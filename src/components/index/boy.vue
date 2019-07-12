@@ -28,7 +28,7 @@
 					</svg>
 				</router-link>
 				<!-- 书架 -->
-				<router-link to="/mybook" class="icon-btn">
+				<router-link to="/bookshelf" class="icon-btn">
 					<svg class="icon icon-All" aria-hidden="true">
 						<use xlink:href="#icon-wodeshujia"></use>
 					</svg>
@@ -554,6 +554,18 @@
 			<p>看更多正版好书</p>
 			<span>下载</span>
 		</div>
+	
+		<!-- 返回顶部 -->
+		<span class="readBox Box-icon">
+			<router-link to="/bookshelf">
+				最近阅读
+			</router-link>
+		</span>
+		<span class="backTop Box-icon" id="TOPBack" @click="top()">
+			<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-fanhuidingbu"></use>
+			</svg>
+		</span>
 	</main>
 </template>
 	
@@ -1137,6 +1149,9 @@
 			change02(index){
 				this.num02=index
 			},
+			top(){
+				document.documentElement.scrollTop = 0;
+			},
 			function(){
 				var now = new Date().getTime();
 				//月份时0-11，不要忘记+1
@@ -1154,11 +1169,24 @@
 				h.innerHTML = hour;
 				m.innerHTML = minute;
 				s.innerHTML = second;
-			}
+			},		
+			Topfunction(){
+				var Btop = document.body.scrollTop || document.documentElement.scrollTop;
+				// 如果滚动距离大于导航条据顶部的距离
+				if( Btop > 140 ) {
+				    // 为导航条设置fix
+				    TOPBack.style.display = "block";
+				}else {
+					TOPBack.style.display = "none";
+				} 
+			}	
 		},
 		mounted(){
 			this.function()
 			setInterval(this.function)
+			
+			this.Topfunction()
+			document.scroll(this.Topfunction) 
 		}
 	}
 </script>
@@ -1741,5 +1769,43 @@
 		color: #fff;
 		border-radius: 99px;
 		background-color: #ed424b;
+	}
+	/* 返回顶部 */
+	.Box-icon{
+		position: fixed; 
+		border: 0.0625rem solid;
+		border-radius: 99px;
+		cursor: pointer;
+	}
+	.readBox{
+		width: 2rem;
+		height: 2rem;
+		padding: 0.5625rem;
+		display: block;
+		right: 20px; 
+		bottom: 3.75rem;
+		background: #ed424b;
+		color: #fff;
+		font-size: 0.8125rem;
+		text-align: center;
+	}
+	.readBox a{
+		color: #fff;
+	}
+	.backTop{
+		width: 3.125rem;
+		height: 3.125rem;
+		right: 20px; 
+		bottom: 1rem;
+		background: #000;
+		opacity: 0.6;
+	}
+	.backTop .icon{
+		width: 1.375rem;
+		height: 1.375rem;
+		color: #fff;
+		position: relative;
+		left: 26%;
+		top: 27%;
 	}
 </style>

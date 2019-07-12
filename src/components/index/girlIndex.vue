@@ -27,7 +27,7 @@
 					</svg>
 				</router-link>
 				<!-- 书架 -->
-				<router-link to="/mybook" class="icon-btn">
+				<router-link to="/bookshelf" class="icon-btn">
 					<svg class="icon icon-All" aria-hidden="true">
 						<use xlink:href="#icon-wodeshujia"></use>
 					</svg>

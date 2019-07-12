@@ -12,8 +12,6 @@ import login from '../../components/login/login.vue'
 import register from '../../components/login/register.vue'
 
 import bookshelf from '../../components/bookshelf/bookshelf.vue'
-import mybook from '../../components/bookshelf/mybook.vue'
-import reading from '../../components/bookshelf/reading.vue'
 
 import boyType from '../../components/boy/boy-type.vue'
 import boyRank from '../../components/boy/boy-rank.vue'
@@ -59,17 +57,7 @@ export default new VueRouter({
 		},
 		{
 			path: '/bookshelf',
-			component: bookshelf,
-			children: [
-				{
-					path: '/mybook',
-					component: mybook
-				},
-				{
-					path: '/reading',
-					component: reading
-				}
-			]
+			component: bookshelf
 		},
 		{
 			path: '/boy-type',

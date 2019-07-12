@@ -1,6 +1,6 @@
 <template>
 	<div id="bookshelf">
-		<div class="BigBox">
+		<div class="bookshelf-box">
 			<!-- 头部 -->
 			<header>
 				<ul>
@@ -14,12 +14,12 @@
 						</router-link>
 					</li>
 					<li class="btnBox">
-						<router-link to="/mybook" class="booknav-btn">
+						<div class="booknav-btn" @click="tabname='mybook'" v-bind:class="{btnBoxActive:tabname=='mybook'}">
 							我的书架
-						</router-link>
-						<router-link to="/reading" class="booknav-btn">
+						</div>
+						<div class="booknav-btn" @click="tabname='reading'" v-bind:class="{btnBoxActive:tabname=='reading'}">
 							最近阅读
-						</router-link>
+						</div>
 					</li>
 					<li>
 						<!-- 搜索 -->
@@ -64,15 +64,15 @@
 						</router-link>
 					</div>
 					<div class="hide-btn">
-						<router-link to="/mybook">
+						<router-link to="/bookshelf">
 							我的书架
 						</router-link>
 					</div>
 				</div>
 			</div>
-			
-			<router-view></router-view>
 		</div>
+		
+		<component :is="tabname"></component>
 		
 		<!-- 底部 -->
 		<footer>
@@ -102,10 +102,18 @@
 </template>
 
 <script>
+	import mybook from './mybook.vue'
+	import reading from './reading.vue'
+	
 	export default{
+		components:{
+			mybook,
+			reading
+		},
 		data(){
 			return{
-				show01: false
+				show01: false,
+				tabname: 'mybook'
 			}
 		},
 		methods: {
@@ -130,15 +138,15 @@
 	}
 	header{
 		height: 3.09375rem;
-		border-bottom: 1px solid #EEE;
-		background: #fff;
 	}
-	.BigBox ul{
-		height: 2.75rem;
+	.bookshelf-box ul{
+		height: 3.09375rem;
 		list-style-type: none;
 		padding: 0.6875rem 0;
 		position: relative;
 		box-sizing: border-box;
+		border-bottom: 1px solid #EEE;
+		background: #fff;
 	}
 	.out{
 		display: inline-block;
@@ -176,7 +184,7 @@
 		position: absolute;
 		left: 50%;
 	}
-	.btnBox .router-link-exact-active{
+	.btnBoxActive{
 		background: #ED424B;
 		color: #fff;
 	}

@@ -65,7 +65,7 @@
 					</router-link>
 				</div>
 				<div class="hide-btn">
-					<router-link to="/mytype">
+					<router-link to="/bookshelf">
 						我的书架
 					</router-link>
 				</div>
@@ -106,7 +106,7 @@
 			<div class="slide">
 				<ol class="slide-ol">
 					<li v-for="(item,index) in NextFree" :key="index">
-						<img :src="item.pic">
+						<img :src="item.pic" class="Book-img">
 						<figcaption>{{item.bookName}}</figcaption>
 						<p>
 							<span>{{item.author}}</span>
@@ -423,15 +423,15 @@
 	}
 	header{
 		height: 3.09375rem;
-		border-bottom: 1px solid #EEE;
-		background: #fff;
 	}
 	.header-ulbox{
-		height: 2.75rem;
+		height: 3.09375rem;
 		list-style-type: none;
 		padding: 0.6875rem 0;
 		position: relative;
 		box-sizing: border-box;
+		border-bottom: 1px solid #EEE;
+		background: #fff;
 	}
 	.out{
 		display: inline-block;
