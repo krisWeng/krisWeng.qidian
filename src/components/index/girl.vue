@@ -1117,23 +1117,24 @@
 				m.innerHTML = minute;
 				s.innerHTML = second;
 			},		
-			Topfunction(){
-				var Btop = document.body.scrollTop || document.documentElement.scrollTop;
-				// 如果滚动距离大于导航条据顶部的距离
-				if( Btop > 140 ) {
-				    // 为导航条设置fix
-				    TOPBack.style.display = "block";
-				}else {
-					TOPBack.style.display = "none";
-				} 
-			}	
+			scrollToTop(el) {
+				let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+				let browserHeight = window.outerHeight;
+				if (scrollTop > browserHeight) {
+					  TOPBack.style.display = 'block';
+				} else {
+					  TOPBack.style.display = 'none';
+				}
+			},
+			destroyed () {
+				window.removeEventListener('scroll', this.scrollToTop); 
+			}
 		},
 		mounted(){
 			this.function()
 			setInterval(this.function)
 			
-			this.Topfunction()
-			document.scroll(this.Topfunction) 
+			window.addEventListener('scroll', this.scrollToTop)
 		}
 	}
 </script>
@@ -1656,7 +1657,7 @@
 		padding: 0.5625rem;
 		display: block;
 		right: 20px; 
-		bottom: 3.75rem;
+		bottom: 5rem;
 		background: #ed424b;
 		color: #fff;
 		font-size: 0.8125rem;

@@ -1,6 +1,6 @@
 <template>
 	<div id="girlIndex">
-		<ul>
+		<ul class="nav-box">
 			<li>
 				<!-- logo -->
 				<div to="/girl" class="logoGirl-a">
@@ -9,7 +9,7 @@
 					</h1>
 				</div>
 			</li>
-			<li>
+			<li class="nav-box-a">
 				<!-- 男生 -->
 				<router-link to="/boy" class="nav-btn">
 					男生
@@ -46,7 +46,7 @@
 		margin: 0 auto;
 		padding: 0;
 	}
-	ul{
+	.nav-box{
 		height: 2.75rem;
 		list-style-type: none;
 		padding: 0.6875rem 0;
@@ -63,13 +63,15 @@
 		text-decoration: none;
 	}
 	/* logo */
+	.nav-box li:nth-child(1){
+		position: absolute;
+		top: 0.25rem;
+		left: 0;
+	}
 	.logoGirl-a{
 		width: 6.25rem;
 		padding: 0 1.125rem;
 		display: inline-block;
-		position: absolute;
-		top: 0;
-		left: 0;
 	}
 	.logoGirl-p{
 		width: inherit;
@@ -81,6 +83,12 @@
 		background-size: 100%;
 	}
 	/* btn */
+	.nav-box-a{
+		margin: 0.5rem 0;
+		position: absolute;
+		top: 0.25rem;
+		left: 38%;
+	}
 	.nav-btn{
 		font-size: 0.875rem;
 		padding: 0 0.875rem;
@@ -91,39 +99,31 @@
 	}
 	.nav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-
-		position: absolute;
-		left: 35%;
 	}
 	.nav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
-		position: absolute;
-		left: 49%;
+		margin-left: -0.27rem;
 	}
-	ul .router-link-exact-active{
+	.nav-box .router-link-exact-active{
 		background: #ED424B;
 		color: #fff;
 	}
 	/* icon */
-	.icon-btn:nth-child(1){
+	.nav-box li:nth-child(3){
+		margin: 0.5rem 0.5625rem 0.5rem 0;
 		position: absolute;
-		top: 0;
-		right: 12%;
-	}
-	.icon-btn:nth-child(2){
-		position: absolute;
-		top: 0;
-		right: 2%;
+		top: 0.4375rem;
+		right: 0;
 	}
 	.icon-All{
 		width: 1.5rem;
 		height: 1.5rem;
-		margin: 0.625rem;
+		margin: 0 0.4375rem;
 		color: #ED424B;
 	}
 	.icon-login{
-		width: 1.625rem;
-		height: 1.625rem;
-		margin: 0.625rem;
+		width: 1.5rem;
+		height: 1.5rem;
+		margin: 0 0.4375rem;
 	}
 </style>

@@ -2,7 +2,7 @@
 	<div id="girl-type">
 		<!-- 头部 -->
 		<header>
-			<ul class="header-ulbox">
+			<ul class="girltype-ul">
 				<li class="out">
 					<router-link to="/girl">
 						<span>
@@ -13,26 +13,27 @@
 					</router-link>
 				</li>
 				<p class="header-p">分类</p>
-				<li class="btnBox">
-					<router-link to="/boy-type" class="typenav-btn">
+				<li class="girl-type-link">
+					<router-link to="/boy-type" class="girltypenav-btn">
 						男生
 					</router-link>
-					<router-link to="/girl-type" class="typenav-btn">
+					<router-link to="/girl-type" class="girltypenav-btn">
 						女生
 					</router-link>
 				</li>
-				<li>
+				<li class="girl-type-icon">
 					<!-- 搜索 -->
-					<router-link to="/search" class="type-icon">
-						<svg class="icon type-icon-search" aria-hidden="true">
+					<router-link to="/search" class="book-icon">
+						<svg class="icon book-icon-search" aria-hidden="true">
 							<use xlink:href="#icon-sousuo"></use>
 						</svg>
 					</router-link>
 					<!-- 更多 -->
-					<div class="typeMore" @click="show()"></div>
+					<div class="bookMore" @click="show()"></div>
 				</li>
 			</ul>
 		</header>
+		
 		
 		<!-- 隐藏 -->
 		<div class="more-Hide" v-if="show01">
@@ -273,7 +274,7 @@
 	header{
 		height: 3.09375rem;
 	}
-	.header-ulbox{
+	.girltype-ul{
 		height: 3.09375rem;
 		list-style-type: none;
 		padding: 0.6875rem 0;
@@ -299,14 +300,15 @@
 		left: 0;
 	}
 	.header-p{
-		font-size: 1rem;
-		font-weight: 400;
-		line-height: 1.5rem;
 		position: absolute;
-		left: 3rem;
+		left: 10%;
 	}
 	/* btn */
-	.typenav-btn{
+	.girl-type-link{
+		position: absolute;
+		left: 37%;
+	}
+	.girltypenav-btn{
 		font-size: 0.875rem;
 		padding: 0 0.875rem;
 		border: 1px solid #ed424b;
@@ -314,46 +316,46 @@
 		display: inline-block;
 		color: #ED424B;
 		top: 0.625rem;
+		cursor: pointer;
 	}
-	.typenav-btn:nth-child(1){
+	.girltypenav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		position: absolute;
-		left: 34%;
+		
 	}
-	.typenav-btn:nth-child(2){
+	.girltypenav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
-		position: absolute;
-		left: 48%;
+		margin-left: -0.5rem;
 	}
-	.btnBox .router-link-exact-active{
+	.girl-type-link .router-link-exact-active{
 		background: #ED424B;
 		color: #fff;
 	}
 	/* icon */
-	.type-icon{
+	.girl-type-icon{
+		margin: 0.5rem 0.5625rem 0.5rem 0;
 		position: absolute;
-		top: 0.3125rem;
-		right: 12%;
+		top: 0;
+		right: 0;
 	}
-	.type-icon-search{
+	.book-icon-search{
 		width: 1.125rem;
 		height: 1.125rem;
-		margin: 0.625rem;
+		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
-	.typeMore:empty{   
+	.bookMore:empty{   
 		width: 2.25rem;
 		height: 2.25rem; 
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
 	}
-	.typeMore{
+	.bookMore{
 		float: right;
 		overflow: hidden;
 	}
-	.typeMore:empty::after,
-	.typeMore:empty::before{
+	.bookMore:empty::after,
+	.bookMore:empty::before{
 		content: ''; 
 		width: 1.25rem;
 		position: absolute;
@@ -364,7 +366,7 @@
 		border-top: 1px solid;
 		top: 0.92rem;
 	}
-	.typeMore:empty::before{
+	.bookMore:empty::before{
 		height: 4px;
 		transform-origin: top center;
 		border-bottom: 1px solid;
@@ -448,7 +450,7 @@
 		background-position: -63px -28px;
 		background-size: 87px 87px;
 	}
-	.hide-icon-rank{
+	.hide-icon-type{
 		width: 27px;
 		height: 26px;
 		background: url(../../assets/img/nav-icon.png);

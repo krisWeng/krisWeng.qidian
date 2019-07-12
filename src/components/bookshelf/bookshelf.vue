@@ -165,6 +165,10 @@
 		left: 0;
 	}
 	/* btn */
+	.btnBox{
+		position: absolute;
+		left: 30%;
+	}
 	.booknav-btn{
 		font-size: 0.875rem;
 		padding: 0 0.875rem;
@@ -173,31 +177,31 @@
 		display: inline-block;
 		color: #ED424B;
 		top: 0.625rem;
+		cursor: pointer;
 	}
 	.booknav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		position: absolute;
-		left: 30%;
+		
 	}
 	.booknav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
-		position: absolute;
-		left: 50%;
+		margin-left: -0.27rem;
 	}
 	.btnBoxActive{
 		background: #ED424B;
 		color: #fff;
 	}
 	/* icon */
-	.book-icon{
+	.bookshelf-box ul li:nth-child(3){
+		margin: 0.5rem 0.5625rem 0.5rem 0;
 		position: absolute;
-		top: 0.3125rem;
-		right: 12%;
+		top: 0.4375rem;
+		right: 0;
 	}
 	.book-icon-search{
 		width: 1.125rem;
 		height: 1.125rem;
-		margin: 0.625rem;
+		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
 	.bookMore:empty{   

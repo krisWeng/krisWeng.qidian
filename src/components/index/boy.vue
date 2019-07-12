@@ -1170,23 +1170,25 @@
 				m.innerHTML = minute;
 				s.innerHTML = second;
 			},		
-			Topfunction(){
-				var Btop = document.body.scrollTop || document.documentElement.scrollTop;
-				// 如果滚动距离大于导航条据顶部的距离
-				if( Btop > 140 ) {
-				    // 为导航条设置fix
-				    TOPBack.style.display = "block";
-				}else {
-					TOPBack.style.display = "none";
-				} 
+			scrollToTop(el) {
+				let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+				let browserHeight = window.outerHeight;
+				if (scrollTop > browserHeight) {
+					  TOPBack.style.display = 'block';
+				} else {
+					  TOPBack.style.display = 'none';
+				}
+			},
+			destroyed(){
+				window.removeEventListener('scroll', this.scrollToTop);
+				window.removeEventListener('setInterval',this.function);
 			}	
 		},
 		mounted(){
 			this.function()
 			setInterval(this.function)
 			
-			this.Topfunction()
-			document.scroll(this.Topfunction) 
+			window.addEventListener('scroll', this.scrollToTop)
 		}
 	}
 </script>
@@ -1206,6 +1208,7 @@
 		padding: 0.6875rem 0;
 		position: relative;
 		box-sizing: border-box;
+		overflow: hidden;
 	}
 	.nav-box li{
 		display: inline-block;
@@ -1213,24 +1216,33 @@
 		float: left;
 	}
 	/* logo */
+	.nav-box li:nth-child(1){
+		position: absolute;
+		top: 0.25rem;
+		left: 0;
+	}
 	.logoBoy-a{
 		width: 6.25rem;
-		padding: 0 1.125rem;
+		padding-right: 0.75rem;
+		padding-left: 0.25rem;
 		display: inline-block;
-		position: absolute;
-		top: 0;
-		left: 0;
 	}
 	.logoBoy-p{
 		width: inherit;
 		height: 1.25rem;
-		margin: 0.90625rem 0;
+		margin: 0.84375rem 0;
 		font-size: 1rem;
 		color: transparent;
 		background: url(../../assets/img/logo.svg);
 		background-size: 100%;
 	}
 	/* btn */
+	.nav-box li:nth-child(2){
+		margin: 0.5rem 0;
+		position: absolute;
+		top: 0.25rem;
+		left: 38%;
+	}
 	.nav-btn{
 		font-size: 0.875rem;
 		padding: 0 0.875rem;
@@ -1241,39 +1253,35 @@
 	}
 	.nav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		position: absolute;
-		left: 35%;
 	}
 	.nav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
-		position: absolute;
-		left: 49%;
+		margin-left: -0.27rem;
 	}
 	.nav-box-a .router-link-exact-active{
 		background: #ED424B;
 		color: #fff;
 	}
 	/* icon */
-	.icon-btn:nth-child(1){
+	.nav-box li:nth-child(3){
+		margin: 0.5rem 0.5625rem 0.5rem 0;
 		position: absolute;
-		top: 0;
-		right: 12%;
+		top: 0.4375rem;
+		right: 0;
 	}
-	.icon-btn:nth-child(2){
-		position: absolute;
-		top: 0;
-		right: 2%;
+	.icon-btn{
+		display: inline-block;
 	}
 	.icon-All{
 		width: 1.5rem;
 		height: 1.5rem;
-		margin: 0.625rem;
+		margin: 0 0.4375rem;
 		color: #ED424B;
 	}
 	.icon-login{
-		width: 1.625rem;
-		height: 1.625rem;
-		margin: 0.625rem;
+		width: 1.5rem;
+		height: 1.5rem;
+		margin: 0 0.4375rem;
 	}
 	/*  图片轮播 */
 	.mint-swipe{
@@ -1783,7 +1791,7 @@
 		padding: 0.5625rem;
 		display: block;
 		right: 20px; 
-		bottom: 3.75rem;
+		bottom: 5rem;
 		background: #ed424b;
 		color: #fff;
 		font-size: 0.8125rem;
