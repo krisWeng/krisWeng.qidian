@@ -1194,14 +1194,14 @@
 		background-color: #fff;
 	}
 	.home-nav-a{
-		width: 3.5rem;
+		width: 14.214%;
 		height: 3.625rem;
 		font-size: .75rem;
 		position: relative;
 		display: inline-block;
 		text-align: center;
 		color: #000000;
-		margin-right: 1.5rem;
+		margin-right: 6.092%;
 	}
 	.home-nav-a:nth-child(5){
 		margin-right: 0;
@@ -1584,15 +1584,19 @@
 		border-bottom: 1px solid #f0f1f2;
 	}
 	.footer-btnLink{
-		padding: .5625rem 1.1875rem 0;
+		padding: 2.46% 5.15% 0;
 		text-align: center;
 		color: #969ba3;
+		overflow: hidden;
+	}
+	.footer-btnLink,
+	.footer-btnLink ol{
+		overflow: hidden;
 	}
 	.footer-btnLink li{
-		display: inline-block;
-		vertical-align: top;
-		white-space: normal;
-		padding: 0.84375rem 0.875rem 0.5625rem;
+		width: 20%;
+		float: left;
+		padding: 0.5625rem 0;
 	}
 	.dark{
 		color: #33373d;

@@ -76,25 +76,229 @@
 		<!-- 内容 -->
 		<div class="module-box">
 			<ul>
-				<li v-for="(item,index) in typeCont" :key="index">
+				<li>
 					<div class="type-sbox-title" >
-						<h3>{{item.title}}</h3>
-						<span>共 {{item.booknum}} 本作品</span>
+						<h3>古代言情</h3>
+						<span>共 209993 本作品</span>
 						<svg class="icon type-icon-right" aria-hidden="true">
 							<use xlink:href="#icon-right"></use>
 						</svg>
 					</div>
 					<div class="type-sbox-cont">
-						<span>{{item.typeName01}}</span>
-						<span>{{item.typeName02}}</span>
-						<span>{{item.typeName03}}</span>
-						<span>{{item.typeName04}}</span>
-						<span>{{item.typeName05}}</span>
-						<span>{{item.typeName06}}</span>
-						<span>{{item.typeName07}}</span>
-						<span>{{item.typeName08}}</span>
-						<span>{{item.typeName09}}</span>
-						<span>{{item.typeName10}}</span>
+						<span>女尊王朝</span>
+						<span>古典架空</span>
+						<span>古代情缘</span>
+						<span>穿越奇情</span>
+						<span>宫闱宅斗</span>
+						<span>经商种田</span>
+						<span>西方时空</span>
+						<span>清穿民国</span>
+						<span>上古蛮荒</span>
+						<span>热血江湖</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>现实生活</h3>
+						<span>共 25 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>家与情感</span>
+						<span>行业人生</span>
+						<span>探索科幻</span>
+						<span>人文博览</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>仙侠奇缘</h3>
+						<span>共 36198 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>武侠情缘</span>
+						<span>古典仙侠</span>
+						<span>现代修真</span>
+						<span>远古洪荒</span>
+						<span>仙侣奇缘</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>现代言情</h3>
+						<span>共 288703 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>都市生活</span>
+						<span>婚恋情缘</span>
+						<span>娱乐明星</span>
+						<span>商战职场</span>
+						<span>都市异能</span>
+						<span>豪门世家</span>
+						<span>极道江湖</span>
+						<span>民国情缘</span>
+						<span>异国情缘</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>浪漫青春</h3>
+						<span>共 174218 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>青春校园</span>
+						<span>青春疼痛</span>
+						<span>叛逆成长</span>
+						<span>青春纯爱</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>玄幻言情</h3>
+						<span>共 137990 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>东方玄幻</span>
+						<span>异界大陆</span>
+						<span>远古神话</span>
+						<span>异族恋情</span>
+						<span>魔法幻情</span>
+						<span>西方奇幻</span>
+						<span>异能超术</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>悬疑灵异</h3>
+						<span>共 12113 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>推理侦探</span>
+						<span>恐怖惊悚</span>
+						<span>悬疑探险</span>
+						<span>灵异鬼怪</span>
+						<span>神秘文化</span>
+						<span>幽冥情缘</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>科幻空间</h3>
+						<span>共 21473 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>未来世界</span>
+						<span>进化变异</span>
+						<span>星际恋歌</span>
+						<span>时空穿梭</span>
+						<span>古武机甲</span>
+						<span>超级科技</span>
+						<span>末世危机</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>游戏竞技</h3>
+						<span>共 6742 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>电子竞技</span>
+						<span>网游情缘</span>
+						<span>游戏异界</span>
+						<span>体育竞技</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>轻小说</h3>
+						<span>共 14000 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>同人衍生</span>
+						<span>唯美幻想</span>
+						<span>萌系变身</span>
+						<span>青春日常</span>
+						<span>搞笑吐槽</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>纯爱</h3>
+						<span>共 11000 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>古纯</span>
+						<span>现纯</span>
+						<span>幻爱</span>
 						<i></i>
 						<i></i>
 						<i></i>
@@ -141,118 +345,7 @@
 	export default{
 		data(){
 			return{
-				show01: false,
-				typeCont:[
-					{
-						title: '古代言情',
-						booknum: '209993',
-						typeName01: '女尊王朝',
-						typeName02: '古典架空',
-						typeName03: '古代情缘',
-						typeName04: '穿越奇情',
-						typeName05: '宫闱宅斗',
-						typeName06: '经商种田',
-						typeName07: '西方时空',
-						typeName08: '清穿民国',
-						typeName09: '上古蛮荒',
-						typeName10: '热血江湖'
-					},
-					{
-						title: '现实生活',
-						booknum: '25',
-						typeName01: '家与情感',
-						typeName02: '行业人生',
-						typeName03: '探索科幻',
-						typeName04: '人文博览'
-					},
-					{
-						title: '仙侠奇缘',
-						booknum: '36198',
-						typeName01: '武侠情缘',
-						typeName02: '古典仙侠',
-						typeName03: '现代修真',
-						typeName04: '远古洪荒',
-						typeName05: '仙侣奇缘'
-						
-					},
-					{
-						title: '现代言情',
-						booknum: '288703',
-						typeName01: '都市生活',
-						typeName02: '婚恋情缘',
-						typeName03: '娱乐明星',
-						typeName04: '商战职场',
-						typeName05: '都市异能',
-						typeName06: '豪门世家',
-						typeName07: '极道江湖',
-						typeName08: '民国情缘',
-						typeName09: '异国情缘'
-					},
-					{
-						title: '浪漫青春',
-						booknum: '174218',
-						typeName01: '青春校园',
-						typeName02: '青春疼痛',
-						typeName03: '叛逆成长',
-						typeName04: '青春纯爱'
-					},
-					{
-						title: '玄幻言情',
-						booknum: '137990',
-						typeName01: '东方玄幻',
-						typeName02: '异界大陆',
-						typeName03: '远古神话',
-						typeName04: '异族恋情',
-						typeName05: '魔法幻情',
-						typeName06: '西方奇幻',
-						typeName07: '异能超术'
-					},
-					{
-						title: '悬疑灵异',
-						booknum: '12113',
-						typeName01: '推理侦探',
-						typeName02: '恐怖惊悚',
-						typeName03: '悬疑探险',
-						typeName04: '灵异鬼怪',
-						typeName05: '神秘文化',
-						typeName06: '幽冥情缘'
-					},
-					{
-						title: '科幻空间',
-						booknum: '21473',
-						typeName01: '未来世界',
-						typeName02: '进化变异',
-						typeName03: '星际恋歌',
-						typeName04: '时空穿梭',
-						typeName05: '古武机甲',
-						typeName06: '超级科技',
-						typeName07: '末世危机'
-					},
-					{
-						title: '游戏竞技',
-						booknum: '6742',
-						typeName01: '电子竞技',
-						typeName02: '网游情缘',
-						typeName03: '游戏异界',
-						typeName04: '体育竞技'
-					},
-					{
-						title: '轻小说',
-						booknum: '14000',
-						typeName01: '同人衍生',
-						typeName02: '唯美幻想',
-						typeName03: '萌系变身',
-						typeName04: '青春日常',
-						typeName05: '搞笑吐槽'
-					},
-					{
-						title: '纯爱',
-						booknum: '11000',
-						typeName01: '古纯',
-						typeName02: '现纯',
-						typeName03: '幻爱'
-					}
-				]
+				show01: false
 			}
 		},
 		methods: {
@@ -577,15 +670,19 @@
 		border-bottom: 1px solid #f0f1f2;
 	}
 	.footer-btnLink{
-		padding: .5625rem 1.1875rem 0;
+		padding: 2.46% 5.15% 0;
 		text-align: center;
 		color: #969ba3;
+		overflow: hidden;
+	}
+	.footer-btnLink,
+	.footer-btnLink ol{
+		overflow: hidden;
 	}
 	.footer-btnLink li{
-		display: inline-block;
-		vertical-align: top;
-		white-space: normal;
-		padding: 0.84375rem 0.875rem 0.5625rem;
+		width: 20%;
+		float: left;
+		padding: 0.5625rem 0;
 	}
 	.dark{
 		color: #33373d;

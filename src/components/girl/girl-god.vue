@@ -382,12 +382,16 @@
 	}
 </script>
 
-<style>*{
+<style>
+	*{
 		margin: 0 auto;
 		padding: 0;
 	}
 	a{
 		text-decoration: none;
+	}
+	ol{
+		list-style: none;
 	}
 	header{
 		height: 3.09375rem;
@@ -424,7 +428,7 @@
 	/* btn */
 	.girl-god-link{
 		position: absolute;
-		left: 37%;
+		left: 38%;
 	}
 	.girlgodnav-btn{
 		font-size: 0.875rem;
@@ -782,15 +786,19 @@
 		border-bottom: 1px solid #f0f1f2;
 	}
 	.footer-btnLink{
-		padding: .5625rem 1.1875rem 0;
+		padding: 2.46% 5.15% 0;
 		text-align: center;
 		color: #969ba3;
+		overflow: hidden;
+	}
+	.footer-btnLink,
+	.footer-btnLink ol{
+		overflow: hidden;
 	}
 	.footer-btnLink li{
-		display: inline-block;
-		vertical-align: top;
-		white-space: normal;
-		padding: 0.84375rem 0.875rem 0.5625rem;
+		width: 20%;
+		float: left;
+		padding: 0.5625rem 0;
 	}
 	.dark{
 		color: #33373d;

@@ -14,10 +14,10 @@
 				</li>
 				<p class="header-p">大神</p>
 				<li class="boy-end-link">
-					<router-link to="/boy-god" class="typenav-btn">
+					<router-link to="/boy-god" class="godnav-btn">
 						男生
 					</router-link>
-					<router-link to="/girl-god" class="typenav-btn">
+					<router-link to="/girl-god" class="godnav-btn">
 						女生
 					</router-link>
 				</li>
@@ -427,7 +427,7 @@
 		position: absolute;
 		left: 37%;
 	}
-	.typenav-btn{
+	.godnav-btn{
 		font-size: 0.875rem;
 		padding: 0 0.875rem;
 		border: 1px solid #ed424b;
@@ -437,11 +437,11 @@
 		top: 0.625rem;
 		cursor: pointer;
 	}
-	.typenav-btn:nth-child(1){
+	.godnav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
 		
 	}
-	.typenav-btn:nth-child(2){
+	.godnav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
 		margin-left: -0.5rem;
 	}
@@ -453,7 +453,7 @@
 	.boy-end-icon{
 		margin: 0.5rem 0.5625rem 0.5rem 0;
 		position: absolute;
-		top: 0.4375rem;
+		top: 0;
 		right: 0;
 	}
 	.book-icon-search{
@@ -783,15 +783,19 @@
 		border-bottom: 1px solid #f0f1f2;
 	}
 	.footer-btnLink{
-		padding: .5625rem 1.1875rem 0;
+		padding: 2.46% 5.15% 0;
 		text-align: center;
 		color: #969ba3;
+		overflow: hidden;
+	}
+	.footer-btnLink,
+	.footer-btnLink ol{
+		overflow: hidden;
 	}
 	.footer-btnLink li{
-		display: inline-block;
-		vertical-align: top;
-		white-space: normal;
-		padding: 0.84375rem 0.875rem 0.5625rem;
+		width: 20%;
+		float: left;
+		padding: 0.5625rem 0;
 	}
 	.dark{
 		color: #33373d;

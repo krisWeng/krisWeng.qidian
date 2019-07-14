@@ -75,25 +75,267 @@
 		<!-- 内容 -->
 		<div class="module-box">
 			<ul>
-				<li v-for="(item,index) in typeCont" :key="index">
+				<li>
 					<div class="type-sbox-title" >
-						<h3>{{item.title}}</h3>
-						<span>共 {{item.booknum}} 本作品</span>
+						<h3>玄幻</h3>
+						<span>共 721722 本作品</span>
 						<svg class="icon type-icon-right" aria-hidden="true">
 							<use xlink:href="#icon-right"></use>
 						</svg>
 					</div>
 					<div class="type-sbox-cont">
-						<span>{{item.typeName01}}</span>
-						<span>{{item.typeName02}}</span>
-						<span>{{item.typeName03}}</span>
-						<span>{{item.typeName04}}</span>
-						<span>{{item.typeName05}}</span>
-						<span>{{item.typeName06}}</span>
-						<span>{{item.typeName07}}</span>
-						<span>{{item.typeName08}}</span>
-						<span>{{item.typeName09}}</span>
-						<span>{{item.typeName10}}</span>
+						<span>东方玄幻</span>
+						<span>异世大陆</span>
+						<span>王朝争霸</span>
+						<span>高武世界</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>奇幻</h3>
+						<span>共 159241 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>剑与魔法</span>
+						<span>史诗奇幻</span>
+						<span>黑暗幻想</span>
+						<span>现代魔法</span>
+						<span>历史神话</span>
+						<span>另类幻想</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>武侠</h3>
+						<span>共 45378 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>传统武侠</span>
+						<span>武侠幻想</span>
+						<span>国术无双</span>
+						<span>古武未来</span>
+						<span>武侠同人</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>仙侠</h3>
+						<span>共 236460 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>修真文明</span>
+						<span>幻想修仙</span>
+						<span>现代修真</span>
+						<span>神话修真</span>
+						<span>古典仙侠</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>都市</h3>
+						<span>共 374244 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>都市生活</span>
+						<span>异术超能</span>
+						<span>都市异能</span>
+						<span>青春校园</span>
+						<span>娱乐明星</span>
+						<span>商战职场</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>现实</h3>
+						<span>共 43492 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>现实百态</span>
+						<span>爱情婚姻</span>
+						<span>社会乡土</span>
+						<span>生活时尚</span>
+						<span>文学艺术</span>
+						<span>成功励志</span>
+						<span>青春文学</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>军事</h3>
+						<span>共 20623 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>战争幻想</span>
+						<span>谍战特工</span>
+						<span>军旅生涯</span>
+						<span>抗战烽火</span>
+						<span>军事战争</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>历史</h3>
+						<span>共 77225 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>外国历史</span>
+						<span>历史传记</span>
+						<span>架空历史</span>
+						<span>上古先秦</span>
+						<span>秦汉三国</span>
+						<span>两晋隋唐</span>
+						<span>五代十国</span>
+						<span>两宋元明</span>
+						<span>清史民国</span>
+						<span>民间传说</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>游戏</h3>
+						<span>共 108311 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>电子竞技</span>
+						<span>虚拟网游</span>
+						<span>游戏异界</span>
+						<span>游戏系统</span>
+						<span>游戏主播</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>体育</h3>
+						<span>共 9109 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>篮球运动</span>
+						<span>体育赛事</span>
+						<span>足球运动</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>科幻</h3>
+						<span>共 157333 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>星际文明</span>
+						<span>时空穿梭</span>
+						<span>未来世界</span>
+						<span>古武机甲</span>
+						<span>超级科技</span>
+						<span>进化变异</span>
+						<span>末世危机</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>灵异</h3>
+						<span>共 66996 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>恐怖惊悚</span>
+						<span>灵异鬼怪</span>
+						<span>悬疑侦探</span>
+						<span>寻墓探险</span>
+						<span>风水秘术</span>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+				</li>
+				<li>
+					<div class="type-sbox-title" >
+						<h3>轻小说</h3>
+						<span>共 113490 本作品</span>
+						<svg class="icon type-icon-right" aria-hidden="true">
+							<use xlink:href="#icon-right"></use>
+						</svg>
+					</div>
+					<div class="type-sbox-cont">
+						<span>原生幻想</span>
+						<span>衍生同人</span>
+						<span>搞笑吐槽</span>
+						<span>青春日常</span>
 						<i></i>
 						<i></i>
 						<i></i>
@@ -162,133 +404,7 @@
 	export default{
 		data(){
 			return{
-				show01: false,
-				typeCont:[
-					{
-						title: '玄幻',
-						booknum: '721722',
-						typeName01: '东方玄幻',
-						typeName02: '异世大陆',
-						typeName03: '王朝争霸',
-						typeName04: '高武世界'
-					},
-					{
-						title: '奇幻',
-						booknum: '159241',
-						typeName01: '剑与魔法',
-						typeName02: '史诗奇幻',
-						typeName03: '黑暗幻想',
-						typeName04: '现代魔法',
-						typeName05: '历史神话',
-						typeName06: '另类幻想'
-					},
-					{
-						title: '武侠',
-						booknum: '45378',
-						typeName01: '传统武侠',
-						typeName02: '武侠幻想',
-						typeName03: '国术无双',
-						typeName04: '古武未来',
-						typeName05: '武侠同人'
-					},
-					{
-						title: '仙侠',
-						booknum: '236460',
-						typeName01: '修真文明',
-						typeName02: '幻想修仙',
-						typeName03: '现代修真',
-						typeName04: '神话修真',
-						typeName05: '古典仙侠'
-					},
-					{
-						title: '都市',
-						booknum: '374244',
-						typeName01: '都市生活',
-						typeName02: '异术超能',
-						typeName03: '都市异能',
-						typeName04: '青春校园',
-						typeName05: '娱乐明星',
-						typeName06: '商战职场'
-					},
-					{
-						title: '现实',
-						booknum: '43492',
-						typeName01: '现实百态',
-						typeName02: '爱情婚姻',
-						typeName03: '社会乡土',
-						typeName04: '生活时尚',
-						typeName05: '文学艺术',
-						typeName06: '成功励志',
-						typeName07: '青春文学'
-					},
-					{
-						title: '军事',
-						booknum: '20623',
-						typeName01: '战争幻想',
-						typeName02: '谍战特工',
-						typeName03: '军旅生涯',
-						typeName04: '抗战烽火',
-						typeName05: '军事战争'
-					},
-					{
-						title: '历史',
-						booknum: '77225',
-						typeName01: '外国历史',
-						typeName02: '历史传记',
-						typeName03: '架空历史',
-						typeName04: '上古先秦',
-						typeName05: '秦汉三国',
-						typeName06: '两晋隋唐',
-						typeName07: '五代十国',
-						typeName08: '两宋元明',
-						typeName09: '清史民国',
-						typeName10: '民间传说'
-					},
-					{
-						title: '游戏',
-						booknum: '108311',
-						typeName01: '电子竞技',
-						typeName02: '虚拟网游',
-						typeName03: '游戏异界',
-						typeName04: '游戏系统',
-						typeName05: '游戏主播'
-					},
-					{
-						title: '体育',
-						booknum: '9109',
-						typeName01: '篮球运动',
-						typeName02: '体育赛事',
-						typeName03: '足球运动'
-					},
-					{
-						title: '科幻',
-						booknum: '157333',
-						typeName01: '星际文明',
-						typeName02: '时空穿梭',
-						typeName03: '未来世界',
-						typeName04: '古武机甲',
-						typeName05: '超级科技',
-						typeName06: '进化变异',
-						typeName07: '末世危机'
-					},
-					{
-						title: '灵异',
-						booknum: '66996',
-						typeName01: '恐怖惊悚',
-						typeName02: '灵异鬼怪',
-						typeName03: '悬疑侦探',
-						typeName04: '寻墓探险',
-						typeName05: '风水秘术'
-					},
-					{
-						title: '轻小说',
-						booknum: '113490',
-						typeName01: '原生幻想',
-						typeName02: '衍生同人',
-						typeName03: '搞笑吐槽',
-						typeName04: '青春日常'
-					}
-				]
+				show01: false
 			}
 		},
 		methods: {
@@ -306,6 +422,9 @@
 	}
 	a{
 		text-decoration: none;
+	}
+	ol{
+		list-style: none;
 	}
 	header{
 		height: 3.09375rem;
@@ -342,7 +461,7 @@
 	/* btn */
 	.boy-end-link{
 		position: absolute;
-		left: 37%;
+		left: 38%;
 	}
 	.typenav-btn{
 		font-size: 0.875rem;
@@ -370,7 +489,7 @@
 	.boy-end-icon{
 		margin: 0.5rem 0.5625rem 0.5rem 0;
 		position: absolute;
-		top: 0.4375rem;
+		top: 0;
 		right: 0;
 	}
 	.book-icon-search{
@@ -613,15 +732,19 @@
 		border-bottom: 1px solid #f0f1f2;
 	}
 	.footer-btnLink{
-		padding: .5625rem 1.1875rem 0;
+		padding: 2.46% 5.15% 0;
 		text-align: center;
 		color: #969ba3;
+		overflow: hidden;
+	}
+	.footer-btnLink,
+	.footer-btnLink ol{
+		overflow: hidden;
 	}
 	.footer-btnLink li{
-		display: inline-block;
-		vertical-align: top;
-		white-space: normal;
-		padding: 0.84375rem 0.875rem 0.5625rem;
+		width: 20%;
+		float: left;
+		padding: 0.5625rem 0;
 	}
 	.dark{
 		color: #33373d;

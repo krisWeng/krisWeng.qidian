@@ -309,7 +309,7 @@
 	/* btn */
 	.boy-end-link{
 		position: absolute;
-		left: 37%;
+		left: 38%;
 	}
 	.typenav-btn{
 		font-size: 0.875rem;
@@ -505,18 +505,19 @@
 		background: #fff;
 		position: relative;
 		margin-bottom: 0.84375rem;
+		overflow: hidden;
 	}
 	.rank-left{
-		width: 8.4375rem;
-		/* display: block; */
-		/* margin: 0; */
+		width: 32.61%;
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
+		overflow: hidden;
 	}
 	.rank-left img{
 		width: 100%;
+		height: 100%;
 		display: block;
 	}
 	.rank-title{
@@ -542,8 +543,8 @@
 	/* 右边 */
 	.rank-ol{
 		overflow: hidden;
-		margin-left: 8.4375rem;
-		padding-left: 2.375rem;
+		margin-left: 32.61%;
+		padding-left: 38px;
 		counter-reset: bookrank;
 		list-style: none;
 	}
@@ -553,9 +554,10 @@
 	}
 	.rank-ol li a{
 		line-height: 1.6875rem;
-		display: block;
-		margin-left: -2.375rem;
-		padding: 0.420625rem 1.125rem 0.420625rem 2.671875rem;
+		/* display: block; */
+		display: flex;
+		margin-left: -15.77%;
+		padding: 2.8% 7.47% 2.8% 17.74%;
 	}
 	.rank-ol li::before{
 		content: counter(bookrank) '.';
@@ -571,9 +573,11 @@
 	.rank-ol li h3{
 		font-size: 1rem;
 		display: inline-block;
+		margin: 0;
 	}
 	.rankmore-icon{
 		float: right;
+		margin-right: 0;
 	}
 	.rankmore-icon .icon{
 		color: #969ba3;
@@ -591,15 +595,19 @@
 		border-bottom: 1px solid #f0f1f2;
 	}
 	.footer-btnLink{
-		padding: .5625rem 1.1875rem 0;
+		padding: 2.46% 5.15% 0;
 		text-align: center;
 		color: #969ba3;
+		overflow: hidden;
+	}
+	.footer-btnLink,
+	.footer-btnLink ol{
+		overflow: hidden;
 	}
 	.footer-btnLink li{
-		display: inline-block;
-		vertical-align: top;
-		white-space: normal;
-		padding: 0.84375rem 0.875rem 0.5625rem;
+		width: 20%;
+		float: left;
+		padding: 0.5625rem 0;
 	}
 	.dark{
 		color: #33373d;
