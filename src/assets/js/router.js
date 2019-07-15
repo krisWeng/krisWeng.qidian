@@ -8,6 +8,8 @@ import boy from '../../components/index/boy.vue'
 import girl from '../../components/index/girl.vue'
 import search from '../../components/index/search.vue'
 
+// import fc from '../../components/index/fc.vue'
+
 import login from '../../components/login/login.vue'
 import register from '../../components/login/register.vue'
 
@@ -111,5 +113,10 @@ export default new VueRouter({
 			path: '/search',
 			component: search
 		}
+		// ,
+		// {
+		// 	path: '/fc',
+		// 	component: fc
+		// }
 	]
 })

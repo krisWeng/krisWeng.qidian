@@ -14,10 +14,10 @@
 				</li>
 				<p class="header-p">完本</p>
 				<li class="boy-end-link">
-					<router-link to="/boy-end" class="typenav-btn">
+					<router-link to="/boy-end" class="endnav-btn">
 						男生
 					</router-link>
-					<router-link to="/girl-end" class="typenav-btn">
+					<router-link to="/girl-end" class="endnav-btn">
 						女生
 					</router-link>
 				</li>
@@ -446,7 +446,7 @@
 		position: absolute;
 		left: 38%;
 	}
-	.typenav-btn{
+	.endnav-btn{
 		font-size: 0.875rem;
 		padding: 0 0.875rem;
 		border: 1px solid #ed424b;
@@ -456,11 +456,11 @@
 		top: 0.625rem;
 		cursor: pointer;
 	}
-	.typenav-btn:nth-child(1){
+	.endnav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
 		
 	}
-	.typenav-btn:nth-child(2){
+	.endnav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
 		margin-left: -0.5rem;
 	}

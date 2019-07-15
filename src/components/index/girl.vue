@@ -489,16 +489,43 @@
 		</div>
 		
 		<!-- 返回顶部 -->
-		<span class="readBox Box-icon">
-			<router-link to="/bookshelf">
-				最近阅读
-			</router-link>
+		<span class="readBox Box-icon" id="lately" @click="appear()">
+			最近阅读
 		</span>
-		<span class="backTop Box-icon" id="TOPBack" @click="top()">
+		<span class="backTop Box-icon" id="TOPBack" @click="top()" style="display: none;">
 			<svg class="icon" aria-hidden="true">
 				<use xlink:href="#icon-fanhuidingbu"></use>
 			</svg>
 		</span>
+		
+		<!-- 最近阅读 -->
+		<transition name="fade">
+			<aside v-show="show" id="aside">
+				<i class="gray-box" @click="appear()"></i>
+				<div class="reading-box">
+					<h3 class="content-one">最近阅读</h3>
+					<div class="content-two">
+						<div class="two-bookname">
+							<span class="bookname-tit">泼辣小厨娘</span>
+							<p class="bookname-toRead">
+								继续阅读
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-tiaozhuanqianwangyoujiantouxiangyouxiayibuxianxing"></use>
+								</svg>
+							</p>
+						</div>
+						<p>读至 第三章 深夜熬粥（新书求推荐、收藏）</p>
+						<p>5天前</p>
+						<span class="all-reading">以上为全部阅读记录</span>
+					</div>
+					<div class="content-three">
+						<router-link to="/login" class="content-three-a">
+							登录去书架
+						</router-link>
+					</div>
+				</div>
+			</aside>
+		</transition>
 	</div>
 </template>
 	
@@ -509,6 +536,7 @@
 				numGirl: 0,
 				numGirl01: 0,
 				numGirl02: 0,
+				show: false,
 				rotationGirl: [
 					{
 						pic: require('../../assets/img/Girl/Pic-rotation01.jpg')
@@ -1096,6 +1124,9 @@
 			change02(index){
 				this.numGirl02=index
 			},
+			appear(){
+				this.show =! this.show
+			},
 			top(){
 				document.documentElement.scrollTop = 0;
 			},
@@ -1118,12 +1149,23 @@
 				s.innerHTML = second;
 			},		
 			scrollToTop(el) {
+				//变量scrollTop是滚动条滚动时，距离顶部的距离
 				let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 				let browserHeight = window.outerHeight;
+				//变量windowHeight是可视区的高度
+				let windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
+				//变量scrollHeight是滚动条的总高度
+				let scrollHeight = document.documentElement.scrollHeight||document.body.scrollHeight;
 				if (scrollTop > browserHeight) {
-					  TOPBack.style.display = 'block';
+					TOPBack.style.display = 'block';
 				} else {
-					  TOPBack.style.display = 'none';
+					TOPBack.style.display = 'none';
+				}
+				if(scrollTop+windowHeight==scrollHeight){
+					TOPBack.style.display = 'none';
+					lately.style.display = 'none';
+				}else{
+					lately.style.display = 'block';
 				}
 			},
 			destroyed () {
@@ -1685,5 +1727,110 @@
 		position: relative;
 		left: 26%;
 		top: 27%;
+	}
+	/* 最近阅读 */
+	aside{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 5;
+	}
+	.gray-box{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.6;
+		background: #000;
+	}
+	.reading-box{
+		height: 100%;
+		position: absolute;
+		left: 2.5rem;
+		right: 0;
+		background: #fff;
+		overflow: hidden;
+	}
+	.content-one{
+		line-height: 1.9375rem;
+		padding: 18px 18px 0 18px;
+		text-align: center;
+		display: block;
+	}
+	.content-two{
+		padding: 1.125rem;
+	}
+	
+	.two-bookname{
+		overflow: hidden;
+	}
+	.bookname-tit{
+		float: left;
+		font-size: 1.125rem;
+		font-weight: bolder;
+		margin-bottom: 0.1875rem;
+	}
+	.content-two p{
+		color: #969ba3;
+	}
+	.bookname-toRead{
+		float: right;
+		margin-right: 0;
+	}
+	.bookname-toRead,
+	.bookname-toRead .icon{
+		font-size: 0.875rem;
+	}
+	.all-reading{
+		font-size: 0.875rem;
+		color: #969ba3;
+		display: block;
+		line-height: 3.125rem;
+		text-align: center;
+		border-top: 0.0625rem solid #f0f1f2;
+		margin-top: 1.125rem;
+	}
+	.content-three{
+		padding: 1.125rem;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.content-three-a{
+		width: 60%;
+		margin-bottom: 0.84375rem;
+		text-decoration: none;
+		color: #fff;
+		background: #ED424B;
+		border-radius: 99px;
+		padding: 0 1.125rem;
+		line-height: 2.5rem;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+	/*显示*/
+	.fade-enter{
+		width: 0;
+	}
+	.fade-enter-to{
+		width: 60%;
+	}
+	.fade-enter-active{
+		transition: all 0.5s;
+	}
+	/*隐藏*/
+	.fade-leave{
+		width: 60%;
+	}
+	.fade-leave-to{
+		width: 0;
+	}
+	.fade-leave-active{
+		transition: all 0.5s;
 	}
 </style>

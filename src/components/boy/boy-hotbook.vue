@@ -717,6 +717,9 @@
 		color: #969ba3;
 	}
 	/* 粉丝榜 */
+	ul{
+		list-style: none;
+	}
 	.fans-list{
 		overflow: hidden;
 		border-top: 1px solid #f0f1f2;
