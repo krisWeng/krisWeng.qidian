@@ -37,7 +37,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<!-- 书本的详细信息 -->
 		<div class="bookIntro">
 			<!-- 头部 -->
@@ -65,7 +65,7 @@
 					</li>
 				</ul>
 			</header>
-		
+
 			<!-- 书本介绍 -->
 			<div class="bookIntro-box">
 				<div class="bookIntro-one">
@@ -104,7 +104,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<!-- 目录 -->
 		<div class="book-msg">
 			<span class="book-synopsis">
@@ -120,7 +120,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 投票 -->
 		<div class="book-vote">
 			<ul>
@@ -147,7 +147,7 @@
 				</li>
 			</ul>
 		</div>
-		
+
 		<!-- 粉丝榜 -->
 		<div class="book-fans">
 			<div class="book-list">
@@ -199,12 +199,12 @@
 				</ul>
 			</div>
 		</div>
-	
+
 		<!-- 广告 -->
 		<div class="advert">
 			<img src="../../../src/assets/img/hotbook/adver.jpg" alt="">
 		</div>
-		
+
 		<!-- 作者简介 -->
 		<div class="book-fans">
 			<div class="book-list">
@@ -230,7 +230,7 @@
 				</ul>
 			</div>
 		</div>
-	
+
 		<!-- 相关标签 -->
 		<div class="book-fans">
 			<div class="book-list">
@@ -248,7 +248,7 @@
 				<i></i>
 			</div>
 		</div>
-		
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -271,7 +271,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -293,7 +293,7 @@
 			show(){
 				this.show01 = ! this.show01
 			}
-			
+
 		}
 	}
 </script>
@@ -383,9 +383,9 @@
 		margin: 0.625rem;
 	}
 	/* 更多 */
-	.typeMore:empty{   
+	.typeMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -396,7 +396,7 @@
 	}
 	.typeMore:empty::after,
 	.typeMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;
@@ -549,7 +549,6 @@
 	.bookIntro{
 		position: relative;
 		margin: 0;
-		
 		background: #fff;
 	}
 	.bookIntro:after{
@@ -817,7 +816,7 @@
 		height: 100%;
 	}
 	.advert::after{
-		content: '广告'; 
+		content: '广告';
 		font-size: 12px;
 		line-height: 1;
 		position: absolute;

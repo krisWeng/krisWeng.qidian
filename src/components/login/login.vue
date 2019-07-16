@@ -11,17 +11,23 @@
 					<ul>
 						<li>
 							<em class="user"></em>
-							<input type="text" id="user" placeholder="请输入邮箱/个性账号">
+							<input type="text" id="user" placeholder="请输入邮箱/个性账号" @click="Noshow()" v-model="user" @input="checkUser(user)">
 						</li>
 						<li>
 							<em class="lock"></em>
-							<input type="text" id="passwd" placeholder="请输入密码">
+							<input type="text" id="passwd" placeholder="请输入密码" @click="Noshow()" v-model="passwd">
 							<div class="passwd-r">
-								<i class="unlook"></i>
+								<i class="unlook" style="display: none;" @click="unpress()"></i>
+                <i class="look" @click="press()">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-look"></use>
+                  </svg>
+                </i>
 							</div>
 						</li>
 					</ul>
 				</div>
+        <p class="point"></p>
 				<div class="login-link">
 					<router-link to="/login">忘记密码</router-link>
 					<router-link to="/register">用户注册</router-link>
@@ -32,7 +38,7 @@
 					</router-link>
 				</div>
 			</div>
-		
+
 			<!-- 其他登录方式 -->
 			<div class="login-other">
 				<ul>
@@ -51,7 +57,7 @@
 				</ul>
 			</div>
 		</div>
-		
+
 		<!-- 更多 -->
 		<div class="loginMore" v-if="if1">
 			<div class="retract">
@@ -86,8 +92,38 @@
 		methods:{
 			show(){
 				this.if1 =! this.if1
-			}
-		}
+			},
+      Noshow(){
+        $('.Top-pic').css('display','none')
+      },
+      press(){
+        $('.look').css('display','none');
+        $('.unlook').css('display','block')
+      },
+      unpress(){
+        $('.unlook').css('display','none');
+        $('.look').css('display','block')
+      },
+      checkUser(msg){
+          if(msg.length == ''){
+            $('.point').html('请输入帐号')
+          }else{
+            var reg = /^[0-9a-zA-Z]{4,10}$/ || /^\w+@\w+(.\w+)+$/ || /^1\d{10}/;
+            if(!reg.test(msg)){
+              $('.point').html('用户名不正确');
+            }else{
+              $('.point').html('')
+            }
+          }
+        }
+      },
+      // checkPasswd(msg02){
+      //     if(msg02.length == ''){
+      //       $('.point').html('密码不能为空')
+      //     }else{
+      //       $('.point').html('')
+      //     }
+      // }
 	}
 </script>
 
@@ -290,4 +326,9 @@
 	.baidu{
 		background: url(../../assets/img/baidu.svg);
 	}
+  .point{
+    margin-left: 2.2rem;
+    color: #ef5b00;
+    margin-bottom: 0.625rem;
+  }
 </style>
