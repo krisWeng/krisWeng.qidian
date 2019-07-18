@@ -37,7 +37,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<!-- 书本的详细信息 -->
 		<div class="bookIntro">
 			<!-- 头部 -->
@@ -65,11 +65,11 @@
 					</li>
 				</ul>
 			</header>
-		
+
 			<!-- 书本介绍 -->
 			<div class="bookIntro-box">
 				<div class="bookIntro-one">
-					<img src="../../../src/assets/img/hotbook/boy-book.jpg" alt="">
+					<img src="../../../data/img/hotbook/boy-book.jpg" alt="">
 					<div class="book-cell">
 						<h2>狂探</h2>
 						<div class="box-auo">
@@ -104,7 +104,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<!-- 目录 -->
 		<div class="book-msg">
 			<span class="book-synopsis">
@@ -120,7 +120,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 投票 -->
 		<div class="book-vote">
 			<ul>
@@ -147,7 +147,7 @@
 				</li>
 			</ul>
 		</div>
-		
+
 		<!-- 粉丝榜 -->
 		<div class="book-fans">
 			<div class="book-list">
@@ -164,7 +164,7 @@
 					<li class="fansList-li">
 						<div class="fansList-All">
 							<div class="fansList-img">
-								<img src="../../../src/assets/img/hotbook/boy-fans01.jpg">
+								<img src="../../../data/img/hotbook/boy-fans01.jpg">
 								<span class="label">盟主</span>
 							</div>
 							<h4 class="fansList-title">茶山隐客</h4>
@@ -173,7 +173,7 @@
 					<li class="fansList-li">
 						<div class="fansList-All">
 							<div class="fansList-img">
-								<img src="../../../src/assets/img/hotbook/boy-fans02.jpg">
+								<img src="../../../data/img/hotbook/boy-fans02.jpg">
 								<span class="label">盟主</span>
 							</div>
 							<h4 class="fansList-title">乐乐光辉</h4>
@@ -182,7 +182,7 @@
 					<li class="fansList-li">
 						<div class="fansList-All">
 							<div class="fansList-img">
-								<img src="../../../src/assets/img/hotbook/boy-fans03.jpg">
+								<img src="../../../data/img/hotbook/boy-fans03.jpg">
 								<span class="label">盟主</span>
 							</div>
 							<h4 class="fansList-title">透明人99</h4>
@@ -191,7 +191,7 @@
 					<li class="fansList-li fansList-last">
 						<div class="fansList-All">
 							<div class="fansList-img">
-								<img src="../../../src/assets/img/hotbook/fans.jpg">
+								<img src="../../../data/img/hotbook/fans.jpg">
 							</div>
 							<h4 class="fansList-title">我<span>·</span>未登录</h4>
 						</div>
@@ -199,12 +199,12 @@
 				</ul>
 			</div>
 		</div>
-	
+
 		<!-- 广告 -->
 		<div class="advert">
-			<img src="../../../src/assets/img/hotbook/adver.jpg" alt="">
+			<img src="../../../data/img/hotbook/adver.jpg" alt="">
 		</div>
-		
+
 		<!-- 作者简介 -->
 		<div class="book-fans">
 			<div class="book-list">
@@ -215,7 +215,7 @@
 					<li class="PlatinumGod-li">
 						<div class="PlatinumGod-All">
 							<div class="PlatinumGod-img">
-								<img src="../../../src/assets/img/hotbook/boy-auo.jpg">
+								<img src="../../../data/img/hotbook/boy-auo.jpg">
 								<span class="label">Lv.5</span>
 							</div>
 							<div class="PlatinumGod-cont">
@@ -230,7 +230,7 @@
 				</ul>
 			</div>
 		</div>
-	
+
 		<!-- 相关标签 -->
 		<div class="book-fans">
 			<div class="book-list">
@@ -245,7 +245,7 @@
 				<i></i>
 			</div>
 		</div>
-		
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -268,10 +268,10 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
-			<img src="../../assets/img/AppLogo.png" alt="">
+			<img src="../../../data/img/AppLogo.png" alt="">
 			<h3>安装起点读书客户端</h3>
 			<p>看更多正版好书</p>
 			<span>下载</span>
@@ -290,7 +290,7 @@
 			show(){
 				this.show01 = ! this.show01
 			}
-			
+
 		}
 	}
 </script>
@@ -380,9 +380,9 @@
 		margin: 0.625rem;
 	}
 	/* 更多 */
-	.typeMore:empty{   
+	.typeMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -393,7 +393,7 @@
 	}
 	.typeMore:empty::after,
 	.typeMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;
@@ -476,42 +476,42 @@
 	.hide-icon-home{
 		width: 28px;
 		height: 25px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: -31px 0;
 		background-size: 87px 87px;
 	}
 	.hide-icon-type{
 		width: 24px;
 		height: 24px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: -63px -28px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-rank{
 		width: 27px;
 		height: 26px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: 0 0;
 		background-size: 87px 87px;
 	}
 	.hide-icon-free{
 		width: 26px;
 		height: 26px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: 0 -30px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-end{
 		width: 20px;
 		height: 27px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: 0 -60px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-money{
 		width: 24px;
 		height: 24px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: -63px 0;
 		background-size: 87px 87px;
 	}
@@ -546,14 +546,14 @@
 	.bookIntro{
 		position: relative;
 		margin: 0;
-		
+
 		background: #fff;
 	}
 	.bookIntro:after{
 		content: "";
 		width: 100%;
 		height: 100%;
-		background: url(../../../src/assets/img/hotbook/boy-book.jpg);
+		background: url(../../../data/img/hotbook/boy-book.jpg);
 		position: absolute;
 		top: 0;
 		display: inline-block;
@@ -595,14 +595,14 @@
 		width: 5.375rem;
 		height: 0.8125rem;
 		display: inline-block;
-		background: url(../../../src/assets/img/hotbook/star2.svg);
+		background: url(../../../data/img/hotbook/star2.svg);
 	}
 	.star{
 		width: 4.9375rem;
 		display: block;
 		line-height: 0.8125rem;
 		color: transparent;
-		background: url(../../../src/assets/img/hotbook/star.svg);
+		background: url(../../../data/img/hotbook/star.svg);
 		/* background: 0 center repeat-x; */
 		background-size: 18px 13px;
 		float: left;
@@ -817,7 +817,7 @@
 		height: 100%;
 	}
 	.advert::after{
-		content: '广告'; 
+		content: '广告';
 		font-size: 12px;
 		line-height: 1;
 		position: absolute;

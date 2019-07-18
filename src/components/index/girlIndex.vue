@@ -79,7 +79,7 @@
 		margin: 0.90625rem 0;
 		font-size: 1rem;
 		color: transparent;
-		background: url(../../assets/img/logoGirl.svg);
+		background: url(../../../data/img/logoGirl.svg);
 		background-size: 100%;
 	}
 	/* btn */
@@ -94,7 +94,7 @@
 		padding: 0 0.875rem;
 		border: 1px solid #ed424b;
 		line-height: 1.75rem;
-		display: inline-block;		
+		display: inline-block;
 		color: #ED424B;
 	}
 	.nav-btn:nth-child(1){

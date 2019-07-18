@@ -7,7 +7,7 @@
 				<span>·</span>
 				<router-link to="/login">登录</router-link>
 			</div>
-			
+
 			<!-- 暂无记录 -->
 			<div class="space">
 				暂无阅读记录
@@ -59,12 +59,12 @@
 		color: #969ba3;
 	}
 	.space::before{
-		content: '';  
+		content: '';
 		width: 2.53125rem;
 		height: 3.375rem;
 		display: block;
 		margin: 0 auto .75rem;
-		background: url(../../assets/img/space.svg) no-repeat center;
+		background: url(../../../data/img/space.svg) no-repeat center;
 		background-size: 100% 100%;
 	}
 </style>

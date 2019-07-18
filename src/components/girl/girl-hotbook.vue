@@ -69,7 +69,7 @@
 			<!-- 书本介绍 -->
 			<div class="bookIntro-box">
 				<div class="bookIntro-one">
-					<img src="../../../src/assets/img/hotbook/girl-book.jpg" alt="">
+					<img src="../../../data/img/hotbook/girl-book.jpg" alt="">
 					<div class="book-cell">
 						<h2>泼辣小厨娘</h2>
 						<div class="box-auo">
@@ -164,7 +164,7 @@
 					<li class="fansList-li">
 						<div class="fansList-All">
 							<div class="fansList-img">
-								<img src="../../../src/assets/img/hotbook/girl-fans01.jpg">
+								<img src="../../../data/img/hotbook/girl-fans01.jpg">
 								<span class="label">掌门</span>
 							</div>
 							<h4 class="fansList-title">月月迷津渡</h4>
@@ -173,7 +173,7 @@
 					<li class="fansList-li">
 						<div class="fansList-All">
 							<div class="fansList-img">
-								<img src="../../../src/assets/img/hotbook/girl-fans02.jpg">
+								<img src="../../../data/img/hotbook/girl-fans02.jpg">
 								<span class="label">堂主</span>
 							</div>
 							<h4 class="fansList-title">汝娃娃唬唬</h4>
@@ -182,7 +182,7 @@
 					<li class="fansList-li">
 						<div class="fansList-All">
 							<div class="fansList-img">
-								<img src="../../../src/assets/img/hotbook/girl-fans03.jpg">
+								<img src="../../../data/img/hotbook/girl-fans03.jpg">
 								<span class="label">舵主</span>
 							</div>
 							<h4 class="fansList-title">好作品的书虫</h4>
@@ -191,7 +191,7 @@
 					<li class="fansList-li fansList-last">
 						<div class="fansList-All">
 							<div class="fansList-img">
-								<img src="../../../src/assets/img/hotbook/fans.jpg">
+								<img src="../../../data/img/hotbook/fans.jpg">
 							</div>
 							<h4 class="fansList-title">我<span>·</span>未登录</h4>
 						</div>
@@ -202,7 +202,7 @@
 
 		<!-- 广告 -->
 		<div class="advert">
-			<img src="../../../src/assets/img/hotbook/adver.jpg" alt="">
+			<img src="../../../data/img/hotbook/adver.jpg" alt="">
 		</div>
 
 		<!-- 作者简介 -->
@@ -215,7 +215,7 @@
 					<li class="PlatinumGod-li">
 						<div class="PlatinumGod-All">
 							<div class="PlatinumGod-img">
-								<img src="../../../src/assets/img/hotbook/girl-auo.jpg">
+								<img src="../../../data/img/hotbook/girl-auo.jpg">
 								<span class="label">Lv.3</span>
 							</div>
 							<div class="PlatinumGod-cont">
@@ -274,7 +274,7 @@
 
 		<!-- 下载提示 -->
 		<div class="downApp">
-			<img src="../../assets/img/AppLogo.png" alt="">
+			<img src="../../../data/img/AppLogo.png" alt="">
 			<h3>安装起点读书客户端</h3>
 			<p>看更多正版好书</p>
 			<span>下载</span>
@@ -479,42 +479,42 @@
 	.hide-icon-home{
 		width: 28px;
 		height: 25px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: -31px 0;
 		background-size: 87px 87px;
 	}
 	.hide-icon-type{
 		width: 24px;
 		height: 24px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: -63px -28px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-rank{
 		width: 27px;
 		height: 26px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: 0 0;
 		background-size: 87px 87px;
 	}
 	.hide-icon-free{
 		width: 26px;
 		height: 26px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: 0 -30px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-end{
 		width: 20px;
 		height: 27px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: 0 -60px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-money{
 		width: 24px;
 		height: 24px;
-		background: url(../../assets/img/nav-icon.png);
+		background: url(../../../data/img/nav-icon.png);
 		background-position: -63px 0;
 		background-size: 87px 87px;
 	}
@@ -555,7 +555,7 @@
 		content: "";
 		width: 100%;
 		height: 100%;
-		background: url(../../../src/assets/img/hotbook/girl-book.jpg);
+		background: url(../../../data/img/hotbook/girl-book.jpg);
 		position: absolute;
 		top: 0;
 		display: inline-block;
@@ -597,14 +597,14 @@
 		width: 5.375rem;
 		height: 0.8125rem;
 		display: inline-block;
-		background: url(../../../src/assets/img/hotbook/star2.svg);
+		background: url(../../../data/img/hotbook/star2.svg);
 	}
 	.star{
 		width: 4.9375rem;
 		display: block;
 		line-height: 0.8125rem;
 		color: transparent;
-		background: url(../../../src/assets/img/hotbook/star.svg);
+		background: url(../../../data/img/hotbook/star.svg);
 		/* background: 0 center repeat-x; */
 		background-size: 18px 13px;
 		float: left;
