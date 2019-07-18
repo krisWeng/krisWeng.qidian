@@ -236,152 +236,10 @@
 		data(){
 			return{
 				show01: false,
-				NowFree:[
-					{
-						pic: require('../../assets/img/freeBoy/NowfreeBoy01.jpg'),
-						bookName: '我的丹田是地球',
-						author: '女孩穿短裙'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NowfreeBoy02.jpg'),
-						bookName: '杨小落的便宜奶爸',
-						author: '寒门'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NowfreeBoy03.jpg'),
-						bookName: '随机惩罚一名幸运观众',
-						author: '宝巨'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NowfreeBoy04.jpg'),
-						bookName: '诸天修道者',
-						author: '分飞雁'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NowfreeBoy05.jpg'),
-						bookName: '娱乐玩童',
-						author: '金色火烧云'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NowfreeBoy06.jpg'),
-						bookName: '修真高手的田园生活',
-						author: '小学嗣业'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NowfreeBoy07.jpg'),
-						bookName: '网游之星剑传奇',
-						author: '星辰旅者'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NowfreeBoy08.jpg'),
-						bookName: '吃货唐朝',
-						author: '肥皂快乐水'
-					}
-				],
-				NextFree:[
-					{
-						pic: require('../../assets/img/freeBoy/NextfreeBoy01.jpg'),
-						bookName: '重生商纣王',
-						author: '星辰雨'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NextfreeBoy02.jpg'),
-						bookName: '坐忘长生',
-						author: '飞翔的黎哥'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NextfreeBoy03.jpg'),
-						bookName: '超神学院的宇宙',
-						author: '荣誉与忠诚'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NextfreeBoy04.jpg'),
-						bookName: '我是夸雷斯马',
-						author: '王大布'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NextfreeBoy05.jpg'),
-						bookName: '西游之掠夺万界',
-						author: '五阿哥'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NextfreeBoy06.jpg'),
-						bookName: '华娱之白金年代',
-						author: '蜗橙'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NextfreeBoy07.jpg'),
-						bookName: '扶明',
-						author: '话凄凉'
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NextfreeBoy08.jpg'),
-						bookName: '我不可能这么俗',
-						author: '懒扎衣'
-					}
-				],
-				PublicBook:[
-					{
-						pic: require('../../assets/img/freeBoy/PublicfreeBoy01.jpg'),
-						title: '赤兔记',
-						des: '金古温梁黄，武侠万年长！在《红缨记》的故事结束半年后，大江湖又迎来了新的风波。黄系武侠，破碎虚空，所有的黄系高手济济一堂，向着武学的最高境界发起了挑战。令东来、传鹰、庞斑、厉若海、石之轩、秦梦瑶、婠婠',
-						author: '东郊林公子',
-						gray: '游戏',
-						red: '连载',
-						blue: '191.62万字'
-
-					},
-					{
-						pic: require('../../assets/img/freeBoy/PublicfreeBoy02.jpg'),
-						title: '蹩脚诗人流浪记',
-						des: '一个人流浪，一个人远走他乡！一个人写诗，一个人挣扎彷徨！一个人爱恨，一个人跌撞人间。我不知道对错，因为有不同的喜好；我不知道方向，因为有不同的渴望；所以，只撒一片文字，只丢一抹情绪，只在沧海桑田的人途',
-						author: '流风云',
-						gray: '短篇',
-						red: '连载',
-						blue: '3.41万字'
-
-					},
-					{
-						pic: require('../../assets/img/freeBoy/PublicfreeBoy03.jpg'),
-						title: '变身之武侠到神话',
-						des: '这本书讲述的是一名宅男重生成大唐双龙世界的一普通小姐，带着可以增加属性点的金手指大杀四方的故事！咳咳...以上的大家看看就可以了，莫当真，实际上讲述的是主角变成妹子后，在无限的世界慢慢变强的故事！理论',
-						author: '涛哥霸气',
-						gray: '轻小说',
-						red: '连载',
-						blue: '130.29万字'
-					}
-				],
-				TheNewBook:[
-					{
-						pic: require('../../assets/img/freeBoy/NewfreeBoy01.jpg'),
-						title: '暗黑之处',
-						des: '万事万物皆有灵性，除人类之外的其它物种之所以没有人类那么出类拔萃，是因为它们体内的灵气是潜藏的，未被激发。事无绝对，先天的东西后天可能因某种机缘巧合而改变，它们中的极少数佼佼者能够通过修炼来吸收天地间',
-						author: '天北之颜',
-						gray: '奇幻',
-						red: '连载',
-						blue: '1.26万字'
-
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NewfreeBoy02.jpg'),
-						title: '惊魂生死情',
-						des: '生命只剩下一周时间，对每个人来说都是最为悲催的事件。本故事讲述的是一位大学才子，研究生毕业即将步入社会，在体检时却被发现感染血液疾病，生命只剩下七天时间。在这七天时间里，他绝望、彷徨、反思，经历了人生',
-						author: '海唐花',
-						gray: '短篇',
-						red: '完结',
-						blue: '5.22万字'
-
-					},
-					{
-						pic: require('../../assets/img/freeBoy/NewfreeBoy03.jpg'),
-						title: '守护圣道',
-						des: '当仙路断绝，当凌然的修真文明开始没落，当拥有各种奇葩遭遇的，穿越者、重生者、外来者，以及蛰伏的轮回强者，科技文明里的阴谋家，开始在天衍星域，疯狂抢夺最后的修真资源时，是谁，在守护修真文明的最后一片净土',
-						author: '戒赌的阿布',
-						gray: '仙侠',
-						red: '连载',
-						blue: '6字'
-					}
-				]
+				NowFree:[],
+				NextFree:[],
+				PublicBook:[],
+				TheNewBook:[]
 			}
 		},
 		methods: {
@@ -411,6 +269,14 @@
       }
 		},
 		mounted(){
+      this.$http.get("./data/boy-free.json")
+      .then((res)=>{
+        this.NowFree = res.data.boyFree.NowFree
+        this.NextFree = res.data.boyFree.NextFree
+        this.PublicBook = res.data.boyFree.PublicBook
+        this.TheNewBook = res.data.boyFree.TheNewBook
+      })
+
 			this.function()
 			setInterval(this.function)
       window.addEventListener('setInterval', this.function)

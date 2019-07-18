@@ -33,7 +33,7 @@
 				</li>
 			</ul>
 		</header>
-		
+
 		<!-- 隐藏 -->
 		<div class="more-Hide" v-if="show01">
 			<i class="hide-bg"></i>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 影视同期 -->
 		<div class="module">
 			<div class="header">
@@ -92,7 +92,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 经典必读 -->
 		<div class="module">
 			<div class="header">
@@ -132,7 +132,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 大神完本 -->
 		<div class="module">
 			<div class="header">
@@ -172,7 +172,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 畅销完本 -->
 		<div class="module">
 			<div class="header">
@@ -213,7 +213,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -236,7 +236,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -252,152 +252,24 @@
 		data(){
 			return{
 				show01: false,
-				TVEnd:[
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy01.jpg'),
-						bookName: '极品家丁',
-						author: '禹言'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy02.jpg'),
-						bookName: '锦衣夜行',
-						author: '月关'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy03.jpg'),
-						bookName: '回到明朝当王爷',
-						author: '月关'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy04.jpg'),
-						bookName: '全职高手',
-						author: '蝴蝶蓝 '
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy05.jpg'),
-						bookName: '盗墓笔记',
-						author: '南派三叔 '
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy06.jpg'),
-						bookName: '鬼吹灯（盗墓者的经历',
-						author: '本物天下霸唱'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy07.jpg'),
-						bookName: '鬼吹灯II',
-						author: '本物天下霸唱'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy08.jpg'),
-						bookName: '陈二狗的妖孽人生',
-						author: '烽火戏诸侯'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy09.jpg'),
-						bookName: '从前有座灵剑山',
-						author: '国王陛下'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy10.jpg'),
-						bookName: '冠军之光',
-						author: '林海听涛'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy11.jpg'),
-						bookName: '大泼猴',
-						author: '甲鱼不是龟'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy12.jpg'),
-						bookName: '校花的贴身高手',
-						author: '鱼人二代'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy13.jpg'),
-						bookName: '诛仙（电视名：诛仙青',
-						author: '萧鼎'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy14.jpg'),
-						bookName: '刑名师爷',
-						author: '沐轶'
-					},
-					{
-						pic: require('../../assets/img/endBoy/TVEndBoy15.jpg'),
-						bookName: '纳妾记',
-						author: '沐轶'
-					}
-				],
-				GodEnd:[
-					{
-						pic: require('../../assets/img/endBoy/GodEndBoy01.jpg'),
-						title: '天牧',
-						des: '天荒我未老，仙灭我重生。踏八荒，只为寻一人！斩众神，只求一因果。苍天之上，唯我独行！老书《血冲仙穹》重发，本书与《帝霸》是姊妹篇。',
-						author: '厌笔萧生',
-						gray: '玄幻',
-						red: '完本',
-						blue: '345.28万字'
-						
-					},
-					{
-						pic: require('../../assets/img/endBoy/GodEndBoy02.jpg'),
-						title: '蹩脚诗人流浪记',
-						des: '林远发现在炼妖祭坛上，万物皆可妖（niang）！于是，他身边的物品就一个个被妖（niang）化……阅读提示（并不重要）：本书是纯洁的轻玄幻都市轻松文，不需要老司机带路即可观看！',
-						author: '蓝领笑笑生',
-						gray: '玄幻',
-						red: '完本',
-						blue: '84.34万字'
-						
-					},
-					{
-						pic: require('../../assets/img/endBoy/GodEndBoy03.jpg'),
-						title: '变身之武侠到神话',
-						des: '【玄幻爆爽精品】一个关于神界神王的秘密！一个关于九柄神剑的传说！造就出一位通天彻地，万古无敌的剑道无敌强者！我之剑道……便是天下第一剑道！',
-						author: 'EK巧克力',
-						gray: '玄幻',
-						red: '完本',
-						blue: '159.96万字'
-					}
-				],
-				HotEnd:[
-					{
-						pic: require('../../assets/img/endBoy/HotEndBoy01.jpg'),
-						title: '暗黑之处',
-						des: '网游荣耀中被誉为教科书级别的顶尖高手，因为种种原因遭到俱乐部的驱逐，离开职业圈的他寄身于一家网吧成了一个小小的网管，但是，拥有十年游戏经验的他，在荣耀新开的第十区重新投入了游戏，带着对往昔的回忆，和一把未完成的自制武器，开始了重返巅峰之路。===================================',
-						author: '蝴蝶蓝 ',
-						gray: '游戏',
-						red: '完结',
-						blue: '535.02万字'
-						
-					},
-					{
-						pic: require('../../assets/img/endBoy/HotEndBoy02.jpg'),
-						title: '完美世界',
-						des: '一粒尘可填海，一根草斩尽日月星辰，弹指间天翻地覆。群雄并起，万族林立，诸圣争霸，乱天动地。问苍茫大地，谁主沉浮？！一个少年从大荒中走出，一切从这里开始……',
-						author: '辰东',
-						gray: '玄幻',
-						red: '完结',
-						blue: '658.34万字'
-						
-					},
-					{
-						pic: require('../../assets/img/endBoy/HotEndBoy03.jpg'),
-						title: '飞天',
-						des: '苍穹之下世态炎凉，妖魔鬼怪不敌人情冷暖！纤纤柔荑，美人如玉，怎奈天地之间剑气如虹！浩瀚星空，七情六欲，贪念嗔痴，佛谛如来，任你法力无边！芸芸众生，一腔诚愿却换来血海滔滔！鬼哭神嚎，血海无涯，敢问路在何方！既无路，任它苦海血海，白骨化舟，一飞冲天！',
-						author: '跃千愁',
-						gray: '仙侠',
-						red: '完结',
-						blue: '698.48万字'
-					}
-				]
+				TVEnd:[],
+				GodEnd:[],
+				HotEnd:[]
 			}
 		},
 		methods: {
 			show(){
 				this.show01 = ! this.show01
 			}
-		}
+		},
+    mounted(){
+       this.$http.get("./data/boy-end.json")
+      .then((res)=>{
+        this.TVEnd = res.data.boyEND.TVEnd
+        this.GodEnd = res.data.boyEND.GodEnd
+        this.HotEnd = res.data.boyEND.HotEnd
+      })
+    }
 	}
 </script>
 
@@ -458,7 +330,7 @@
 	}
 	.endnav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		
+
 	}
 	.endnav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
@@ -481,9 +353,9 @@
 		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
-	.bookMore:empty{   
+	.bookMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -494,7 +366,7 @@
 	}
 	.bookMore:empty::after,
 	.bookMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;

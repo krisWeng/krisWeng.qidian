@@ -9,6 +9,9 @@ Vue.use(Mint);
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 import router from './assets/js/router.js'
 
 new Vue({

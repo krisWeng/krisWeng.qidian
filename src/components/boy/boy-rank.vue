@@ -33,7 +33,7 @@
 				</li>
 			</ul>
 		</header>
-		
+
 		<div class="more-Hide" v-if="show01">
 			<i class="hide-bg"></i>
 			<div class="hide-cont">
@@ -70,8 +70,8 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="module-box" v-for="(item,index) in rankList" :key="index">
+
+		<div class="module-box" v-for="(item,index) in rankListBoy" :key="index">
 			<span class="rank-left">
 				<img :src="item.pic">
 				<h2 class="rank-title">{{item.title01}}<br>{{item.title02}}</h2>
@@ -132,7 +132,7 @@
 				</li>
 			</ol>
 		</div>
-		
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -155,7 +155,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -171,98 +171,20 @@
 		data(){
 			return{
 				show01: false,
-				rankList:[
-					{
-						pic: require('../../assets/img/rank/rankBoy01.jpg'),
-						title01: '原创',
-						title02: '排行榜',
-						book01: '全球高武',
-						book02: '诡秘之主',
-						book03: '牧神记',
-						book04: '英雄联盟：我的时代',
-						book05: '暗月纪元'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy02.jpg'),
-						title01: '畅销榜',
-						book01: '全球高武',
-						book02: '诡秘之主',
-						book03: '史上最强赘婿',
-						book04: '九星毒奶',
-						book05: '凡人修仙之仙界篇'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy03.jpg'),
-						title01: '新增',
-						title02: '粉丝榜',
-						book01: '生活系神豪',
-						book02: '咫尺之间人尽敌国',
-						book03: '学霸的黑科技时代',
-						book04: '大美时代',
-						book05: '我真没想出名啊'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy04.jpg'),
-						title01: '推荐榜',
-						book01: '诡秘之主',
-						book02: '英雄联盟：我的时代',
-						book03: '地球第一剑',
-						book04: '狂探',
-						book05: '王者时刻'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy05.jpg'),
-						title01: '打赏榜',
-						book01: '大美时代',
-						book02: '遮天',
-						book03: '九星毒奶',
-						book04: '道门法则',
-						book05: '我能看见经验值'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy06.jpg'),
-						title01: '更新榜',
-						book01: '极品至尊仙医',
-						book02: '奶爸大文豪',
-						book03: '敢笑黄巢不丈夫',
-						book04: '截教之火神传奇',
-						book05: '无敌神龙养成系统'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy07.jpg'),
-						title01: '签约榜',
-						book01: '前任无双',
-						book02: '氪金成仙',
-						book03: '后人',
-						book04: '交手',
-						book05: '一剑斩破九重天'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy08.jpg'),
-						title01: '新书榜',
-						book01: '这个修士太凶残',
-						book02: '奥术之尊',
-						book03: '斗罗大陆之玉龙斗罗',
-						book04: '从斗罗开始的神级选择',
-						book05: '无限诸天聊天群'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy09.jpg'),
-						title01: '新人榜',
-						book01: '龙王大人在上',
-						book02: '重启完美年代',
-						book03: '九龙吞珠',
-						book04: '我在英伦当贵族',
-						book05: '段子的平行世界'
-					}
-				]
+				rankListBoy:[]
 			}
 		},
 		methods: {
 			show(){
 				this.show01 = ! this.show01
 			}
-		}
+		},
+    mounted(){
+      this.$http.get("./data/rank.json")
+      .then((res)=>{
+        this.rankListBoy = res.data.rankList.rankListBoy
+      })
+    }
 	}
 </script>
 
@@ -323,7 +245,7 @@
 	}
 	.ranknav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		
+
 	}
 	.ranknav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
@@ -346,9 +268,9 @@
 		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
-	.bookMore:empty{   
+	.bookMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -359,7 +281,7 @@
 	}
 	.bookMore:empty::after,
 	.bookMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;

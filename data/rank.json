@@ -1,0 +1,165 @@
+{
+  "rankList":{
+    "rankListBoy":[
+      {
+        "pic": "./data/img/rank/rankBoy01.jpg",
+        "title01": "原创",
+        "title02": "排行榜",
+        "book01": "全球高武",
+        "book02": "诡秘之主",
+        "book03": "牧神记",
+        "book04": "英雄联盟：我的时代",
+        "book05": "暗月纪元"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy02.jpg",
+        "title01": "畅销榜",
+        "book01": "全球高武",
+        "book02": "诡秘之主",
+        "book03": "史上最强赘婿",
+        "book04": "九星毒奶",
+        "book05": "凡人修仙之仙界篇"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy03.jpg",
+        "title01": "新增",
+        "title02": "粉丝榜",
+        "book01": "生活系神豪",
+        "book02": "咫尺之间人尽敌国",
+        "book03": "学霸的黑科技时代",
+        "book04": "大美时代",
+        "book05": "我真没想出名啊"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy04.jpg",
+        "title01": "推荐榜",
+        "book01": "诡秘之主",
+        "book02": "英雄联盟：我的时代",
+        "book03": "地球第一剑",
+        "book04": "狂探",
+        "book05": "王者时刻"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy05.jpg",
+        "title01": "打赏榜",
+        "book01": "大美时代",
+        "book02": "遮天",
+        "book03": "九星毒奶",
+        "book04": "道门法则",
+        "book05": "我能看见经验值"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy06.jpg",
+        "title01": "更新榜",
+        "book01": "极品至尊仙医",
+        "book02": "奶爸大文豪",
+        "book03": "敢笑黄巢不丈夫",
+        "book04": "截教之火神传奇",
+        "book05": "无敌神龙养成系统"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy07.jpg",
+        "title01": "签约榜",
+        "book01": "前任无双",
+        "book02": "氪金成仙",
+        "book03": "后人",
+        "book04": "交手",
+        "book05": "一剑斩破九重天"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy08.jpg",
+        "title01": "新书榜",
+        "book01": "这个修士太凶残",
+        "book02": "奥术之尊",
+        "book03": "斗罗大陆之玉龙斗罗",
+        "book04": "从斗罗开始的神级选择",
+        "book05": "无限诸天聊天群"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy09.jpg",
+        "title01": "新人榜",
+        "book01": "龙王大人在上",
+        "book02": "重启完美年代",
+        "book03": "九龙吞珠",
+        "book04": "我在英伦当贵族",
+        "book05": "段子的平行世界"
+      }
+    ],
+    "rankListGirl":[
+      {
+        "pic": "./data/img/rank/rankBoy01.jpg",
+        "title01": "原创",
+        "title02": "排行榜",
+        "book01": "好想住你隔壁",
+        "book02": "神医凰后",
+        "book03": "你好，King先生",
+        "book04": "遇见，傅先生",
+        "book05": "快穿：男神，有点燃！"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy02.jpg",
+        "title01": "畅销榜",
+        "book01": "末日乐园",
+        "book02": "快穿之我只想种田",
+        "book03": "六宫凤华",
+        "book04": "女战神的黑包群",
+        "book05": "第一侯"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy03.jpg",
+        "title01": "新增",
+        "title02": "粉丝榜",
+        "book01": "妖女乱国",
+        "book02": "总有人想带坏我徒孙",
+        "book03": "神医凰后",
+        "book04": "启禀陛下，夫人装怂",
+        "book05": "天芳"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy04.jpg",
+        "title01": "推荐榜",
+        "book01": "幽后传奇",
+        "book02": "第一侯",
+        "book03": "天芳",
+        "book04": "花娇",
+        "book05": "末日乐园"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy05.jpg",
+        "title01": "打赏榜",
+        "book01": "君九龄",
+        "book02": "娇娘医经",
+        "book03": "金陵春",
+        "book04": "清宫熹照",
+        "book05": "慕南枝"
+      },
+      {
+        "pic": "./data/img/rank/rankBoy06.jpg",
+        "title01": "更新榜",
+        "book01": "情有独钟初恋你",
+        "book02": "古青月",
+        "book03": "在成为僵尸以后",
+        "book04": "凰道吉日",
+        "book05": "重生九零俏甜妻"
+      },
+      {
+        "pic": "./data/img/rank/rankGirl07.jpg",
+        "title01": "收藏榜",
+        "book01": "宁小闲御神录",
+        "book02": "君九龄",
+        "book03": "平凡的清穿日子",
+        "book04": "慕南枝",
+        "book05": "大帝姬"
+      },
+      {
+        "pic": "./data/img/rank/rankGirl08.jpg",
+        "title01": "免费榜",
+        "book01": "这游戏过于真实了",
+        "book02": "谢家小玉",
+        "book03": "左苏",
+        "book04": "一个癫痫女孩的自述",
+        "book05": "他不会死"
+      }
+    ]
+  }
+}

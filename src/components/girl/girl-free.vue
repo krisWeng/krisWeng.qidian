@@ -236,123 +236,11 @@
 		data(){
 			return{
 				show01: false,
-				NowFree:[
-					{
-						pic: require('../../assets/img/freeGirl/NowfreeGirl01.jpg'),
-						bookName: '女boss坑仙路',
-						author: '两颗虎牙'
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NowfreeGirl02.jpg'),
-						bookName: '戏精打脸日常',
-						author: '升麻'
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NowfreeGirl03.jpg'),
-						bookName: '八零甜妻萌宝宝',
-						author: '席祯'
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NowfreeGirl04.jpg'),
-						bookName: '闺门秀',
-						author: 'Loeva'
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NowfreeGirl05.jpg'),
-						bookName: '三国吕布之女',
-						author: 'real觅尔'
-					}
-				],
-				NextFree:[
-					{
-						pic: require('../../assets/img/freeGirl/NextfreeGirl01.jpg'),
-						bookName: '星际脱单指南',
-						author: '尤前'
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NextfreeGirl02.jpg'),
-						bookName: '炮灰女的另类修仙',
-						author: '一壶龙井茶'
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NextfreeGirl03.jpg'),
-						bookName: '重生星际养娃日常',
-						author: '黑马系'
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NextfreeGirl04.jpg'),
-						bookName: '重生特工小娇妻',
-						author: '海星99'
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NextfreeGirl05.jpg'),
-						bookName: '大香师',
-						author: '沐水游'
-					}
-				],
-				PublicBook:[
-					{
-						pic: require('../../assets/img/freeGirl/PublicfreeGirl01.jpg'),
-						title: '朝华赋',
-						des: '我叫苏暮颜，您可以叫我暮颜或者颜儿，府里的下人都称呼我颜小姐――――我的母亲出身青楼，是集才貌于一身的花魁娘子，所以我天生就有一副好皮囊！父亲则是高高在上的南安侯，所以我也就理所当然的成了庶女！―――',
-						author: '红烛喃呢',
-						gray: '古代言情',
-						red: '连载',
-						blue: '18.43万字'
-
-					},
-					{
-						pic: require('../../assets/img/freeGirl/PublicfreeGirl02.jpg'),
-						title: '星际女王养成',
-						des: '沈冰幸运的成为了冰冻计划的实验者，本以为会被当做白老鼠，没想到她连这个资格都没有，政府的欺骗，家园的毁灭，她只能拼命的向前冲。探索星际，磨练自己，杀丧失，战兽人，因为身边始终有他的支持。沈冰：“哥哥，',
-						author: '萧风飘渺',
-						gray: '科幻空间',
-						red: '连载',
-						blue: '38.78万字'
-
-					},
-					{
-						pic: require('../../assets/img/freeGirl/PublicfreeGirl03.jpg'),
-						title: '婚姻生活的微分定理',
-						des: '徐娜一直觉得，她与胡兴崴婚姻生活美满，要说真有不足的地方，也就那么一点点，可现实又会一次次让她不得不承认，很多时候差的那一点点，却是一个巨大的分水岭。',
-						author: '八匹',
-						gray: '现代言情',
-						red: '连载',
-						blue: '5.49万字'
-					}
-				],
-				TheNewBook:[
-					{
-						pic: require('../../assets/img/freeGirl/NewfreeGirl01.jpg'),
-						title: '他口袋里有星光',
-						des: '外婆家附近不知道什么时候搬过来一个神仙颜值的少年。他懒散中染了几分不羁的狠劲儿，整个一中都怵他。而他却唯独栽在一个转校生身上？每天各种宠，花式撩，甜到齁！——向应递给她一团粉色的草莓棉花糖:“给你的。',
-						author: '凉小温',
-						gray: '浪漫青春',
-						red: '连载',
-						blue: '1.55万字'
-
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NewfreeGirl02.jpg'),
-						title: '霸道琳川爱上我',
-						des: 'H市霸道总裁苗琳川爱上性感女神柏东延。高冷与性感，寡言与热情，这几者之间会产生怎样的火花?命运之轮是否会再次转动，将二者的灵魂再度碰撞在一起?一切还是未知。我们的故事就从他们的电校相遇开始…………',
-						author: '悦槿木花',
-						gray: '浪漫青春',
-						red: '连载',
-						blue: '2054字'
-
-					},
-					{
-						pic: require('../../assets/img/freeGirl/NewfreeGirl03.jpg'),
-						title: '狐念，寻',
-						des: '混沌初开时产生的生命能量创造了天地，万物不可无序，掌管这一切的是天道，然而天道这次遇见了一个和它同时出现的少女，那少女竟也可以控制着一切，天道这是要丢了铁饭碗吗？？',
-						author: '玄幻言情',
-						gray: '仙侠',
-						red: '连载',
-						blue: '3381字'
-					}
-				]
-			}
+				NowFree:[],
+        NextFree:[],
+        PublicBook:[],
+        TheNewBook:[]
+      }
 		},
 		methods: {
 			show(){
@@ -381,6 +269,14 @@
       }
 		},
 		mounted(){
+      this.$http.get("./data/girl-free.json")
+      .then((res)=>{
+        this.NowFree = res.data.girlFree.NowFree
+        this.NextFree = res.data.girlFree.NextFree
+        this.PublicBook = res.data.girlFree.PublicBook
+        this.TheNewBook = res.data.girlFree.TheNewBook
+      })
+
 			this.function()
 			setInterval(this.function)
       window.addEventListener('setInterval', this.function)

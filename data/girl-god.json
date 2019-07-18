@@ -1,0 +1,179 @@
+{
+  "GodBoy":{
+    "GodNew":[
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl01.jpg",
+    			"bookName": "余生有你甜又暖",
+    			"author": "囧囧有妖"
+    		},
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl02.jpg",
+    			"bookName": "嫁入豪门77天后",
+    			"author": "绛美人"
+    		},
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl03.jpg",
+    			"bookName": "金粉",
+    			"author": "青铜穗"
+    		},
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl04.jpg",
+    			"bookName": "九零长女有点苏",
+    			"author": "燕小陌"
+    		},
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl05.jpg",
+    			"bookName": "只想爱你再多一点点",
+    			"author": "古萧"
+    		},
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl06.jpg",
+    			"bookName": "王妃娘娘，爷在墙外等你",
+    			"author": "七叶槿"
+    		},
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl07.jpg",
+    			"bookName": "藏不住的欢喜",
+    			"author": "银子洛"
+    		},
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl08.jpg",
+    			"bookName": "穿越五十年代之养殖大户",
+    			"author": "小硕鼠5030"
+    		},
+    		{
+    			"pic": "./data/img/godGirl/GodNewGirl09.jpg",
+    			"bookName": "世界第一甜",
+    			"author": "为你穿高跟鞋"
+    		}
+    	],
+    "PlatinumMsg":[
+      {
+        "pic": "./data/img/godGirl/PlatinumGirl01.jpg",
+        "PlatinumName": "辰东",
+        "PlatinumIntro": "阅文集团白金作家，网络文学代表人物之一，中国作协会员。"
+      },
+      {
+        "pic": "./data/img/godGirl/PlatinumGirl02.png",
+        "PlatinumName": "骷髅精灵",
+        "PlatinumIntro": "阅文集团白金作家，网络文学著名作家，上海网络作家协会副会长，上海青年文联副会长。"
+      },
+      {
+        "pic": "./data/img/godGirl/PlatinumGirl03.jpg",
+        "PlatinumName": "小刀锋利",
+        "PlatinumIntro": "阅文集团白金作家，著名网络作家，作品磅礴大气，在业内及粉丝群体中极富盛名。"
+      },
+      {
+        "pic": "./data/img/godGirl/PlatinumGirl04.jpg",
+        "PlatinumName": "尘风",
+        "PlatinumIntro": "阅文集团白金作家，网络文学著名作家，2015福布斯中国原创文学风云榜第三名。"
+      },
+      {
+        "pic": "./data/img/godGirl/PlatinumGirl05.jpg",
+        "PlatinumName": "血红",
+        "PlatinumIntro": "阅文集团白金作家，上海网络作家协会会长，理工高材生哲学硕士，富豪榜榜上作家。"
+      }
+    ],
+    "OkamiMsg":[
+      {
+        "pic": "./data/img/godBoy/OkamiBoy01.jpg",
+        "OkamiName": "金铃动",
+        "OkamiIntro": "阅文集团大神作家，起点女频仙侠文代表作家。作者擅长构架宏大的修仙世界，文笔简练，想象力极其丰富。他笔下的主角个性鲜明，突破传统女性仙侠文的桎梏，为读者展现了一个自立自强，凭借个人能力问鼎修仙巅峰的女性形象。"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy02.jpg",
+        "OkamiName": "罗衣对雪",
+        "OkamiIntro": "云起书院现言大神，行文流畅，故事新颖，人物形象特别丰满，代表作《Boss太嚣张：老公，结婚吧》"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy03.jpg",
+        "OkamiName": "六月浩雪",
+        "OkamiIntro": "阅文旗下云起书院知名宅斗作家，完结小说《重生之温婉》曾进入百度风云榜前五十，颇受读者追捧，新书《嫡女重生记》正在火热连载中。"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy04.png",
+        "OkamiName": "莫小淘",
+        "OkamiIntro": "莫小淘，云起书院大神作者，擅长甜宠文，题材新颖创新，笔下的男主深情专一，深受万千读者喜爱。"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy05.jpg",
+        "OkamiName": "银子洛",
+        "OkamiIntro": "云起书院大神作者"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy06.jpg",
+        "OkamiName": "麻辣千金",
+        "OkamiIntro": " 云起书院作者，擅长现代小说，行文视角新颖，喜欢塑造思想活跃女性，力求创作出不一样的现代文。 "
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy07.jpg",
+        "OkamiName": "黛蜜儿",
+        "OkamiIntro": "云起书院大神作家"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy08.jpg",
+        "OkamiName": "莉莉薇",
+        "OkamiIntro": "喜欢干净单纯纯粹的感情，喜欢他只爱我，我只爱他的唯一！"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy09.jpg",
+        "OkamiName": "楠楠李",
+        "OkamiIntro": "阅文集团大神作家"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy10.jpg",
+        "OkamiName": "卿云",
+        "OkamiIntro": "云起书院古言大神，擅长宝宝文，文风萌宠甜蜜，代表作《全能王妃：偷个王爷生宝宝》"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy11.jpg",
+        "OkamiName": "吉祥夜",
+        "OkamiIntro": "阅文集团大神作家"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy12.jpg",
+        "OkamiName": "冷青衫",
+        "OkamiIntro": "人气大神作者，擅长古言类作品的创作，作品《替身侍婢魅君心：一夜弃妃》曾长期位于全平台销售榜第一！"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy13.png",
+        "OkamiName": "单兮",
+        "OkamiIntro": "云起书院新锐作者，擅长现代言情小说。文风轻松幽默，笔下的人物形象鲜明，深受读者喜欢。"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy14.jpg",
+        "OkamiName": "忆昔颜",
+        "OkamiIntro": "新浪微博http://weibo.com/u/5624155185/home?topnav=1&amp;wvr=6"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy15.jpg",
+        "OkamiName": "一路烦花",
+        "OkamiIntro": "不嫌弃。不抛弃。不放弃。"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy16.jpg",
+        "OkamiName": "浮屠妖",
+        "OkamiIntro": "云起书院高人气大神作者，主打现代言情。拥有多年写作经验，文笔深厚，感情细腻。著有多本畅销书籍，长据全平台各大榜单前列，在各大渠道平台上成绩斐然。"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy17.png",
+        "OkamiName": "洛日",
+        "OkamiIntro": "云起大神作者，文风轻松活泼，笔下的人物十分逗趣，可卖萌可严肃，可逗比可正经，百变小能手，你值得拥有。代表作《誓要休夫：邪王私宠小萌妃》"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy18.jpg",
+        "OkamiName": "战西野"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy19.png",
+        "OkamiName": "百香蜜",
+        "OkamiIntro": "云起书院大神作家"
+      },
+      {
+        "pic": "./data/img/godBoy/OkamiBoy20.jpg",
+        "OkamiName": "逍遥游游",
+        "OkamiIntro": "阅文集团旗下起点中文网大神作家，作品幽默风趣，可读性极强，连贯性突出，环节紧凑！《明朝败家子》正在起点中文网火热连载中！"
+      }
+    ]
+  }
+}

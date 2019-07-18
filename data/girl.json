@@ -1,0 +1,579 @@
+{
+  "girlList":{
+    "rotationGirl": [
+      {
+        "pic": "./data/img/girl/Pic-rotation01.jpg"
+      },
+      {
+        "pic": "./data/img/girl/Pic-rotation02.jpg"
+      },
+      {
+        "pic": "./data/img/girl/Pic-rotation03.jpg"
+      },
+      {
+        "pic": "./data/img/girl/Pic-rotation04.jpg"
+      },
+      {
+        "pic": "./data/img/girl/Pic-rotation05.jpg"
+      },
+      {
+        "pic": "./data/img/girl/Pic-rotation06.jpg"
+      }
+    ],
+    "hotGirl": [
+      {
+        "pic": "./data/img/girl/hotBook01.jpg",
+        "bookName": "泼辣小厨娘",
+        "author": "马家大小姐"
+      },
+      {
+        "pic": "./data/img/girl/hotBook02.jpg",
+        "bookName": "燧灵记",
+        "author": "半山闲居"
+      },
+      {
+        "pic": "./data/img/girl/hotBook03.jpg",
+        "bookName": "雁西归",
+        "author": "九月酒"
+      },
+      {
+        "pic": "./data/img/girl/hotBook04.jpg",
+        "bookName": "掌欢",
+        "author": "冬天的柳叶"
+      },
+      {
+        "pic": "./data/img/girl/hotBook05.jpg",
+        "bookName": "炮灰修真指南",
+        "author": "青莲乐府"
+      },
+      {
+        "pic": "./data/img/girl/hotBook06.jpg",
+        "bookName": "随身空间好种田",
+        "author": "我是小雪参"
+      }
+    ],
+    "freeGirl": [
+      {
+        "pic": "./data/img/girl/free01.jpg",
+        "bookName": "星际脱单指南",
+        "author": "尤前"
+      },
+      {
+        "pic": "./data/img/girl/free02.jpg",
+        "bookName": "炮灰女的另类修仙",
+        "author": "一壶龙井茶"
+      },
+      {
+        "pic": "./data/img/girl/free03.jpg",
+        "bookName": "重生星际养娃日常",
+        "author": "一壶龙井茶"
+      },
+      {
+        "pic": "./data/img/girl/free04.jpg",
+        "bookName": "重生特工小娇妻",
+        "author": "海星99"
+      },
+      {
+        "pic": "./data/img/girl/free05.jpg",
+        "bookName": "大香师",
+        "author": "沐水游"
+      }
+    ],
+    "listBtnNameGirl": [
+      {
+        "ListName": "热销榜"
+      },
+      {
+        "ListName": "风云榜"
+      },
+      {
+        "ListName": "点击榜"
+      },
+      {
+        "ListName": "推荐榜"
+      }
+    ],
+    "rankListGirl": [
+      {
+        "top1": "top1",
+        "pic1": "./data/img/girl/HotSell01.jpg",
+        "bookName1": "掌欢",
+        "author1": "冬天的柳叶",
+
+        "top2": "top2",
+        "pic2": "./data/img/girl/HotSell02.jpg",
+        "bookName2": "末日乐园",
+        "author2": "须尾俱全",
+
+        "top3": "top3",
+        "pic3": "./data/img/girl/HotSell03.jpg",
+        "bookName3": "快穿：我只想种田",
+        "author3": "沧澜止戈",
+
+        "top4": "top4",
+        "pic4": "./data/img/girl/HotSell04.jpg",
+        "bookName4": "六宫凤华",
+        "author4": "寻找失落的爱情",
+
+        "top5": "top5",
+        "pic5": "./data/img/girl/HotSell05.jpg",
+        "bookName5": "女战神的黑包群",
+        "author5": "二谦",
+
+        "top6": "top6",
+        "pic6": "./data/img/girl/HotSell06.jpg",
+        "bookName6": "英鸾",
+        "author6": "君书雁",
+
+        "top7": "top7",
+        "pic7": "./data/img/girl/HotSell07.jpg",
+        "bookName7": "第一侯",
+        "author7": "希行",
+
+        "top8": "top8",
+        "pic8": "./data/img/girl/HotSell08.jpg",
+        "bookName8": "重生腹黑娇妻",
+        "author8": "浮世落华",
+
+        "top9": "top9",
+        "pic9": "./data/img/girl/HotSell09.jpg",
+        "bookName9": "快穿：每次都是我躺枪",
+        "author9": "旺财是只喵",
+
+        "top10": "top10",
+        "pic10": "./data/img/girl/HotSell10.jpg",
+        "bookName10": "似锦",
+        "author10": "冬天的柳叶"
+      },
+      {
+        "top1": "top1",
+        "pic1": "./data/img/girl/Wind01.jpg",
+        "bookName1": "好想住你隔壁",
+        "author1": "叶非夜",
+
+        "top2": "top2",
+        "pic2": "./data/img/girl/Wind02.jpg",
+        "bookName2": "神医凰后",
+        "author2": "苏小暖",
+
+        "top3": "top3",
+        "pic3": "./data/img/girl/Wind03.jpg",
+        "bookName3": "你好，King先生",
+        "author3": "锦凰",
+
+        "top4": "top4",
+        "pic4": "./data/img/girl/Wind04.jpg",
+        "bookName4": "遇见，傅先生",
+        "author4": "无尽相思",
+
+        "top5": "top5",
+        "pic5": "./data/img/girl/Wind05.jpg",
+        "bookName5": "快穿：男神，有点燃！",
+        "author5": "墨泠",
+
+        "top6": "top6",
+        "pic6": "./data/img/girl/Wind06.jpg",
+        "bookName6": "花娇",
+        "author6": "吱吱",
+
+        "top7": "top7",
+        "pic7": "./data/img/girl/Wind07.jpg",
+        "bookName7": "神医弃女",
+        "author7": "MS芙子",
+
+        "top8": "top8",
+        "pic8": "./data/img/girl/Wind08.jpg",
+        "bookName8": "南城待月归",
+        "author8": "公子衍",
+
+        "top9": "top9",
+        "pic9": "./data/img/girl/Wind09.jpg",
+        "bookName9": "夫人，你马甲又掉了！",
+        "author9": "一路烦花",
+
+        "top10": "top10",
+        "pic10": "./data/img/girl/Wind10.jpg",
+        "bookName10": "邪王追妻",
+        "author10": "苏小暖"
+      },
+      {
+        "top1": "top1",
+        "pic1": "./data/img/girl/Click01.jpg",
+        "bookName1": "女战神的黑包群",
+        "author1": "二谦",
+
+        "top2": "top2",
+        "pic2": "./data/img/girl/Click02.jpg",
+        "bookName2": "六宫凤华",
+        "author2": "寻找失落的爱情",
+
+        "top3": "top3",
+        "pic3": "./data/img/girl/Click03.jpg",
+        "bookName3": "欢喜记事",
+        "author3": "木嬴",
+
+        "top4": "top4",
+        "pic4": "./data/img/girl/Click04.jpg",
+        "bookName4": "十万里风鹏正举",
+        "author4": "兔9",
+
+        "top5": "top5",
+        "pic5": "./data/img/girl/Click05.jpg",
+        "bookName5": "与你在一起就是最幸福的事",
+        "author5": "蘑菇里正",
+
+        "top6": "top6",
+        "pic6": "./data/img/girl/Click06.jpg",
+        "bookName6": "妖女乱国",
+        "author6": "樊笼也自然",
+
+        "top7": "top7",
+        "pic7": "./data/img/girl/Click07.jpg",
+        "bookName7": "六零小甜妻",
+        "author7": "修身齐家.QD",
+
+        "top8": "top8",
+        "pic8": "./data/img/girl/Click08.jpg",
+        "bookName8": "四爷，你别抓我",
+        "author8": "夏之琉",
+
+        "top9": "top9",
+        "pic9": "./data/img/girl/Click09.jpg",
+        "bookName9": "穿越之双世情缘",
+        "author9": "长弓瑾澈",
+
+        "top10": "top10",
+        "pic10": "./data/img/girl/Click10.jpg",
+        "bookName10": "灵族记",
+        "author10": "水冰潇"
+      },
+      {
+        "top1": "top1",
+        "pic1": "./data/img/girl/Recommendation01.jpg",
+        "bookName1": "幽后传奇",
+        "author1": "墨鱼甲乙",
+
+        "top2": "top2",
+        "pic2": "./data/img/girl/Recommendation02.jpg",
+        "bookName2": "第一侯",
+        "author2": "希行",
+
+        "top3": "top3",
+        "pic3": "./data/img/girl/Recommendation03.jpg",
+        "bookName3": "末日乐园",
+        "author3": "须尾俱全",
+
+        "top4": "top4",
+        "pic4": "./data/img/girl/Recommendation04.jpg",
+        "bookName4": "花娇",
+        "author4": "吱吱",
+
+        "top5": "top5",
+        "pic5": "./data/img/girl/Recommendation05.jpg",
+        "bookName5": "天芳",
+        "author5": "云芨",
+
+        "top6": "top6",
+        "pic6": "./data/img/girl/Recommendation06.jpg",
+        "bookName6": "大佬退休之后",
+        "author6": "油爆香菇",
+
+        "top7": "top7",
+        "pic7": "./data/img/girl/Recommendation07.jpg",
+        "bookName7": "快穿：我只想种田",
+        "author7": "沧澜止戈",
+
+        "top8": "top8",
+        "pic8": "./data/img/girl/Recommendation08.jpg",
+        "bookName8": "掌欢",
+        "author8": "冬天的柳叶",
+
+        "top9": "top9",
+        "pic9": "./data/img/girl/Recommendation09.jpg",
+        "bookName9": "重生八零锦绣盛婚",
+        "author9": "幽非芽",
+
+        "top10": "top10",
+        "pic10": "./data/img/girl/Recommendation10.jpg",
+        "bookName10": "启禀陛下，夫人装怂",
+        "author10": "西母娘娘"
+      }
+    ],
+    "NewBookGirl": [
+      {
+        "pic": "./data/img/girl/NewBook01.jpg",
+        "title": "掌欢",
+        "des": "骆三姑娘仗着其父权倾朝野，恃强凌弱、声名狼藉，没事就领着一群狗奴才上街调戏良家美少年。对清阳郡主来说，这种人敢在她面前撒野，她伸根手指头就弄死了——直到她睁开眼，发现自己叫骆笙。",
+        "author": "冬天的柳叶",
+        "gray": "古代言情",
+        "red": "连载中",
+        "blue": "12.95万字"
+
+      },
+      {
+        "pic": "./data/img/girl/NewBook02.jpg",
+        "title": "快穿：反派女主只想暴富",
+        "des": "贪财拜金女花哨，因为一份巨额财产被迫进入快穿世界。但谁能告诉她，她为什么没有系统？！喂！系统？！你在吗？任务是什么啊？！故事大概要从花哨抢了某男主的系统开始……*某大神系统：“你的任务是使每个世界都he。”花哨：“he？幸福结局？就是变成富婆对吗？好的，没问题！”系统：“……金钱买不来幸福。”花哨：“有钱谁不幸福？”系统：“……”这个宿主每天都想着暴富搞钱。又名《我抢了男主系统》《我，女主，超有钱》PS：真·反派女主【划重点！！！】非传统快穿文，1v1非灵魂碎片，不攻略，不完成心愿！已有完结文《星际萌商时代》《末世源能师》坑品有保证，存稿丰富可放心入坑~~",
+        "author": "爱喜婉",
+        "gray": "科幻空间",
+        "red": "连载中",
+        "blue": "28.98万字"
+
+      },
+      {
+        "pic": "./data/img/girl/NewBook03.jpg",
+        "title": "锦绣凤华",
+        "des": "人间凶兽霍景秀，人见人死，狗见狗躲。修罗两眼一瞪，小妖怪这么可爱，你们都眼瞎？甜宠逗趣，1vs1每天8000+，欢迎入坑！小伙伴们，求多多支持正版呀！",
+        "author": "陈婉煜Sun",
+        "gray": "古代言情",
+        "red": "连载中",
+        "blue": "25.65万字"
+      }
+    ],
+    "EndBookGirl": [
+      {
+        "pic": "./data/img/girl/END01.jpg",
+        "title": "似锦",
+        "des": "人都说姜家四姑娘是一等一的美人儿，可惜被安国公府摘走了这朵鲜花。然而姜似出嫁前夕，未婚夫与别的女人跳湖殉情了。。。。",
+        "author": "冬天的柳叶",
+        "gray": "古代言情",
+        "red": "完本",
+        "blue": "170.77万字"
+
+      },
+      {
+        "pic": "./data/img/girl/END02.jpg",
+        "title": "六零甜妻有空间",
+        "des": "【年代+空间＋甜宠。1V1。双洁。】穿到六零怎么办？空间升级三世缘。携手共创致富路，日子红火惹人羡。你要问墨白，最大的苦恼是什么？——顾维安空闲时，总喜欢撩她。PS：小说架空，考究与杠精系列，不喜可移；看不懂就问，打低分可耻，请注意修养。此文脑洞清奇，有点玄幻色彩。能正版看到完结的，都是真爱。",
+        "author": "郁从文",
+        "gray": "现代言情",
+        "red": "完本",
+        "blue": "59.83万字"
+
+      },
+      {
+        "pic": "./data/img/girl/END03.jpg",
+        "title": "乘鸾",
+        "des": "上辈子，明微疲于奔命，终究没能改变国运，失去了最重要的亲人。睁开眼，她发现自己回到了七十年前。昏庸的灵帝还没登位，凶悍的胡人还没建立西魏，南楚的野心家还没掌权，北齐仍然兵强马壮！这还等什么？赶紧把该干掉的干掉，该弄死的弄死，收一波人头啊！接着找到帝星，辅佐他登上帝位，好好治理天下。她就可以美滋滋回去与亲人团聚，享受盛世了。然后——“来都来了，不当个皇后再走？”",
+        "author": "云芨",
+        "gray": "古代言情",
+        "red": "完本",
+        "blue": "170.43万字"
+      }
+    ],
+    "TypeBtnNameGirl": [
+      {
+        "ListName": "古代言情"
+      },
+      {
+        "ListName": "仙侠奇缘"
+      },
+      {
+        "ListName": "现代言情"
+      },
+      {
+        "ListName": "浪漫青春"
+      }
+    ],
+    "typeListGirl01": [
+      {
+        "pic1": "./data/img/girl/Ancient01.jpg",
+        "bookName1": "祝琴说",
+        "author1": "逗跌",
+
+        "pic2": "./data/img/girl/Ancient02.jpg",
+        "bookName2": "田园福妃",
+        "author2": "滋洋",
+
+        "pic3": "./data/img/girl/Ancient03.jpg",
+        "bookName3": "金粉",
+        "author3": "青铜穗",
+
+        "pic4": "./data/img/girl/Ancient04.jpg",
+        "bookName4": "权门贵嫁",
+        "author4": "秦兮",
+
+        "pic5": "./data/img/girl/Ancient05.jpg",
+        "bookName5": "素手调汤",
+        "author5": "沐清浅"
+      },
+      {
+        "pic1": "./data/img/girl/Fairy01.jpg",
+        "bookName1": "九州江月寒",
+        "author1": "唐深藏功与名",
+
+        "pic2": "./data/img/girl/Fairy02.jpg",
+        "bookName2": "狐宠胡宠",
+        "author2": "斑猪",
+
+        "pic3": "./data/img/girl/Fairy03.jpg",
+        "bookName3": "摘仙令",
+        "author3": "潭子",
+
+        "pic4": "./data/img/girl/Fairy04.jpg",
+        "bookName4": "无上女仙君",
+        "author4": "淡淡竹君",
+
+        "pic5": "./data/img/girl/Fairy05.jpg",
+        "bookName5": "炮灰修真指南",
+        "author5": "青莲乐府"
+      },
+      {
+        "pic1": "./data/img/girl/Modern01.jpg",
+        "bookName1": "最羡人间五月天",
+        "author1": "邑小白",
+
+        "pic2": "./data/img/girl/Modern02.jpg",
+        "bookName2": "爱你是平凡的温暖",
+        "author2": "筱悠独醉",
+
+        "pic3": "./data/img/girl/Modern03.jpg",
+        "bookName3": "带着仓库重生",
+        "author3": "我尽力了",
+
+        "pic4": "./data/img/girl/Modern04.jpg",
+        "bookName4": "穿越六十年代农家女",
+        "author4": "红烧豆腐干",
+
+        "pic5": "./data/img/girl/Modern05.jpg",
+        "bookName5": "重回八零小辣妻",
+        "author5": "持好"
+      },
+      {
+          "pic1": "./data/img/girl/Youth01.jpg",
+          "bookName1": "两个十年，你是否还要",
+          "author1": "浪漫肉食主义",
+
+          "pic2": "./data/img/girl/Youth02.jpg",
+          "bookName2": "我知道的，他都懂得",
+          "author2": "汐潇",
+
+          "pic3": "./data/img/girl/Youth03.jpg",
+          "bookName3": "若是久长时",
+          "author3": "清香月",
+
+          "pic4": "./data/img/girl/Youth04.jpg",
+          "bookName4": "小小时光里的小小秘密",
+          "author4": "温馨的寒冬",
+
+          "pic5": "./data/img/girl/Youth05.jpg",
+          "bookName5": "寻道之路，与君同行",
+          "author5": "青之荧华"
+        }
+    ],
+    "TypeBtnNameGirl02": [
+      {
+        "ListName": "玄幻言情"
+      },
+      {
+        "ListName": "悬疑灵异"
+      },
+      {
+        "ListName": "科幻空间"
+      },
+      {
+        "ListName": "游戏竞技"
+      }
+    ],
+    "typeListGirl02": [
+      {
+        "pic1": "./data/img/girl/Mysterious01.jpg",
+        "bookName1": "降生记",
+        "author1": "东荒尚桃",
+
+        "pic2": "./data/img/girl/Mysterious02.jpg",
+        "bookName2": "帝凤无双",
+        "author2": "妖精家的小二",
+
+        "pic3": "./data/img/girl/Mysterious03.jpg",
+        "bookName3": "魅上欢",
+        "author3": "少女不写诗",
+
+        "pic4": "./data/img/girl/Mysterious04.jpg",
+        "bookName4": "仙三代的日常生活",
+        "author4": "感觉挺冷.",
+
+        "pic5": "./data/img/girl/Mysterious05.jpg",
+        "bookName5": "快穿渣男洗白论",
+        "author5": "清风静静"
+      },
+      {
+        "pic1": "./data/img/girl/suspense01.jpg",
+        "bookName1": "罪恶无形",
+        "author1": "莫伊莱",
+
+        "pic2": "./data/img/girl/suspense02.jpg",
+        "bookName2": "娇妻案中见",
+        "author2": "落思蕴",
+
+        "pic3": "./data/img/girl/suspense03.jpg",
+        "bookName3": "天师除灵日常",
+        "author3": "慕凌彬",
+
+        "pic4": "./data/img/girl/suspense04.jpg",
+        "bookName4": "重生之娱乐圈事件簿",
+        "author4": "爱吃松子.",
+
+        "pic5": "./data/img/girl/suspense05.jpg",
+        "bookName5": "食灵猎人",
+        "author5": "一缕冥火"
+      },
+      {
+        "pic1": "./data/img/girl/strange01.jpg",
+        "bookName1": "坑宿主的一百万种方式",
+        "author1": "机甲小熊",
+
+        "pic2": "./data/img/girl/strange02.jpg",
+        "bookName2": "快穿之厉害了我的宿主",
+        "author2": "戏精夏",
+
+        "pic3": "./data/img/girl/strange03.jpg",
+        "bookName3": "快穿之养老攻略",
+        "author3": "快穿狂魔",
+
+        "pic4": "./data/img/girl/strange04.jpg",
+        "bookName4": "快穿之炮灰不伤悲",
+        "author4": "游7..",
+
+        "pic5": "./data/img/girl/strange05.jpg",
+        "bookName5": "末世幼稚园攻略",
+        "author5": "包包紫"
+      },
+      {
+          "pic1": "./data/img/girl/gtv01.jpg",
+          "bookName1": "不负绿茵",
+          "author1": "音欠生",
+
+          "pic2": "./data/img/girl/gtv02.jpg",
+          "bookName2": "界之柱",
+          "author2": "不存在的笔名",
+
+          "pic3": "./data/img/girl/gtv03.jpg",
+          "bookName3": "十年养成攻略",
+          "author3": "花与刃",
+
+          "pic4": "./data/img/girl/gtv04.jpg",
+          "bookName4": "全息之幻想",
+          "author4": "笔下的世界线",
+
+          "pic5": "./data/img/girl/gtv05.jpg",
+          "bookName5": "百兵图",
+          "author5": "裘洛"
+        }
+      ],
+    "themeGirl": [
+      {
+        "pic": "./data/img/girl/theme01.jpg"
+      },
+      {
+        "pic": "./data/img/girl/theme02.jpg"
+      },
+      {
+        "pic": "./data/img/girl/theme03.jpg"
+      },
+      {
+        "pic": "./data/img/girl/theme04.jpg"
+      }
+    ]
+  }
+}

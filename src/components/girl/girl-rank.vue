@@ -33,7 +33,7 @@
 				</li>
 			</ul>
 		</header>
-		
+
 		<div class="more-Hide" v-if="show01">
 			<i class="hide-bg"></i>
 			<div class="hide-cont">
@@ -70,8 +70,8 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="module-box" v-for="(item,index) in rankList" :key="index">
+
+		<div class="module-box" v-for="(item,index) in rankListGirl" :key="index">
 			<span class="rank-left">
 				<img :src="item.pic">
 				<h2 class="rank-title">{{item.title01}}<br>{{item.title02}}</h2>
@@ -132,7 +132,7 @@
 				</li>
 			</ol>
 		</div>
-		
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -155,7 +155,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -171,89 +171,20 @@
 		data(){
 			return{
 				show01: false,
-				rankList:[
-					{
-						pic: require('../../assets/img/rank/rankBoy01.jpg'),
-						title01: '原创',
-						title02: '排行榜',
-						book01: '好想住你隔壁',
-						book02: '神医凰后',
-						book03: '你好，King先生',
-						book04: '遇见，傅先生',
-						book05: '快穿：男神，有点燃！'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy02.jpg'),
-						title01: '畅销榜',
-						book01: '末日乐园',
-						book02: '快穿之我只想种田',
-						book03: '六宫凤华',
-						book04: '女战神的黑包群',
-						book05: '第一侯'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy03.jpg'),
-						title01: '新增',
-						title02: '粉丝榜',
-						book01: '妖女乱国',
-						book02: '总有人想带坏我徒孙',
-						book03: '神医凰后',
-						book04: '启禀陛下，夫人装怂',
-						book05: '天芳'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy04.jpg'),
-						title01: '推荐榜',
-						book01: '幽后传奇',
-						book02: '第一侯',
-						book03: '天芳',
-						book04: '花娇',
-						book05: '末日乐园'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy05.jpg'),
-						title01: '打赏榜',
-						book01: '君九龄',
-						book02: '娇娘医经',
-						book03: '金陵春',
-						book04: '清宫熹照',
-						book05: '慕南枝'
-					},
-					{
-						pic: require('../../assets/img/rank/rankBoy06.jpg'),
-						title01: '更新榜',
-						book01: '情有独钟初恋你',
-						book02: '古青月',
-						book03: '在成为僵尸以后',
-						book04: '凰道吉日',
-						book05: '重生九零俏甜妻'
-					},
-					{
-						pic: require('../../assets/img/rank/rankGirl07.jpg'),
-						title01: '收藏榜',
-						book01: '宁小闲御神录',
-						book02: '君九龄',
-						book03: '平凡的清穿日子',
-						book04: '慕南枝',
-						book05: '大帝姬'
-					},
-					{
-						pic: require('../../assets/img/rank/rankGirl08.jpg'),
-						title01: '免费榜',
-						book01: '这游戏过于真实了',
-						book02: '谢家小玉',
-						book03: '左苏',
-						book04: '一个癫痫女孩的自述',
-						book05: '他不会死'
-					}
-				]
+				rankListGirl:[]
 			}
 		},
 		methods: {
 			show(){
 				this.show01 = ! this.show01
 			}
-		}
+		},
+    mounted(){
+      this.$http.get("./data/rank.json")
+      .then((res)=>{
+        this.rankListGirl = res.data.rankList.rankListGirl
+      })
+    }
 	}
 </script>
 
@@ -268,6 +199,9 @@
 	header{
 		height: 3.09375rem;
 	}
+  ol{
+    list-style: none;
+  }
 	.girlrank-ul{
 		height: 3.09375rem;
 		list-style-type: none;
@@ -314,7 +248,7 @@
 	}
 	.girlranknav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		
+
 	}
 	.girlranknav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
@@ -337,9 +271,9 @@
 		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
-	.bookMore:empty{   
+	.bookMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -350,7 +284,7 @@
 	}
 	.bookMore:empty::after,
 	.bookMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;

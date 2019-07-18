@@ -33,7 +33,7 @@
 				</li>
 			</ul>
 		</header>
-		
+
 		<!-- 隐藏 -->
 		<div class="more-Hide" v-if="show01">
 			<i class="hide-bg"></i>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 大神新书 -->
 		<div class="module">
 			<div class="header">
@@ -91,7 +91,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 白金列表 -->
 		<div class="module">
 			<div class="header">
@@ -148,7 +148,7 @@
 				</ul>
 			</div>
 		</div>
-	
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -171,7 +171,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -187,182 +187,10 @@
 		data(){
 			return{
 				show01: false,
-				GodNew:[
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl01.jpg'),
-						bookName: '余生有你甜又暖',
-						author: '囧囧有妖'
-					},
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl02.jpg'),
-						bookName: '嫁入豪门77天后',
-						author: '绛美人'
-					},
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl03.jpg'),
-						bookName: '金粉',
-						author: '青铜穗'
-					},
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl04.jpg'),
-						bookName: '九零长女有点苏',
-						author: '燕小陌'
-					},
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl05.jpg'),
-						bookName: '只想爱你再多一点点',
-						author: '古萧'
-					},
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl06.jpg'),
-						bookName: '王妃娘娘，爷在墙外等你',
-						author: '七叶槿'
-					},
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl07.jpg'),
-						bookName: '藏不住的欢喜',
-						author: '银子洛'
-					},
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl08.jpg'),
-						bookName: '穿越五十年代之养殖大户',
-						author: '小硕鼠5030'
-					},
-					{
-						pic: require('../../assets/img/godGirl/GodNewGirl09.jpg'),
-						bookName: '世界第一甜',
-						author: '为你穿高跟鞋'
-					}
-				],
-				PlatinumMsg:[
-					{
-						pic: require('../../assets/img/godGirl/PlatinumGirl01.jpg'),
-						PlatinumName: '叶非夜',
-						PlatinumIntro: '白金作家，创下单日销售24万元记录的言情天后，2015年福布斯中国原创风云榜年度人气作家第一名，代表作《国民老公带回家》。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/PlatinumGirl02.png'),
-						PlatinumName: '夏染雪',
-						PlatinumIntro: '阅文集团旗下小说阅读网白金作家，至今，已创作40多部作品，涉猎题材众多，聚揽人气过亿，写作风格独树一帜。多部小说长期位居热销榜前列。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/PlatinumGirl03.jpg'),
-						PlatinumName: '苏小暖',
-						PlatinumIntro: '白金作家，常年雄踞人气畅销榜第一,并荣获第一届福布斯原创文学风云榜女性榜单总榜第一名。深受90后、00后读者喜爱。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/PlatinumGirl04.jpg'),
-						PlatinumName: '吱吱',
-						PlatinumIntro: '阅文集团白金作者，起点女生网顶级大神，古言天后。她笔下的故事，总是精致而考究，又带有人文关怀。情节细腻而环环相扣，角色形象鲜明，衣食住行等细节都值得细细揣摩和品味。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/PlatinumGirl05.jpg'),
-						PlatinumName: '安知晓',
-						PlatinumIntro: '白金作家。擅长写多主角故事，行文流畅，文风大气，语言幽默爆笑。文章跌宕起伏，充满爱情和悬疑的色彩，元素众多，男女主角个性鲜明，敢爱敢恨。'
-					}
-				],
-				OkamiMsg:[
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl01.png'),
-						OkamiName: '金铃动',
-						OkamiIntro: '阅文集团大神作家，起点女频仙侠文代表作家。作者擅长构架宏大的修仙世界，文笔简练，想象力极其丰富。他笔下的主角个性鲜明，突破传统女性仙侠文的桎梏，为读者展现了一个自立自强，凭借个人能力问鼎修仙巅峰的女性形象。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl02.jpg'),
-						OkamiName: '罗衣对雪',
-						OkamiIntro: '云起书院现言大神，行文流畅，故事新颖，人物形象特别丰满，代表作《Boss太嚣张：老公，结婚吧》'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl03.jpg'),
-						OkamiName: '六月浩雪',
-						OkamiIntro: '阅文旗下云起书院知名宅斗作家，完结小说《重生之温婉》曾进入百度风云榜前五十，颇受读者追捧，新书《嫡女重生记》正在火热连载中。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl04.jpg'),
-						OkamiName: '莫小淘',
-						OkamiIntro: '莫小淘，云起书院大神作者，擅长甜宠文，题材新颖创新，笔下的男主深情专一，深受万千读者喜爱。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl05.jpg'),
-						OkamiName: '银子洛',
-						OkamiIntro: '云起书院大神作者'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl06.jpg'),
-						OkamiName: '麻辣千金',
-						OkamiIntro: ' 云起书院作者，擅长现代小说，行文视角新颖，喜欢塑造思想活跃女性，力求创作出不一样的现代文。 '
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl07.png'),
-						OkamiName: '黛蜜儿',
-						OkamiIntro: '云起书院大神作家'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl08.png'),
-						OkamiName: '莉莉薇',
-						OkamiIntro: '喜欢干净单纯纯粹的感情，喜欢他只爱我，我只爱他的唯一！'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl09.jpg'),
-						OkamiName: '楠楠李',
-						OkamiIntro: '阅文集团大神作家'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl10.jpg'),
-						OkamiName: '卿云',
-						OkamiIntro: '云起书院古言大神，擅长宝宝文，文风萌宠甜蜜，代表作《全能王妃：偷个王爷生宝宝》'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl11.jpg'),
-						OkamiName: '吉祥夜',
-						OkamiIntro: '阅文集团大神作家'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl12.jpg'),
-						OkamiName: '冷青衫',
-						OkamiIntro: '人气大神作者，擅长古言类作品的创作，作品《替身侍婢魅君心：一夜弃妃》曾长期位于全平台销售榜第一！'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl13.jpg'),
-						OkamiName: '单兮',
-						OkamiIntro: '云起书院新锐作者，擅长现代言情小说。文风轻松幽默，笔下的人物形象鲜明，深受读者喜欢。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl14.jpg'),
-						OkamiName: '忆昔颜',
-						OkamiIntro: '新浪微博http://weibo.com/u/5624155185/home?topnav=1&amp;wvr=6'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl15.jpg'),
-						OkamiName: '一路烦花',
-						OkamiIntro: '不嫌弃。不抛弃。不放弃。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl16.jpg'),
-						OkamiName: '浮屠妖',
-						OkamiIntro: '云起书院高人气大神作者，主打现代言情。拥有多年写作经验，文笔深厚，感情细腻。著有多本畅销书籍，长据全平台各大榜单前列，在各大渠道平台上成绩斐然。'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl17.jpg'),
-						OkamiName: '洛日',
-						OkamiIntro: '云起大神作者，文风轻松活泼，笔下的人物十分逗趣，可卖萌可严肃，可逗比可正经，百变小能手，你值得拥有。代表作《誓要休夫：邪王私宠小萌妃》'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl18.jpg'),
-						OkamiName: '战西野'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl19.jpg'),
-						OkamiName: '百香蜜',
-						OkamiIntro: '云起书院大神作家'
-					},
-					{
-						pic: require('../../assets/img/godGirl/OkamiGirl20.png'),
-						OkamiName: '逍遥游游',
-						OkamiIntro: '1.请大家记得评价票一定投五星！五星！五星！重要的事情说三遍！！！如果觉得本文还不够好，请把评价票留给你觉得值得五颗星的其他文，否则不但会拉低了文的点数，还会浪费大家的评价票(*￣3￣)2，支持正版，人人有责。下面有学生党除了充值以外支持正版的方法，所以不要为了盗版找借口哟！也请看盗版的朋友绕道，不要在正版评论区找存在感了，这样每天需要辛辛苦苦熬夜花上几个小时码字的我看到会很心塞的=_=☆_☆_☆_☆_☆学生党怎么样支持正版呢？☆_☆_☆_☆_☆下载潇湘书院的手机APP软件，进入首页后大约右下角的位置有一个写着“签”字的蓝色圆形，每天一次点击签到，就可以得到元宝。元宝和潇湘币一样能用来订阅VIP章节！每一个支持正版的小可爱都是我的心头宝，谢谢小天使们，么么哒~\(≧▽≦)/~'
-					}
-				]
-			}
+				GodNew:[],
+        PlatinumMsg:[],
+        OkamiMsg:[]
+      }
 		},
 		methods: {
 			show(){
@@ -378,7 +206,15 @@
 					this.loading = false;
 				}, 2500);
 			}
-		}
+		},
+    mounted(){
+      this.$http.get("./data/girl-god.json")
+      .then((res)=>{
+        this.GodNew = res.data.GodBoy.GodNew
+        this.PlatinumMsg = res.data.GodBoy.PlatinumMsg
+        this.OkamiMsg = res.data.GodBoy.OkamiMsg
+      })
+    }
 	}
 </script>
 
@@ -442,7 +278,7 @@
 	}
 	.girlgodnav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		
+
 	}
 	.girlgodnav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
@@ -465,9 +301,9 @@
 		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
-	.bookMore:empty{   
+	.bookMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -478,7 +314,7 @@
 	}
 	.bookMore:empty::after,
 	.bookMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;

@@ -33,7 +33,7 @@
 				</li>
 			</ul>
 		</header>
-		
+
 		<!-- 隐藏 -->
 		<div class="more-Hide" v-if="show01">
 			<i class="hide-bg"></i>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 大神新书 -->
 		<div class="module">
 			<div class="header">
@@ -91,7 +91,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 白金列表 -->
 		<div class="module">
 			<div class="header">
@@ -148,7 +148,7 @@
 				</ul>
 			</div>
 		</div>
-	
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -171,7 +171,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -187,183 +187,10 @@
 		data(){
 			return{
 				show01: false,
-				GodNew:[
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy01.jpg'),
-						bookName: '重生之最好时代',
-						author: '九灯和善'
-					},
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy02.jpg'),
-						bookName: '我真不是暴发户',
-						author: '晨光路西法'
-					},
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy03.jpg'),
-						bookName: '老胡同',
-						author: '隐为者'
-					},
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy04.jpg'),
-						bookName: '战神无双',
-						author: '尘风'
-					},
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy05.jpg'),
-						bookName: '氪金成仙',
-						author: '五志'
-					},
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy06.jpg'),
-						bookName: '一剑斩破九重天',
-						author: '流浪的蛤蟆'
-					},
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy07.jpg'),
-						bookName: '前任无双',
-						author: '跃千愁'
-					},
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy08.jpg'),
-						bookName: '九天',
-						author: '黑山老鬼'
-					},
-					{
-						pic: require('../../assets/img/godBoy/GodNewBoy09.jpg'),
-						bookName: '我是丹田掌控者',
-						author: '南极海'
-					}
-				],
-				PlatinumMsg:[
-					{
-						pic: require('../../assets/img/godBoy/PlatinumBoy01.png'),
-						PlatinumName: '辰东',
-						PlatinumIntro: '阅文集团白金作家，网络文学代表人物之一，中国作协会员。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/PlatinumBoy02.png'),
-						PlatinumName: '骷髅精灵',
-						PlatinumIntro: '阅文集团白金作家，网络文学著名作家，上海网络作家协会副会长，上海青年文联副会长。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/PlatinumBoy03.png'),
-						PlatinumName: '小刀锋利',
-						PlatinumIntro: '阅文集团白金作家，著名网络作家，作品磅礴大气，在业内及粉丝群体中极富盛名。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/PlatinumBoy04.png'),
-						PlatinumName: '尘风',
-						PlatinumIntro: '阅文集团白金作家，网络文学著名作家，2015福布斯中国原创文学风云榜第三名。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/PlatinumBoy05.png'),
-						PlatinumName: '血红',
-						PlatinumIntro: '阅文集团白金作家，上海网络作家协会会长，理工高材生哲学硕士，富豪榜榜上作家。'
-					}
-				],
-				OkamiMsg:[
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy01.jpg'),
-						OkamiName: '幻雨',
-						OkamiIntro: '阅文大神级作者，在仙侠小说创作上独具特色，聚集了众多粉丝，代表作品《百炼成仙》、《仙碎虚空》。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy02.jpg'),
-						OkamiName: '睡觉会变白',
-						OkamiIntro: '网络文学大神作家'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy03.jpg'),
-						OkamiName: '狗狍子',
-						OkamiIntro: '网络小说大神级人物。已完本作品《官术》被网友封为都市官文小说经典，目前新书《最强校草》正在火爆连载中！'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy04.png'),
-						OkamiName: '秒速九光年',
-						OkamiIntro: '阅文集团旗下起点中文网大神作家，作品世界构建宏伟缜密，未来感十足！《超级基因装甲》正在起点中文网火热连载中！'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy05.jpg'),
-						OkamiName: '天堂羽',
-						OkamiIntro: ' 学历本科，专业电子信息工程，兴趣……看书、动漫、游戏、旅游度假'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy06.jpg'),
-						OkamiName: '夜独醉',
-						OkamiIntro: ' 创世大神作者'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy07.jpg'),
-						OkamiName: '萧舒',
-						OkamiIntro: '阅文集团大神级作者，在武侠类小说创作方面极具个人特色。作品武侠风很浓重，吸引了大量读者和粉丝。目前新作《白袍总管》正在火热连载中！'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy08.jpg'),
-						OkamiName: '宝石猫',
-						OkamiIntro: '爱小说，所以也想写写。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy09.jpg'),
-						OkamiName: '曾经拥有的方向感',
-						OkamiIntro: '阅文集团旗下起点中文网大神作家，作品风格热血爽白，剧情节奏感很强！《傲世武皇》正在起点中文网火热连载中！'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy10.jpg'),
-						OkamiName: '打死都要钱',
-						OkamiIntro: '著名玄幻作者，作品风格热血，构思别具一格，擅长对高潮剧情节奏的把握深受读者喜爱。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy11.jpg'),
-						OkamiName: '花都大少',
-						OkamiIntro: '极品全能学生'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy12.jpg'),
-						OkamiName: '争斤论两花花帽',
-						OkamiIntro: '阅文集团大神作家，一名立志于做人民教师的公司职员'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy13.png'),
-						OkamiName: '傅啸尘',
-						OkamiIntro: '阅文集团旗下起点中文网大神作家，代表作品《武神空间》以热血爽快见长，剧情精彩，让人拍案叫绝，目前正火热连载中！'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy14.jpg'),
-						OkamiName: '新丰',
-						OkamiIntro: '阅文集团大神作家，其作品风格幽默诙谐，玄幻品类热销榜前列作家。行文张扬不羁，节奏感强。代表作《最强的系统》《彪悍的人生》《无敌真寂寞》新书《我不想逆天啊》火热连载中。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy15.jpg'),
-						OkamiName: '沉默的糕点',
-						OkamiIntro: '起点大神作者'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy16.jpg'),
-						OkamiName: '乘风御剑',
-						OkamiIntro: ' 学历：专科。专业：法律。兴趣：貌似兴趣就是看小说，看电影，暴走之类的了。'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy17.png'),
-						OkamiName: '相思洗红豆',
-						OkamiIntro: '雄性，自尊心很强的雄性！'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy18.jpg'),
-						OkamiName: '迪巴拉爵士',
-						OkamiIntro: '网络文学大神作者'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy19.png'),
-						OkamiName: '文抄公',
-						OkamiIntro: '网络文学大神作家'
-					},
-					{
-						pic: require('../../assets/img/godBoy/OkamiBoy20.jpg'),
-						OkamiName: '上山打老虎额',
-						OkamiIntro: '阅文集团旗下起点中文网大神作家，作品幽默风趣，可读性极强，连贯性突出，环节紧凑！《明朝败家子》正在起点中文网火热连载中！'
-					}
-				]
-			}
+				GodNew:[],
+				PlatinumMsg:[],
+        OkamiMsg:[]
+      }
 		},
 		methods: {
 			show(){
@@ -379,7 +206,15 @@
 					this.loading = false;
 				}, 2500);
 			}
-		}
+		},
+    mounted(){
+      this.$http.get("./data/boy-god.json")
+      .then((res)=>{
+        this.GodNew = res.data.GodBoy.GodNew
+        this.PlatinumMsg = res.data.GodBoy.PlatinumMsg
+        this.OkamiMsg = res.data.GodBoy.OkamiMsg
+      })
+    }
 	}
 </script>
 
@@ -439,7 +274,7 @@
 	}
 	.godnav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		
+
 	}
 	.godnav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
@@ -462,9 +297,9 @@
 		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
-	.bookMore:empty{   
+	.bookMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -475,7 +310,7 @@
 	}
 	.bookMore:empty::after,
 	.bookMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;

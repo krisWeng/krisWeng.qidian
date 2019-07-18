@@ -33,7 +33,7 @@
 				</li>
 			</ul>
 		</header>
-		
+
 		<!-- 隐藏 -->
 		<div class="more-Hide" v-if="show01">
 			<i class="hide-bg"></i>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 影视同期 -->
 		<div class="module">
 			<div class="header">
@@ -92,7 +92,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 经典必读 -->
 		<div class="module">
 			<div class="header">
@@ -107,7 +107,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 大神完本 -->
 		<div class="module">
 			<div class="header">
@@ -147,7 +147,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -170,7 +170,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -186,86 +186,22 @@
 		data(){
 			return{
 				show01: false,
-				TVEnd:[
-					{
-						pic: require('../../assets/img/endGirl/TVEndGirl01.jpg'),
-						bookName: '美人为馅',
-						author: '丁墨'
-					},
-					{
-						pic: require('../../assets/img/endGirl/TVEndGirl02.jpg'),
-						bookName: '如果蜗牛有爱情',
-						author: '丁墨'
-					},
-					{
-						pic: require('../../assets/img/endGirl/TVEndGirl03.jpg'),
-						bookName: '他来了请闭眼',
-						author: '丁墨'
-					},
-					{
-						pic: require('../../assets/img/endGirl/TVEndGirl04.jpg'),
-						bookName: '女娲成长日记',
-						author: '凌舞水袖 '
-					},
-					{
-						pic: require('../../assets/img/endGirl/TVEndGirl05.jpg'),
-						bookName: '琅琊榜',
-						author: '海宴 '
-					},
-					{
-						pic: require('../../assets/img/endGirl/TVEndGirl06.jpg'),
-						bookName: '太子妃升职记',
-						author: '鲜橙.QD'
-					},
-					{
-						pic: require('../../assets/img/endGirl/TVEndGirl07.jpg'),
-						bookName: '芈月传',
-						author: '蒋胜男'
-					},
-					{
-						pic: require('../../assets/img/endGirl/TVEndGirl08.jpg'),
-						bookName: '欢乐颂',
-						author: '阿耐'
-					}
-				],
-				GodEnd:[
-					{
-						pic: require('../../assets/img/endGirl/GodEndGirl01.jpg'),
-						title: '季先生的启明星',
-						des: '新书《我男主超甜》已发布。——————————“听说你暗恋我？”“……你一定是误会了。”“好吧，那我暗恋你。”这么明目张胆的说出来还叫暗恋吗！？*在人人崇尚文化娱乐，唯独东华文化没落的世界。她的出现，注定了宣扬东方之美。写小说、作歌曲、演电影、一举改变全民审美，成就无双传奇，登顶全球第一天后宝座。某一天，南希被签约进某人的娱乐公司。全民开始了花样式强行被喂狗粮的日常！',
-						author: '水千澈',
-						gray: '现代言情',
-						red: '完本',
-						blue: '162.55万字'
-						
-					},
-					{
-						pic: require('../../assets/img/endGirl/GodEndGirl02.jpg'),
-						title: '我想我已慢慢喜欢你',
-						des: '【一个小短篇。】“喂，物理作业给我抄下。”“啊？有作业？”“……我怎么知道。”——“你又偷偷背着我和别人学习了？！你觉得我没他聪明，还是没他成绩好？”“……”【练笔之作，日常温馨向，不喜请直接点叉】',
-						author: '安向暖',
-						gray: '浪漫青春',
-						red: '完本',
-						blue: '8.41万字'
-						
-					},
-					{
-						pic: require('../../assets/img/endGirl/GodEndGirl03.jpg'),
-						title: '慕川向晚',
-						des: '千年难得一遇的写作废柴向晚，因为书扑成了狗，被逼相亲。“妈，不是身高一米九腹肌十六块住八十八层别墅从八百米大床上醒来的国家级高富帅，一律不要。”“……你是准备嫁蜈蚣？”后来向晚终于如愿以偿。他被国家级高富帅找上门来了，扑街的书也突然爆火——有人按她书中情节，一比一复制了一桩命案。而她与国家级高富帅第一次碰撞，就把人家给夹伤了…………爱情、亲情、伦理、悬疑、你要的这里都有，色香味俱全。【本文狂撒狗血，太过较真的勿来。】☆★☆★☆★☆★☆★☆★☆强烈推荐姒锦完结文。现代：《史上第一宠婚》、《步步惊婚》、《唯愿此生不负你》、《溺爱成瘾》古代：《且把年华赠天下》、《孤王寡女》',
-						author: 'EK姒锦',
-						gray: '现代言情',
-						red: '完本',
-						blue: '207.24万字'
-					}
-				]
+				TVEnd:[],
+				GodEnd:[]
 			}
 		},
 		methods: {
 			show(){
 				this.show01 = ! this.show01
 			}
-		}
+		},
+    mounted(){
+       this.$http.get("./data/girl-end.json")
+      .then((res)=>{
+        this.TVEnd = res.data.girlEND.TVEnd
+        this.GodEnd = res.data.girlEND.GodEnd
+      })
+    }
 	}
 </script>
 
@@ -280,6 +216,9 @@
 	header{
 		height: 3.09375rem;
 	}
+  ol{
+    list-style: none;
+  }
 	.girlend-ul{
 		height: 3.09375rem;
 		list-style-type: none;
@@ -326,7 +265,7 @@
 	}
 	.girlendnav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		
+
 	}
 	.girlendnav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
@@ -349,9 +288,9 @@
 		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
-	.bookMore:empty{   
+	.bookMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -362,7 +301,7 @@
 	}
 	.bookMore:empty::after,
 	.bookMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;
