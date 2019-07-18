@@ -15,10 +15,10 @@
 						</li>
 						<li>
 							<em class="lock"></em>
-							<input type="text" id="passwd" placeholder="请输入密码" @click="Noshow()" v-model="passwd">
+							<input type="password" id="passwd" placeholder="请输入密码" @click="Noshow()" v-model="passwd">
 							<div class="passwd-r">
-								<i class="unlook" style="display: none;" @click="unpress()"></i>
-                <i class="look" @click="press()">
+								<i class="unlook" @click="unpress()"></i>
+                <i class="look" style="display: none;" @click="press()">
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-look"></use>
                   </svg>
@@ -98,11 +98,12 @@
       },
       press(){
         $('.look').css('display','none');
-        $('.unlook').css('display','block')
+        $('.unlook').css('display','block');
+
       },
       unpress(){
+        $('.look').css('display','block');
         $('.unlook').css('display','none');
-        $('.look').css('display','block')
       },
       checkUser(msg){
           if(msg.length == ''){
@@ -117,7 +118,7 @@
           }
         }
       },
-      // checkPasswd(msg02){
+      // checking(msg02){
       //     if(msg02.length == ''){
       //       $('.point').html('密码不能为空')
       //     }else{

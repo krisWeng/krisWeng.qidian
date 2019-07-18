@@ -1223,11 +1223,13 @@
 			},
 			destroyed () {
 				window.removeEventListener('scroll', this.scrollToTop);
+        window.removeEventListener('setInterval',this.function);
 			}
 		},
 		mounted(){
 			this.function()
 			setInterval(this.function)
+      window.addEventListener('setInterval', this.function)
 
 			window.addEventListener('scroll', this.scrollToTop)
 		}

@@ -6,7 +6,7 @@
 				<img :src="item.pic">
 			</mt-swipe-item>
 		</mt-swipe>
-		
+
 		<!-- 搜索框 -->
 		<router-link to='/search' class="search">
 			<svg class="icon" aria-hidden="true">
@@ -14,7 +14,7 @@
 			</svg>
 			覆汉
 		</router-link>
-		
+
 		<!-- 导航栏 -->
 		<nav class="home-nav">
 			<router-link to='/girl-type' class="home-nav-a">
@@ -38,7 +38,7 @@
 				<h4>大神</h4>
 			</router-link>
 		</nav>
-		
+
 		<!-- 热门小说 -->
 		<div class="module">
 			<div class="header">
@@ -61,7 +61,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 按钮导航 -->
 		<div class="home-btn">
 			<nav>
@@ -77,7 +77,7 @@
 				</h3>
 			</nav>
 		</div>
-	
+
 		<!-- 限时免费 -->
 		<div class="module">
 			<div class="header">
@@ -107,7 +107,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 排行榜 -->
 		<div class="module">
 			<div class="header">
@@ -235,7 +235,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 新书抢鲜 -->
 		<div class="module">
 			<div class="header">
@@ -276,7 +276,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 畅销完本 -->
 		<div class="module">
 			<div class="header">
@@ -317,7 +317,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 分类推荐 -->
 		<div class="module">
 			<div class="header">
@@ -429,7 +429,7 @@
 				</ol>
 			</div>
 		</div>
-			
+
 		<!-- 猜你喜欢 -->
 		<div class="module module-last">
 			<div class="header">
@@ -456,7 +456,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -479,7 +479,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -487,7 +487,7 @@
 			<p>看更多正版好书</p>
 			<span>下载</span>
 		</div>
-		
+
 		<!-- 返回顶部 -->
 		<span class="readBox Box-icon" id="lately" @click="appear()">
 			最近阅读
@@ -497,7 +497,7 @@
 				<use xlink:href="#icon-fanhuidingbu"></use>
 			</svg>
 		</span>
-		
+
 		<!-- 最近阅读 -->
 		<transition name="fade">
 			<aside v-show="show" id="aside">
@@ -528,7 +528,7 @@
 		</transition>
 	</div>
 </template>
-	
+
 <script>
 	export default{
 		data(){
@@ -636,47 +636,47 @@
 						pic1: require('../../assets/img/girl/HotSell01.jpg'),
 						bookName1: '掌欢',
 						author1: '冬天的柳叶',
-						
+
 						top2: 'top2',
 						pic2: require('../../assets/img/girl/HotSell02.jpg'),
 						bookName2: '末日乐园',
 						author2: '须尾俱全',
-						
+
 						top3: 'top3',
 						pic3: require('../../assets/img/girl/HotSell03.jpg'),
 						bookName3: '快穿：我只想种田',
 						author3: '沧澜止戈',
-						
+
 						top4: 'top4',
 						pic4: require('../../assets/img/girl/HotSell04.jpg'),
 						bookName4: '六宫凤华',
 						author4: '寻找失落的爱情',
-						
+
 						top5: 'top5',
 						pic5: require('../../assets/img/girl/HotSell05.jpg'),
 						bookName5: '女战神的黑包群',
 						author5: '二谦',
-						
+
 						top6: 'top6',
 						pic6: require('../../assets/img/girl/HotSell06.jpg'),
 						bookName6: '英鸾',
 						author6: '君书雁',
-						
+
 						top7: 'top7',
 						pic7: require('../../assets/img/girl/HotSell07.jpg'),
 						bookName7: '第一侯',
 						author7: '希行',
-						
+
 						top8: 'top8',
 						pic8: require('../../assets/img/girl/HotSell08.jpg'),
 						bookName8: '重生腹黑娇妻',
 						author8: '浮世落华',
-						
+
 						top9: 'top9',
 						pic9: require('../../assets/img/girl/HotSell09.jpg'),
 						bookName9: '快穿：每次都是我躺枪',
 						author9: '旺财是只喵',
-						
+
 						top10: 'top10',
 						pic10: require('../../assets/img/girl/HotSell10.jpg'),
 						bookName10: '似锦',
@@ -687,47 +687,47 @@
 						pic1: require('../../assets/img/girl/Wind01.jpg'),
 						bookName1: '好想住你隔壁',
 						author1: '叶非夜',
-						
+
 						top2: 'top2',
 						pic2: require('../../assets/img/girl/Wind02.jpg'),
 						bookName2: '神医凰后',
 						author2: '苏小暖',
-						
+
 						top3: 'top3',
 						pic3: require('../../assets/img/girl/Wind03.jpg'),
 						bookName3: '你好，King先生',
 						author3: '锦凰',
-						
+
 						top4: 'top4',
 						pic4: require('../../assets/img/girl/Wind04.jpg'),
 						bookName4: '遇见，傅先生',
 						author4: '无尽相思',
-						
+
 						top5: 'top5',
 						pic5: require('../../assets/img/girl/Wind05.jpg'),
 						bookName5: '快穿：男神，有点燃！',
 						author5: '墨泠',
-						
+
 						top6: 'top6',
 						pic6: require('../../assets/img/girl/Wind06.jpg'),
 						bookName6: '花娇',
 						author6: '吱吱',
-						
+
 						top7: 'top7',
 						pic7: require('../../assets/img/girl/Wind07.jpg'),
 						bookName7: '神医弃女',
 						author7: 'MS芙子',
-						
+
 						top8: 'top8',
 						pic8: require('../../assets/img/girl/Wind08.jpg'),
 						bookName8: '南城待月归',
 						author8: '公子衍',
-						
+
 						top9: 'top9',
 						pic9: require('../../assets/img/girl/Wind09.jpg'),
 						bookName9: '夫人，你马甲又掉了！',
 						author9: '一路烦花',
-						
+
 						top10: 'top10',
 						pic10: require('../../assets/img/girl/Wind10.jpg'),
 						bookName10: '邪王追妻',
@@ -738,47 +738,47 @@
 						pic1: require('../../assets/img/girl/Click01.jpg'),
 						bookName1: '女战神的黑包群',
 						author1: '二谦',
-						
+
 						top2: 'top2',
 						pic2: require('../../assets/img/girl/Click02.jpg'),
 						bookName2: '六宫凤华',
 						author2: '寻找失落的爱情',
-						
+
 						top3: 'top3',
 						pic3: require('../../assets/img/girl/Click03.jpg'),
 						bookName3: '欢喜记事',
 						author3: '木嬴',
-						
+
 						top4: 'top4',
 						pic4: require('../../assets/img/girl/Click04.jpg'),
 						bookName4: '十万里风鹏正举',
 						author4: '兔9',
-						
+
 						top5: 'top5',
 						pic5: require('../../assets/img/girl/Click05.jpg'),
 						bookName5: '与你在一起就是最幸福的事',
 						author5: '蘑菇里正',
-						
+
 						top6: 'top6',
 						pic6: require('../../assets/img/girl/Click06.jpg'),
 						bookName6: '妖女乱国',
 						author6: '樊笼也自然',
-						
+
 						top7: 'top7',
 						pic7: require('../../assets/img/girl/Click07.jpg'),
 						bookName7: '六零小甜妻',
 						author7: '修身齐家.QD',
-						
+
 						top8: 'top8',
 						pic8: require('../../assets/img/girl/Click08.jpg'),
 						bookName8: '四爷，你别抓我',
 						author8: '夏之琉',
-						
+
 						top9: 'top9',
 						pic9: require('../../assets/img/girl/Click09.jpg'),
 						bookName9: '穿越之双世情缘',
 						author9: '长弓瑾澈',
-						
+
 						top10: 'top10',
 						pic10: require('../../assets/img/girl/Click10.jpg'),
 						bookName10: '灵族记',
@@ -789,47 +789,47 @@
 						pic1: require('../../assets/img/girl/Recommendation01.jpg'),
 						bookName1: '幽后传奇',
 						author1: '墨鱼甲乙',
-						
+
 						top2: 'top2',
 						pic2: require('../../assets/img/girl/Recommendation02.jpg'),
 						bookName2: '第一侯',
 						author2: '希行',
-						
+
 						top3: 'top3',
 						pic3: require('../../assets/img/girl/Recommendation03.jpg'),
 						bookName3: '末日乐园',
 						author3: '须尾俱全',
-						
+
 						top4: 'top4',
 						pic4: require('../../assets/img/girl/Recommendation04.jpg'),
 						bookName4: '花娇',
 						author4: '吱吱',
-						
+
 						top5: 'top5',
 						pic5: require('../../assets/img/girl/Recommendation05.jpg'),
 						bookName5: '天芳',
 						author5: '云芨',
-						
+
 						top6: 'top6',
 						pic6: require('../../assets/img/girl/Recommendation06.jpg'),
 						bookName6: '大佬退休之后',
 						author6: '油爆香菇',
-						
+
 						top7: 'top7',
 						pic7: require('../../assets/img/girl/Recommendation07.jpg'),
 						bookName7: '快穿：我只想种田',
 						author7: '沧澜止戈',
-						
+
 						top8: 'top8',
 						pic8: require('../../assets/img/girl/Recommendation08.jpg'),
 						bookName8: '掌欢',
 						author8: '冬天的柳叶',
-						
+
 						top9: 'top9',
 						pic9: require('../../assets/img/girl/Recommendation09.jpg'),
 						bookName9: '重生八零锦绣盛婚',
 						author9: '幽非芽',
-						
+
 						top10: 'top10',
 						pic10: require('../../assets/img/girl/Recommendation10.jpg'),
 						bookName10: '启禀陛下，夫人装怂',
@@ -845,7 +845,7 @@
 						gray: '古代言情',
 						red: '连载中',
 						blue: '12.95万字'
-						
+
 					},
 					{
 						pic: require('../../assets/img/girl/NewBook02.jpg'),
@@ -855,7 +855,7 @@
 						gray: '科幻空间',
 						red: '连载中',
 						blue: '28.98万字'
-						
+
 					},
 					{
 						pic: require('../../assets/img/girl/NewBook03.jpg'),
@@ -876,7 +876,7 @@
 						gray: '古代言情',
 						red: '完本',
 						blue: '170.77万字'
-						
+
 					},
 					{
 						pic: require('../../assets/img/girl/END02.jpg'),
@@ -886,7 +886,7 @@
 						gray: '现代言情',
 						red: '完本',
 						blue: '59.83万字'
-						
+
 					},
 					{
 						pic: require('../../assets/img/girl/END03.jpg'),
@@ -917,19 +917,19 @@
 						pic1: require('../../assets/img/girl/Ancient01.jpg'),
 						bookName1: '祝琴说',
 						author1: '逗跌',
-						
+
 						pic2: require('../../assets/img/girl/Ancient02.jpg'),
 						bookName2: '田园福妃',
 						author2: '滋洋',
-						
+
 						pic3: require('../../assets/img/girl/Ancient03.jpg'),
 						bookName3: '金粉',
 						author3: '青铜穗',
-						
+
 						pic4: require('../../assets/img/girl/Ancient04.jpg'),
 						bookName4: '权门贵嫁',
 						author4: '秦兮',
-						
+
 						pic5: require('../../assets/img/girl/Ancient05.jpg'),
 						bookName5: '素手调汤',
 						author5: '沐清浅'
@@ -938,19 +938,19 @@
 						pic1: require('../../assets/img/girl/Fairy01.jpg'),
 						bookName1: '九州江月寒',
 						author1: '唐深藏功与名',
-						
+
 						pic2: require('../../assets/img/girl/Fairy02.jpg'),
 						bookName2: '狐宠胡宠',
 						author2: '斑猪',
-						
+
 						pic3: require('../../assets/img/girl/Fairy03.jpg'),
 						bookName3: '摘仙令',
 						author3: '潭子',
-						
+
 						pic4: require('../../assets/img/girl/Fairy04.jpg'),
 						bookName4: '无上女仙君',
 						author4: '淡淡竹君',
-						
+
 						pic5: require('../../assets/img/girl/Fairy05.jpg'),
 						bookName5: '炮灰修真指南',
 						author5: '青莲乐府'
@@ -959,19 +959,19 @@
 						pic1: require('../../assets/img/girl/Modern01.jpg'),
 						bookName1: '最羡人间五月天',
 						author1: '邑小白',
-						
+
 						pic2: require('../../assets/img/girl/Modern02.jpg'),
 						bookName2: '爱你是平凡的温暖',
 						author2: '筱悠独醉',
-						
+
 						pic3: require('../../assets/img/girl/Modern03.jpg'),
 						bookName3: '带着仓库重生',
 						author3: '我尽力了',
-						
+
 						pic4: require('../../assets/img/girl/Modern04.jpg'),
 						bookName4: '穿越六十年代农家女',
 						author4: '红烧豆腐干',
-						
+
 						pic5: require('../../assets/img/girl/Modern05.jpg'),
 						bookName5: '重回八零小辣妻',
 						author5: '持好'
@@ -980,19 +980,19 @@
 						pic1: require('../../assets/img/girl/Youth01.jpg'),
 						bookName1: '两个十年，你是否还要',
 						author1: '浪漫肉食主义',
-						
+
 						pic2: require('../../assets/img/girl/Youth02.jpg'),
 						bookName2: '我知道的，他都懂得',
 						author2: '汐潇',
-						
+
 						pic3: require('../../assets/img/girl/Youth03.jpg'),
 						bookName3: '若是久长时1',
 						author3: '清香月',
-						
+
 						pic4: require('../../assets/img/girl/Youth04.jpg'),
 						bookName4: '小小时光里的小小秘密',
 						author4: '温馨的寒冬',
-						
+
 						pic5: require('../../assets/img/girl/Youth05.jpg'),
 						bookName5: '寻道之路，与君同行',
 						author5: '青之荧华'
@@ -1017,19 +1017,19 @@
 						pic1: require('../../assets/img/girl/Mysterious01.jpg'),
 						bookName1: '降生记',
 						author1: '东荒尚桃',
-						
+
 						pic2: require('../../assets/img/girl/Mysterious02.jpg'),
 						bookName2: '帝凤无双',
 						author2: '妖精家的小二',
-						
+
 						pic3: require('../../assets/img/girl/Mysterious03.jpg'),
 						bookName3: '魅上欢',
 						author3: '少女不写诗',
-						
+
 						pic4: require('../../assets/img/girl/Mysterious04.jpg'),
 						bookName4: '仙三代的日常生活',
 						author4: '感觉挺冷.',
-						
+
 						pic5: require('../../assets/img/girl/Mysterious05.jpg'),
 						bookName5: '快穿渣男洗白论',
 						author5: '清风静静'
@@ -1038,19 +1038,19 @@
 						pic1: require('../../assets/img/girl/suspense01.jpg'),
 						bookName1: '罪恶无形',
 						author1: '莫伊莱',
-						
+
 						pic2: require('../../assets/img/girl/suspense02.jpg'),
 						bookName2: '娇妻案中见',
 						author2: '落思蕴',
-						
+
 						pic3: require('../../assets/img/girl/suspense03.jpg'),
 						bookName3: '天师除灵日常',
 						author3: '慕凌彬',
-						
+
 						pic4: require('../../assets/img/girl/suspense04.jpg'),
 						bookName4: '重生之娱乐圈事件簿',
 						author4: '爱吃松子.',
-						
+
 						pic5: require('../../assets/img/girl/suspense05.jpg'),
 						bookName5: '食灵猎人',
 						author5: '一缕冥火'
@@ -1059,19 +1059,19 @@
 						pic1: require('../../assets/img/girl/strange01.jpg'),
 						bookName1: '坑宿主的一百万种方式',
 						author1: '机甲小熊',
-						
+
 						pic2: require('../../assets/img/girl/strange02.jpg'),
 						bookName2: '快穿之厉害了我的宿主',
 						author2: '戏精夏',
-						
+
 						pic3: require('../../assets/img/girl/strange03.jpg'),
 						bookName3: '快穿之养老攻略',
 						author3: '快穿狂魔',
-						
+
 						pic4: require('../../assets/img/girl/strange04.jpg'),
 						bookName4: '快穿之炮灰不伤悲',
 						author4: '游7.',
-						
+
 						pic5: require('../../assets/img/girl/strange05.jpg'),
 						bookName5: '末世幼稚园攻略',
 						author5: '包包紫'
@@ -1080,19 +1080,19 @@
 						pic1: require('../../assets/img/girl/gtv01.jpg'),
 						bookName1: '不负绿茵',
 						author1: '音欠生',
-						
+
 						pic2: require('../../assets/img/girl/gtv02.jpg'),
 						bookName2: '界之柱',
 						author2: '不存在的笔名',
-						
+
 						pic3: require('../../assets/img/girl/gtv03.jpg'),
 						bookName3: '十年养成攻略',
 						author3: '花与刃',
-						
+
 						pic4: require('../../assets/img/girl/gtv04.jpg'),
 						bookName4: '全息之幻想',
 						author4: '笔下的世界线',
-						
+
 						pic5: require('../../assets/img/girl/gtv05.jpg'),
 						bookName5: '百兵图',
 						author5: '裘洛'
@@ -1137,17 +1137,17 @@
 				var time = date-now;
 				//1000毫秒=1秒 1分钟=60秒 1小时=60分钟 1天=24小时
 				var day = parseInt(time/1000/60/60/24);
-				
+
 				var hour = parseInt(time/1000/60/60%24);
-				
+
 				var minute = parseInt(time/1000/60%60);
-				
+
 				var second = parseInt(time/1000%60);
 				d.innerHTML = day;
 				h.innerHTML = hour;
 				m.innerHTML = minute;
 				s.innerHTML = second;
-			},		
+			},
 			scrollToTop(el) {
 				//变量scrollTop是滚动条滚动时，距离顶部的距离
 				let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
@@ -1169,13 +1169,15 @@
 				}
 			},
 			destroyed () {
-				window.removeEventListener('scroll', this.scrollToTop); 
+				window.removeEventListener('scroll', this.scrollToTop);
+        window.removeEventListener('setInterval',this.function);
 			}
 		},
 		mounted(){
 			this.function()
 			setInterval(this.function)
-			
+      window.addEventListener('setInterval', this.function)
+
 			window.addEventListener('scroll', this.scrollToTop)
 		}
 	}
@@ -1185,7 +1187,7 @@
 		*{
 		text-decoration: none;
 	}
-	
+
 	body{
 		font-family: sans-serif;
 		line-height: 1.5;
@@ -1269,32 +1271,32 @@
 		height: 24px;
 		background-position: -63px -28px;
 	}
-	
+
 	/* 排行榜 */
 	.charts{
 		width: 27px;
 		height: 26px;
 		background-position: 0 0;
 	}
-	
+
 	/* 免费 */
 	.free{
 		width: 26px;
-		height: 26px;    
+		height: 26px;
 		background-position: 0 -30px;
 	}
-	
+
 	/* 完本 */
 	.endBook{
 		width: 20px;
 		height: 27px;
 		background-position: 0 -60px;
 	}
-	
+
 	/* 大神 */
 	.God{
 		width: 26px;
-		height: 26px;    
+		height: 26px;
 		background-position: -30px -30px;
 	}
 	/* 热门小说 */
@@ -1494,7 +1496,7 @@
 		height: 100%;
 	}
 	.advert::after{
-		content: '广告'; 
+		content: '广告';
 		font-size: 12px;
 		line-height: 1;
 		position: absolute;
@@ -1692,7 +1694,7 @@
 	}
 	/* 返回顶部 */
 	.Box-icon{
-		position: fixed; 
+		position: fixed;
 		border: 0.0625rem solid;
 		border-radius: 99px;
 		cursor: pointer;
@@ -1702,7 +1704,7 @@
 		height: 2rem;
 		padding: 0.5625rem;
 		display: block;
-		right: 20px; 
+		right: 20px;
 		bottom: 5rem;
 		background: #ed424b;
 		color: #fff;
@@ -1715,7 +1717,7 @@
 	.backTop{
 		width: 3.125rem;
 		height: 3.125rem;
-		right: 20px; 
+		right: 20px;
 		bottom: 1rem;
 		background: #000;
 		opacity: 0.6;
@@ -1763,7 +1765,7 @@
 	.content-two{
 		padding: 1.125rem;
 	}
-	
+
 	.two-bookname{
 		overflow: hidden;
 	}

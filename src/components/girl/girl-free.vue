@@ -33,7 +33,7 @@
 				</li>
 			</ul>
 		</header>
-		
+
 		<!-- 隐藏 -->
 		<div class="more-Hide" v-if="show01">
 			<i class="hide-bg"></i>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 本期免费 -->
 		<div class="module">
 			<div class="header">
@@ -95,7 +95,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 下期限免 -->
 		<div class="module">
 			<div class="header">
@@ -115,7 +115,7 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<!-- 人气免费 -->
 		<div class="module">
 			<div class="header">
@@ -156,7 +156,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 新书免费 -->
 		<div class="module">
 			<div class="header">
@@ -197,7 +197,7 @@
 				</ol>
 			</div>
 		</div>
-	
+
 		<!-- 底部 -->
 		<footer>
 			<!-- 登录 -->
@@ -220,7 +220,7 @@
 				Copyright © 2002-2019 m.qidian.com
 			</p>
 		</footer>
-		
+
 		<!-- 下载提示 -->
 		<div class="downApp">
 			<img src="../../assets/img/AppLogo.png" alt="">
@@ -299,7 +299,7 @@
 						gray: '古代言情',
 						red: '连载',
 						blue: '18.43万字'
-						
+
 					},
 					{
 						pic: require('../../assets/img/freeGirl/PublicfreeGirl02.jpg'),
@@ -309,7 +309,7 @@
 						gray: '科幻空间',
 						red: '连载',
 						blue: '38.78万字'
-						
+
 					},
 					{
 						pic: require('../../assets/img/freeGirl/PublicfreeGirl03.jpg'),
@@ -330,7 +330,7 @@
 						gray: '浪漫青春',
 						red: '连载',
 						blue: '1.55万字'
-						
+
 					},
 					{
 						pic: require('../../assets/img/freeGirl/NewfreeGirl02.jpg'),
@@ -340,7 +340,7 @@
 						gray: '浪漫青春',
 						red: '连载',
 						blue: '2054字'
-						
+
 					},
 					{
 						pic: require('../../assets/img/freeGirl/NewfreeGirl03.jpg'),
@@ -365,21 +365,25 @@
 				var time = date-now;
 				//1000毫秒=1秒 1分钟=60秒 1小时=60分钟 1天=24小时
 				var day = parseInt(time/1000/60/60/24);
-				
+
 				var hour = parseInt(time/1000/60/60%24);
-				
+
 				var minute = parseInt(time/1000/60%60);
-				
+
 				var second = parseInt(time/1000%60);
 				d.innerHTML = day;
 				h.innerHTML = hour;
 				m.innerHTML = minute;
 				s.innerHTML = second;
-			}
+			},
+      destroyed(){
+      	window.removeEventListener('setInterval',this.function);
+      }
 		},
 		mounted(){
 			this.function()
 			setInterval(this.function)
+      window.addEventListener('setInterval', this.function)
 		}
 	}
 </script>
@@ -440,7 +444,7 @@
 	}
 	.girlfreenav-btn:nth-child(1){
 		border-radius: 0.25rem 0 0 0.25rem;
-		
+
 	}
 	.girlfreenav-btn:nth-child(2){
 		border-radius: 0 0.25rem 0.25rem 0;
@@ -463,9 +467,9 @@
 		margin: 0.25rem 0.625rem 0 0.625rem;
 	}
 	/* 更多 */
-	.bookMore:empty{   
+	.bookMore:empty{
 		width: 2.25rem;
-		height: 2.25rem; 
+		height: 2.25rem;
 		position: relative;
 		top: -0.3125rem;
 		right: 3%;
@@ -476,7 +480,7 @@
 	}
 	.bookMore:empty::after,
 	.bookMore:empty::before{
-		content: ''; 
+		content: '';
 		width: 1.25rem;
 		position: absolute;
 		left: 50%;
