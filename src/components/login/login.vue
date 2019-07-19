@@ -15,7 +15,7 @@
 						</li>
 						<li>
 							<em class="lock"></em>
-							<input type="password" id="passwd" placeholder="请输入密码" @click="Noshow()" v-model="passwd">
+							<input type="password" id="passwd" placeholder="请输入密码" @click="Noshow()" v-model="passwd" @input="checkPass(passwd)">
 							<div class="passwd-r">
 								<i class="unlook" @click="unpress()"></i>
                 <i class="look" style="display: none;" @click="press()">
@@ -33,9 +33,9 @@
 					<router-link to="/register">用户注册</router-link>
 				</div>
 				<div class="login-btn">
-					<router-link to="/login">
+					<span @click="Nonull()">
 						登录
-					</router-link>
+					</span>
 				</div>
 			</div>
 
@@ -86,7 +86,9 @@
 	export default {
 		data(){
 			return {
-				if1: false
+				if1: false,
+        user: '',
+        passwd: ''
 			}
 		},
 		methods:{
@@ -99,33 +101,37 @@
       press(){
         $('.look').css('display','none');
         $('.unlook').css('display','block');
-
       },
       unpress(){
         $('.look').css('display','block');
         $('.unlook').css('display','none');
       },
       checkUser(msg){
-          if(msg.length == ''){
-            $('.point').html('请输入帐号')
+        if(msg.length == ''){
+          $('.point').html('请输入帐号')
+        }else{
+          var reg = /^[0-9a-zA-Z]{4,11}$/ || /^\w+@\w+(.\w+)+$/ || /^1\d{11}/;
+          if(!reg.test(msg)){
+            $('.point').html('用户名不正确');
           }else{
-            var reg = /^[0-9a-zA-Z]{4,10}$/ || /^\w+@\w+(.\w+)+$/ || /^1\d{10}/;
-            if(!reg.test(msg)){
-              $('.point').html('用户名不正确');
-            }else{
-              $('.point').html('')
-            }
+            $('.point').html('')
           }
         }
       },
-      // checking(msg02){
-      //     if(msg02.length == ''){
-      //       $('.point').html('密码不能为空')
-      //     }else{
-      //       $('.point').html('')
-      //     }
-      // }
-	}
+      checkPass(res){
+        if(res.length == ''){
+          $('.point').html('请输入密码')
+        }else{
+          $('.point').html('')
+        }
+      },
+      Nonull(){
+        if(user == '' || passwd ==''){
+          $('.point').html('请输入帐号、密码')
+        }
+      }
+    }
+  }
 </script>
 
 <style>
@@ -238,9 +244,9 @@
 		padding: 0 2.1875rem;
 		text-align: center;
 	}
-	.login-btn a{
-	    width: 100%;
-		height: 3.3125rem;
+	.login-btn span{
+    width: 100%;
+		height: 3.3125spanrem;
 		border-radius: 1.725rem;
 		line-height: 3.3125rem;
 		font-size: 1.125rem;

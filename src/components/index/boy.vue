@@ -676,7 +676,7 @@
 			destroyed(){
 				window.removeEventListener('scroll', this.scrollToTop);
 				window.removeEventListener('setInterval',this.function);
-        clearInterval(this.function);
+        clearInterval(this.function());
 			}
 		},
 		mounted(){
@@ -753,7 +753,7 @@
 		background-size: 100%;
 	}
 	/* btn */
-	.nav-box li:nth-child(2){
+	.nav-box-a{
 		margin: 0.5rem 0;
 		position: absolute;
 		top: 0.25rem;
