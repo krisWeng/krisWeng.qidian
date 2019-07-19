@@ -64,7 +64,7 @@
 		height: 3.375rem;
 		display: block;
 		margin: 0 auto .75rem;
-		background: url(../../../data/img/space.svg) no-repeat center;
+		background: url(../../assets/img/space.svg) no-repeat center;
 		background-size: 100% 100%;
 	}
 </style>

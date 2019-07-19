@@ -174,7 +174,7 @@
 
 		<!-- 下载提示 -->
 		<div class="downApp">
-			<img src="../../../data/img/AppLogo.png" alt="">
+			<img src="../../assets/img/AppLogo.png" alt="">
 			<h3>安装起点读书客户端</h3>
 			<p>看更多正版好书</p>
 			<span>下载</span>
@@ -393,42 +393,42 @@
 	.hide-icon-home{
 		width: 28px;
 		height: 25px;
-		background: url(../../../data/img/nav-icon.png);
+		background: url(../../assets/img/nav-icon.png);
 		background-position: -31px 0;
 		background-size: 87px 87px;
 	}
 	.hide-icon-type{
 		width: 24px;
 		height: 24px;
-		background: url(../../../data/img/nav-icon.png);
+		background: url(../../assets/img/nav-icon.png);
 		background-position: -63px -28px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-rank{
 		width: 27px;
 		height: 26px;
-		background: url(../../../data/img/nav-icon.png);
+		background: url(../../assets/img/nav-icon.png);
 		background-position: 0 0;
 		background-size: 87px 87px;
 	}
 	.hide-icon-free{
 		width: 26px;
 		height: 26px;
-		background: url(../../../data/img/nav-icon.png);
+		background: url(../../assets/img/nav-icon.png);
 		background-position: 0 -30px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-end{
 		width: 20px;
 		height: 27px;
-		background: url(../../../data/img/nav-icon.png);
+		background: url(../../assets/img/nav-icon.png);
 		background-position: 0 -60px;
 		background-size: 87px 87px;
 	}
 	.hide-icon-money{
 		width: 24px;
 		height: 24px;
-		background: url(../../../data/img/nav-icon.png);
+		background: url(../../assets/img/nav-icon.png);
 		background-position: -63px 0;
 		background-size: 87px 87px;
 	}

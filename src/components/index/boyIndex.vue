@@ -549,7 +549,8 @@
 
 		<!-- 下载提示 -->
 		<div class="downApp">
-			<img src="../../../data/img/AppLogo.png" alt="">
+			<!-- <img src="../../assets/img/AppLogo.png" alt=""> -->
+      <img :src="img" alt="">
 			<h3>安装起点读书客户端</h3>
 			<p>看更多正版好书</p>
 			<span>下载</span>
@@ -616,7 +617,8 @@
         TypeBtnName02: [],
         typeList02: [],
         LightNovel: [],
-        theme: []
+        theme: [],
+        img:require("../../assets/img/AppLogo.png")
 			}
 		},
 		methods:{
@@ -748,7 +750,7 @@
 		margin: 0.84375rem 0;
 		font-size: 1rem;
 		color: transparent;
-		background: url(../../../data/img/logo.svg);
+		background: url(../../assets/img/logo.svg);
 		background-size: 100%;
 	}
 	/* btn */
@@ -870,7 +872,7 @@
 		bottom: 1.625rem;
 		left: 0;
 		margin: auto;
-		background: url(../../../data/img/nav-icon.png);
+		background: url(../../assets/img/nav-icon.png);
 		background-size: 87px 87px;
 	}
 	/* 分类 */
@@ -1088,7 +1090,7 @@
 		left: 0;
 		width: 10px;
 		height: 9px;
-		background: url(../../../data/img/top.svg) no-repeat center;
+		background: url(../../assets/img/top.svg) no-repeat center;
 		background-size: 100%;
 	}
 	/* 广告 */

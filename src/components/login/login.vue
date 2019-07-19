@@ -1,9 +1,9 @@
 <template>
 	<div id="login">
-		<img src="../../../data/img/loginTop.png" alt="" class="Top-pic">
+		<img src="../../assets/img/loginTop.png" alt="" class="Top-pic">
 		<div class="login-box">
 			<div class="login-logo">
-				<img src="../../../data/img/AppLogo.png" alt="">
+				<img src="../../assets/img/AppLogo.png" alt="">
 			</div>
 			<!-- 输入框内容 -->
 			<div class="login-cont">
@@ -212,14 +212,14 @@
 		background-size: 100%;
 	}
 	.user{
-		background: url(../../../data/img/user.svg);
+		background: url(../../assets/img/user.svg);
 	}
 	.lock{
-		background: url(../../../data/img/lock.svg);
+		background: url(../../assets/img/lock.svg);
 	}
 	.unlook{
 		margin: 1.03125rem 1.1rem 0;
-		background: url(../../../data/img/unlook.svg);
+		background: url(../../assets/img/unlook.svg);
 	}
 	/* 忘记密码 */
 	.login-link{
@@ -285,13 +285,13 @@
 		background-size: 100%;
 	}
 	.QQ{
-		background: url(../../../data/img/qq.svg);
+		background: url(../../assets/img/qq.svg);
 	}
 	.phone{
-		background: url(../../../data/img/phone.svg);
+		background: url(../../assets/img/phone.svg);
 	}
 	.more{
-		background: url(../../../data/img/more.svg);
+		background: url(../../assets/img/more.svg);
 	}
 	/* 更多登录方式 */
 	.loginMore{
@@ -316,16 +316,16 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin-left: .16rem;
-		background-image: url(../../../data/img/down.svg);
+		background-image: url(../../assets/img/down.svg);
 	}
 	.weibo{
-		background: url(../../../data/img/weibo.svg);
+		background: url(../../assets/img/weibo.svg);
 	}
 	.alipay{
-		background: url(../../../data/img/alipay.svg);
+		background: url(../../assets/img/alipay.svg);
 	}
 	.baidu{
-		background: url(../../../data/img/baidu.svg);
+		background: url(../../assets/img/baidu.svg);
 	}
   .point{
     margin-left: 2.2rem;

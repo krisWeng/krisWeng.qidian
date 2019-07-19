@@ -70,16 +70,17 @@
 	}
 	.logoGirl-a{
 		width: 6.25rem;
-		padding: 0 1.125rem;
+		padding-right: 0.75rem;
+		padding-left: 0.25rem;
 		display: inline-block;
 	}
 	.logoGirl-p{
 		width: inherit;
 		height: 1.25rem;
-		margin: 0.90625rem 0;
+		margin: 0.84375rem 0;
 		font-size: 1rem;
 		color: transparent;
-		background: url(../../../data/img/logoGirl.svg);
+		background: url(../../assets/img/logoGirl.svg);
 		background-size: 100%;
 	}
 	/* btn */
