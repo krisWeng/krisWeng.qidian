@@ -119,10 +119,10 @@
 			<div class="header">
 				<div class="header-title">
 					<h3>限时免费</h3>
-					<span id="d" style="background: #ED424B; color: #fff">00</span>
-					<span id="h" style="background: #000000; color: #fff">00</span>
-					<span id="m" style="background: #000000; color: #fff">00</span>
-					<span id="s" style="background: #000000; color: #fff">00</span>
+					<span id="d" style="background: #ED424B; color: #fff">{{d}}</span>
+					<span id="h" style="background: #000000; color: #fff">{{h}}</span>
+					<span id="m" style="background: #000000; color: #fff">{{m}}</span>
+					<span id="s" style="background: #000000; color: #fff">{{s}}</span>
 				</div>
 				<div class="header-more">
 					更多
@@ -618,7 +618,11 @@
         typeList02: [],
         LightNovel: [],
         theme: [],
-        img:require("../../assets/img/AppLogo.png")
+        img:require("../../assets/img/AppLogo.png"),
+        d: '00',
+        h: '00',
+        m: '00',
+        s: '00'
 			}
 		},
 		methods:{
@@ -637,24 +641,17 @@
 			top(){
 				document.documentElement.scrollTop = 0;
 			},
-			function(){
-				var now = new Date().getTime();
-				//月份时0-11，不要忘记+1
-				var date = new Date(2019,6,25).getTime();
-				var time = date-now;
-				//1000毫秒=1秒 1分钟=60秒 1小时=60分钟 1天=24小时
-				var day = parseInt(time/1000/60/60/24);
-
-				var hour = parseInt(time/1000/60/60%24);
-
-				var minute = parseInt(time/1000/60%60);
-
-				var second = parseInt(time/1000%60);
-				d.innerHTML = day;
-				h.innerHTML = hour;
-				m.innerHTML = minute;
-				s.innerHTML = second;
-			},
+      function(){
+        var now = new Date().getTime();
+        //月份时0-11，不要忘记+1
+        var date = new Date(2019,6,25).getTime();
+        var time = date-now;
+        //1000毫秒=1秒 1分钟=60秒 1小时=60分钟 1天=24小时
+        this.d = parseInt(time/1000/60/60/24);
+        this.h = parseInt(time/1000/60/60%24);
+        this.m = parseInt(time/1000/60%60);
+        this.s = parseInt(time/1000%60);
+      },
 			scrollToTop(el) {
 				//变量scrollTop是滚动条滚动时，距离顶部的距离
 				let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
@@ -677,7 +674,7 @@
 			},
 			destroyed () {
 				window.removeEventListener('scroll', this.scrollToTop);
-        window.removeEventListener('setInterval',this.function);
+        window.clearInterval('setInterval');
 			}
 		},
 		mounted(){
@@ -699,8 +696,7 @@
       })
 
 			this.function()
-			setInterval(this.function)
-      // window.addEventListener('setInterval', this.function)
+			window.setInterval(this.function)
 
 			window.addEventListener('scroll', this.scrollToTop)
 		}

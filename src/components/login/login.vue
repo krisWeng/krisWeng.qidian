@@ -11,18 +11,13 @@
 					<ul>
 						<li>
 							<em class="user"></em>
-							<input type="text" id="user" placeholder="请输入邮箱/个性账号" @click="Noshow()" v-model="user" @input="checkUser(user)">
+							<input type="text" id="user" class="userColor" placeholder="请输入邮箱/个性账号" @click="Noshow()" v-model="user" @input="checkUser(user)">
 						</li>
 						<li>
 							<em class="lock"></em>
-							<input type="password" id="passwd" placeholder="请输入密码" @click="Noshow()" v-model="passwd" @input="checkPass(passwd)">
+							<input :type="passwdType" id="passwd" placeholder="请输入密码" @click="Noshow()" v-model="passwd" @input="checkPass(passwd)">
 							<div class="passwd-r">
-								<i class="unlook" @click="unpress()"></i>
-                <i class="look" style="display: none;" @click="press()">
-                  <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-look"></use>
-                  </svg>
-                </i>
+                <img :src="openeye" class="eye" alt="" @click="changeType()">
 							</div>
 						</li>
 					</ul>
@@ -33,7 +28,7 @@
 					<router-link to="/register">用户注册</router-link>
 				</div>
 				<div class="login-btn">
-					<span @click="Nonull()">
+					<span @click="Nonull()" class="login-btn-span dis" @span="checkAll(user,passwd)">
 						登录
 					</span>
 				</div>
@@ -60,7 +55,7 @@
 
 		<!-- 更多 -->
 		<div class="loginMore" v-if="if1">
-			<div class="retract">
+			<div class="retract" @click="show()">
 				收起
 				<i class="down-icon"></i>
 			</div>
@@ -88,7 +83,9 @@
 			return {
 				if1: false,
         user: '',
-        passwd: ''
+        passwd: '',
+        passwdType: 'password', // 密码类型
+        openeye: require('../../assets/img/unlook.svg'), //图片地址
 			}
 		},
 		methods:{
@@ -98,23 +95,22 @@
       Noshow(){
         $('.Top-pic').css('display','none')
       },
-      press(){
-        $('.look').css('display','none');
-        $('.unlook').css('display','block');
-      },
-      unpress(){
-        $('.look').css('display','block');
-        $('.unlook').css('display','none');
+      changeType(){
+        this.passwdType = this.passwdType == 'password' ? 'text' : 'password';
+        this.openeye = this.openeye == require("../../assets/img/unlook.svg") ? require("../../assets/img/look.svg") : require("../../assets/img/unlook.svg");
       },
       checkUser(msg){
         if(msg.length == ''){
           $('.point').html('请输入帐号')
         }else{
-          var reg = /^[0-9a-zA-Z]{4,11}$/ || /^\w+@\w+(.\w+)+$/ || /^1\d{11}/;
+          // var reg = /^[0-9a-zA-Z]{4,11}$/ || /^\w+@\w+(.\w+)+$/ || /^1\d{10}/;
+          var reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
           if(!reg.test(msg)){
             $('.point').html('用户名不正确');
           }else{
             $('.point').html('')
+            // $('.dis').css('opacity','1')
+            $('.userColor').css('opacity','1')
           }
         }
       },
@@ -125,8 +121,15 @@
           $('.point').html('')
         }
       },
+      checkAll(){
+        if(this.user == '' || this.passwd == ''){
+          $('.dis').css('opacity','0.7')
+        }else{
+          $('.dis').css('opacity','1')
+        }
+      },
       Nonull(){
-        if(user == '' || passwd ==''){
+        if(this.user == '' || this.passwd == ''){
           $('.point').html('请输入帐号、密码')
         }
       }
@@ -135,6 +138,10 @@
 </script>
 
 <style>
+  html{
+    height: 100%;
+    background: #fff;
+  }
 	#login{
 		padding-bottom: 7.42rem;
 		background: #fff;
@@ -209,7 +216,7 @@
 		height: 3.3125rem;
 		float: right;
 	}
-	.passwd-r i{
+	.passwd-r img{
 		width: 1.1rem;
 		height: 1.1rem;
 		display: block;
@@ -222,10 +229,6 @@
 	}
 	.lock{
 		background: url(../../assets/img/lock.svg);
-	}
-	.unlook{
-		margin: 1.03125rem 1.1rem 0;
-		background: url(../../assets/img/unlook.svg);
 	}
 	/* 忘记密码 */
 	.login-link{
@@ -244,21 +247,21 @@
 		padding: 0 2.1875rem;
 		text-align: center;
 	}
-	.login-btn span{
+	.login-btn-span{
     width: 100%;
-		height: 3.3125spanrem;
 		border-radius: 1.725rem;
 		line-height: 3.3125rem;
 		font-size: 1.125rem;
-		opacity: .7;
 		background: linear-gradient(to right, #EE434C, #F14B4E);
 		position: relative;
 		z-index: 1;
 		display: inline-block;
-		vertical-align: middle;
 		text-align: center;
 		color: #FFF;
 	}
+  .dis{
+    opacity: .7;
+  }
 	/* 其他登录方式 */
 	.login-other,
 	.loginMore{

@@ -83,10 +83,10 @@
 			<div class="header">
 				<div class="header-title">
 					<h3>限时免费</h3>
-					<span id="d" style="background: #ED424B; color: #fff">00</span>
-					<span id="h" style="background: #000000; color: #fff">00</span>
-					<span id="m" style="background: #000000; color: #fff">00</span>
-					<span id="s" style="background: #000000; color: #fff">00</span>
+					<span id="d" style="background: #ED424B; color: #fff">{{d}}</span>
+					<span id="h" style="background: #000000; color: #fff">{{h}}</span>
+					<span id="m" style="background: #000000; color: #fff">{{m}}</span>
+					<span id="s" style="background: #000000; color: #fff">{{s}}</span>
 				</div>
 				<div class="header-more">
 					更多
@@ -548,7 +548,11 @@
 				typeListGirl01: [],
 				TypeBtnNameGirl02: [],
 				typeListGirl02: [],
-				themeGirl: []
+				themeGirl: [],
+        d: '00',
+        h: '00',
+        m: '00',
+        s: '00'
 			}
 		},
 		methods:{
@@ -565,6 +569,7 @@
 				this.show =! this.show
 			},
 			top(){
+        // 获取当前滚动条的位置
 				document.documentElement.scrollTop = 0;
 			},
 			function(){
@@ -580,10 +585,10 @@
 				var minute = parseInt(time/1000/60%60);
 
 				var second = parseInt(time/1000%60);
-				d.innerHTML = day;
-				h.innerHTML = hour;
-				m.innerHTML = minute;
-				s.innerHTML = second;
+				this.d = day;
+				this.h = hour;
+				this.m = minute;
+				this.s = second;
 			},
 			scrollToTop(el) {
 				//变量scrollTop是滚动条滚动时，距离顶部的距离
@@ -607,7 +612,7 @@
 			},
 			destroyed () {
 				window.removeEventListener('scroll', this.scrollToTop);
-        window.removeEventListener('setInterval',this.function);
+        window.clearInterval('setInterval');
 			}
 		},
 		mounted(){
@@ -629,7 +634,6 @@
 
 			this.function()
 			setInterval(this.function)
-      window.addEventListener('setInterval', this.function)
 
 			window.addEventListener('scroll', this.scrollToTop)
 		}

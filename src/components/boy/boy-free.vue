@@ -77,10 +77,10 @@
 			<div class="header">
 				<div class="header-title">
 					<h3>本期免费</h3>
-					<span id="d" style="background: #ED424B; color: #fff">00</span>
-					<span id="h" style="background: #000000; color: #fff">00</span>
-					<span id="m" style="background: #000000; color: #fff">00</span>
-					<span id="s" style="background: #000000; color: #fff">00</span>
+					<span id="d" style="background: #ED424B; color: #fff">{{d}}</span>
+					<span id="h" style="background: #000000; color: #fff">{{h}}</span>
+					<span id="m" style="background: #000000; color: #fff">{{m}}</span>
+					<span id="s" style="background: #000000; color: #fff">{{s}}</span>
 				</div>
 			</div>
 			<div class="slide">
@@ -239,7 +239,11 @@
 				NowFree:[],
 				NextFree:[],
 				PublicBook:[],
-				TheNewBook:[]
+				TheNewBook:[],
+        d: '00',
+        h: '00',
+        m: '00',
+        s: '00'
 			}
 		},
 		methods: {
@@ -253,19 +257,16 @@
 				var time = date-now;
 				//1000毫秒=1秒 1分钟=60秒 1小时=60分钟 1天=24小时
 				var day = parseInt(time/1000/60/60/24);
-
 				var hour = parseInt(time/1000/60/60%24);
-
 				var minute = parseInt(time/1000/60%60);
-
 				var second = parseInt(time/1000%60);
-				d.innerHTML = day;
-				h.innerHTML = hour;
-				m.innerHTML = minute;
-				s.innerHTML = second;
+				this.d = day;
+				this.h = hour;
+				this.m = minute;
+				this.s = second;
 			},
       destroyed(){
-      	window.removeEventListener('setInterval',this.function);
+      	window.clearInterval('setInterval');
       }
 		},
 		mounted(){
@@ -279,7 +280,6 @@
 
 			this.function()
 			setInterval(this.function)
-      window.addEventListener('setInterval', this.function)
 		}
 	}
 </script>
