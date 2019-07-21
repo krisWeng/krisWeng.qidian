@@ -240,10 +240,10 @@
 				NextFree:[],
 				PublicBook:[],
 				TheNewBook:[],
-        d: '00',
-        h: '00',
-        m: '00',
-        s: '00'
+				d: '00',
+				h: '00',
+				m: '00',
+				s: '00'
 			}
 		},
 		methods: {

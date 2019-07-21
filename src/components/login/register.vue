@@ -1,49 +1,223 @@
 <template>
 	<div id="register">
-		<header>
-			<div class="back" @click="back()">
-				<span>
-					<svg class="icon" aria-hidden="true">
-						<use xlink:href="#icon-Fill"></use>
-					</svg>
-				</span>
-				手机注册
-			</div>
-		</header>
+		<section class="register-box">
+      <header>
+        <div class="back" @click="back()">
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-Fill"></use>
+            </svg>
+          </span>
+          手机注册
+        </div>
+      </header>
+      <div class="registerBox">
+        <ul>
+          <li @click="PhoneNumTo()">
+            <span class="address">{{fromName}}</span>
+            <svg class="icon right" aria-hidden="true">
+              <use xlink:href="#icon-xiangyou"></use>
+            </svg>
+          </li>
+          <li class="phoneBor">
+            <span class="phoneNum">+86</span>
+            <input class="phoneInp" type="number" placeholder="请输入手机号码" v-model="number" @input="checkPhone(number)" @click=(getChange())>
+          </li>
+        </ul>
+        <p class="getPoint"></p>
+        <div class="message" id="numbtn" style="background: rgba(37, 129, 250, 0.2);" @click="getNum">
+          获取手机验证码
+        </div>
+        <p>我同意<span>用户服务协议</span></p>
+      </div>
+    </section>
 
-		<div class="registerBox">
-			<ul>
-				<li>
-					<span class="address">中国大陆</span>
-					<svg class="icon right" aria-hidden="true">
-						<use xlink:href="#icon-xiangyou"></use>
-					</svg>
-				</li>
-				<li class="phoneBor">
-					<span class="phoneNum">+86</span>
-					<input class="phoneInp" type="number" placeholder="请输入手机号码" v-model="number" @input="checkPhone(number)" @click=(getChange())>
-				</li>
-			</ul>
-      <p class="getPoint"></p>
-			<div class="message" id="numbtn" style="background: rgba(37, 129, 250, 0.2);" @click="getNum">
-				获取手机验证码
-			</div>
-			<p>我同意<span>用户服务协议</span></p>
-		</div>
-	</div>
+    <!-- 手机归属地 -->
+    <transition name="fade">
+      <section class="phoneFrom" v-show="show">
+        <header>
+          <div class="back" @click="PhoneNumTo()">
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-Fill"></use>
+              </svg>
+            </span>
+            请选择手机归属地
+          </div>
+        </header>
+        <ol class="phone-China" v-for="(item,index) in ChinaList">
+          <li @click="Tosend(item.Fromname)">{{item.Fromname}}<span>{{item.PhoneNum}}</span></li>
+        </ol>
+        <h3 id="A" class="PhoneFrom-name">A</h3>
+        <ol class="phone-China" v-for="(item,index) in AList">
+          <li @click="Tosend(item.Fromname)">{{item.Fromname}}<span>{{item.PhoneNum}}</span></li>
+        </ol>
+        <h3 id="B" class="PhoneFrom-name">B</h3>
+        <ol class="phone-China" v-for="(item,index) in BList">
+          <li @click="Tosend(item.Fromname)">{{item.Fromname}}<span>{{item.PhoneNum}}</span></li>
+        </ol>
+
+        <div class="PhoneLetter">
+          <dl>
+            <dd>
+              <a href="#A">A</a>
+            </dd>
+            <dd>
+              <a href="#B">B</a>
+            </dd>
+          </dl>
+        </div>
+      </section>
+    </transition>
+  </div>
 </template>
 
 <script>
 	export default{
     data(){
       return{
-        number: ''
+        number: '',
+        show: false,
+        fromName: '中国大陆',
+        ChinaList:[
+          {
+            Fromname: '中国大陆',
+            PhoneNum: '+86'
+          },
+          {
+            Fromname: '中国香港',
+            PhoneNum: '+852'
+          },
+          {
+            Fromname: '中国台湾',
+            PhoneNum: '+886'
+          },
+          {
+            Fromname: '中国澳门',
+            PhoneNum: '+853'
+          }
+        ],
+        AList:[
+          {
+            Fromname: '阿富汗',
+            PhoneNum: '+93'
+          },
+          {
+            Fromname: '阿尔巴尼亚',
+            PhoneNum: '+355'
+          },
+          {
+            Fromname: '阿尔及利亚',
+            PhoneNum: '+213'
+          },
+          {
+            Fromname: '安哥拉',
+            PhoneNum: '+244'
+          },
+          {
+            Fromname: '安道尔共和国',
+            PhoneNum: '+376'
+          },
+          {
+            Fromname: '安圭拉岛',
+            PhoneNum: '+1264'
+          },
+          {
+            Fromname: '安提瓜及巴布达',
+            PhoneNum: '+1268'
+          },
+          {
+            Fromname: '阿根廷',
+            PhoneNum: '+54'
+          },
+          {
+            Fromname: '阿鲁巴',
+            PhoneNum: '+297'
+          },
+          {
+            Fromname: '奥地利',
+            PhoneNum: '+43'
+          },
+          {
+            Fromname: '阿塞拜疆',
+            PhoneNum: '+994'
+          },
+          {
+            Fromname: '埃及',
+            PhoneNum: '+20'
+          },
+          {
+            Fromname: '爱沙尼亚',
+            PhoneNum: '+372'
+          }
+        ],
+        BList:[
+          {
+            Fromname: '巴哈马',
+            PhoneNum: '+1242'
+          },
+          {
+            Fromname: '巴林',
+            PhoneNum: '+973'
+          },
+          {
+            Fromname: '孟加拉共和国',
+            PhoneNum: '+880'
+          },
+          {
+            Fromname: '巴巴多斯',
+            PhoneNum: '+1246'
+          },
+          {
+            Fromname: '白俄罗斯',
+            PhoneNum: '+375'
+          },
+          {
+            Fromname: '比利时',
+            PhoneNum: '+32'
+          },
+          {
+            Fromname: '伯利兹',
+            PhoneNum: '+501'
+          },
+          {
+            Fromname: '贝宁',
+            PhoneNum: '+229'
+          },
+          {
+            Fromname: '百慕大',
+            PhoneNum: '+1441'
+          },
+          {
+            Fromname: '不丹',
+            PhoneNum: '+395'
+          },
+          {
+            Fromname: '玻利维亚',
+            PhoneNum: '+591'
+          },
+          {
+            Fromname: '波斯尼亚和黑塞哥维那',
+            PhoneNum: '+387'
+          },
+          {
+            Fromname: '博茨瓦纳',
+            PhoneNum: '+267'
+          }
+        ]
       }
     },
 		methods:{
-			back(){
-				this.$router.go('-1')
-			},
+      back(){
+        this.$router.go(-1)
+      },
+      PhoneNumTo(){
+        this.show=!this.show
+      },
+      Tosend(a){
+        this.fromName = a;
+        this.show=!this.show
+      },
       checkPhone(num){
         if(num.length == ''){
           numbtn.style.background = 'rgba(37, 129, 250, 0.2)'
@@ -82,11 +256,15 @@
 </script>
 
 <style>
-	#register{
+  #register{
+    background: #fff;
+  }
+	.register-box{
 		padding-bottom: 26.15625rem;
 		background: #fff;
 	}
-	ul li{
+	ol,
+  ul li{
 		list-style: none;
 	}
 	header{
@@ -170,4 +348,64 @@
 		color: #2581FA;
 		cursor: pointer;
 	}
+  /* 手机归属地 */
+  .phoneFrom{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    overflow-y: scroll;
+    background: #fff;
+  }
+  .phone-China{
+    padding-left: 1.375rem;
+  }
+  .phone-China li{
+    margin-right: 2.0625rem;
+    line-height: 3.375rem;
+    border-bottom: 1px solid #eee;
+    position: relative;
+  }
+  .phone-China li span{
+    position: absolute;
+    left: 50%;
+  }
+  .PhoneFrom-name{
+    background: #F0F1F3;
+    padding-left: 1.375rem;
+  }
+  .PhoneLetter{
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+  .PhoneLetter dd{
+    line-height: 1.375rem;
+  }
+  .PhoneLetter dd a{
+    color: #2c3e50;
+    text-decoration: none;
+  }
+ /*显示*/
+ .fade-enter{
+ 	width: 0;
+ }
+ .fade-enter-to{
+ 	width: 100%;
+ }
+ .fade-enter-active{
+ 	transition: all 0.5s;
+ }
+ /*隐藏*/
+ .fade-leave{
+ 	width: 100%;
+ }
+ .fade-leave-to{
+ 	width: 0;
+ }
+ .fade-leave-active{
+ 	transition: all 0.5s;
+ }
 </style>
