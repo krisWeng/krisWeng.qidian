@@ -28,7 +28,7 @@
 					<router-link to="/register">用户注册</router-link>
 				</div>
 				<div class="login-btn">
-					<span @click="Nonull()" class="login-btn-span dis" @span="checkAll(user,passwd)">
+					<span @click="Nonull()" class="login-btn-span dis">
 						登录
 					</span>
 				</div>
@@ -92,28 +92,31 @@
 			show(){
 				this.if1 =! this.if1
 			},
+      // 点击输入框，隐藏头部logo
       Noshow(){
         $('.Top-pic').css('display','none')
       },
+      // 密码可见/不可见
       changeType(){
         this.passwdType = this.passwdType == 'password' ? 'text' : 'password';
         this.openeye = this.openeye == require("../../assets/img/unlook.svg") ? require("../../assets/img/look.svg") : require("../../assets/img/unlook.svg");
       },
+      // 检验帐号，如果帐号为空或不正确，则会提示；如果帐号正确，则无提示且字体、按钮透明度为1
       checkUser(msg){
         if(msg.length == ''){
           $('.point').html('请输入帐号')
         }else{
-          // var reg = /^[0-9a-zA-Z]{4,11}$/ || /^\w+@\w+(.\w+)+$/ || /^1\d{10}/;
           var reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
           if(!reg.test(msg)){
             $('.point').html('用户名不正确');
           }else{
             $('.point').html('')
-            // $('.dis').css('opacity','1')
             $('.userColor').css('opacity','1')
+            $('.dis').css('opacity','1')
           }
         }
       },
+      // 检验密码
       checkPass(res){
         if(res.length == ''){
           $('.point').html('请输入密码')
@@ -121,16 +124,13 @@
           $('.point').html('')
         }
       },
-      checkAll(){
-        if(this.user == '' || this.passwd == ''){
-          $('.dis').css('opacity','0.7')
-        }else{
-          $('.dis').css('opacity','1')
-        }
-      },
+      // 登录按钮点击，如果帐号密码为空，则提示；如果帐号密码输入正确，则跳转到指定页面
       Nonull(){
         if(this.user == '' || this.passwd == ''){
           $('.point').html('请输入帐号、密码')
+        }
+        if(this.user == '18475969926@163.com' || this.passwd == '123321'){
+          this.$router.push({path:'/'})
         }
       }
     }
