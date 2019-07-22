@@ -274,13 +274,13 @@
 		vertical-align: top;
 	}
 	.hide-nav a{
-		width: 3.9375rem;
-		height: 4.0625rem;
+		width: 15%;
+		height: 3.625rem;
 		font-size: 0.875rem;
 		position: relative;
 		display: inline-block;
 		text-align: center;
-		margin: 0.84375rem 1.6875rem;
+		margin: 0.75rem 1.5rem;
 		color: #33373d;
 	}
 	.hide-nav a h4{
@@ -346,7 +346,7 @@
 		text-align: center;
 	}
 	.hide-btn a{
-		width: 19.6875rem;
+		width: 75%;
 		font-size: 1rem;
 		line-height: 2.5rem;
 		display: inline-block;

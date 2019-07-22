@@ -489,13 +489,11 @@
 		</div>
 
 		<!-- 返回顶部 -->
-		<span class="readBox Box-icon" id="lately" @click="appear()">
+		<span class="readBox Box-icon lately" @click="appear()">
 			最近阅读
 		</span>
-		<span class="backTop Box-icon" id="TOPBack" @click="top()" style="display: none;">
-			<svg class="icon" aria-hidden="true">
-				<use xlink:href="#icon-fanhuidingbu"></use>
-			</svg>
+		<span class="backTop Box-icon TOPBack" @click="top()" style="display: none;">
+      <img src="../../assets/img/fanhuidingbu.svg" alt="">
 		</span>
 
 		<!-- 最近阅读 -->
@@ -599,15 +597,15 @@
 				//变量scrollHeight是滚动条的总高度
 				let scrollHeight = document.documentElement.scrollHeight||document.body.scrollHeight;
 				if (scrollTop > browserHeight) {
-					TOPBack.style.display = 'block';
+					$('.TOPBack').css('display','block');
 				} else {
-					TOPBack.style.display = 'none';
+					$('.TOPBack').css('display','none');
 				}
 				if(scrollTop+windowHeight==scrollHeight){
-					TOPBack.style.display = 'none';
-					lately.style.display = 'none';
+					$('.TOPBack').css('display','none');
+					$('.lately').css('display','none');
 				}else{
-					lately.style.display = 'block';
+					$('.lately').css('display','block');
 				}
 			},
 			destroyed () {
@@ -702,7 +700,7 @@
 		display: inline-block;
 		text-align: center;
 		color: #000000;
-		margin-right: 6.092%;
+		margin-right: 5%;
 	}
 	.home-nav-a:nth-child(5){
 		margin-right: 0;
@@ -1179,7 +1177,7 @@
 		background: #000;
 		opacity: 0.6;
 	}
-	.backTop .icon{
+	.backTop img{
 		width: 1.375rem;
 		height: 1.375rem;
 		color: #fff;

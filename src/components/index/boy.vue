@@ -10,7 +10,7 @@
 					</h1>
 				</router-link>
 			</li>
-			<li class="nav-box-a">
+			<li class="nav-box-li">
 				<!-- 男生 -->
 				<router-link to="/boy" class="nav-btn-box">
 					男生
@@ -556,13 +556,11 @@
 		</div>
 
 		<!-- 返回顶部 -->
-		<span class="readBox Box-icon" id="lately" @click="appear()">
+		<span class="readBox Box-icon lately" @click="appear()">
 			最近阅读
 		</span>
-		<span class="backTop Box-icon" id="TOPBack" @click="top()" style="display: none;">
-			<svg class="icon" aria-hidden="true">
-				<use xlink:href="#icon-fanhuidingbu"></use>
-			</svg>
+		<span class="backTop Box-icon TOPBack" @click="top()" style="display: none;">
+			<img src="../../assets/img/fanhuidingbu.svg" alt="">
 		</span>
 
 		<!-- 最近阅读 -->
@@ -659,15 +657,15 @@
 				//变量scrollHeight是滚动条的总高度
 				let scrollHeight = document.documentElement.scrollHeight||document.body.scrollHeight;
 				if (scrollTop > browserHeight) {
-					TOPBack.style.display = 'block';
+					$('.TOPBack').css('display','block');
 				} else {
-					TOPBack.style.display = 'none';
+					$('.TOPBack').css('display','none');
 				}
 				if(scrollTop+windowHeight==scrollHeight){
-					TOPBack.style.display = 'none';
-					lately.style.display = 'none';
+					$('.TOPBack').css('display','none');
+					$('.lately').css('display','none');
 				}else{
-					lately.style.display = 'block';
+					$('.lately').css('display','block');
 				}
 			},
 			destroyed(){
@@ -748,11 +746,11 @@
 		background-size: 100%;
 	}
 	/* btn */
-	.nav-box-a{
+	.nav-box-li{
 		margin: 0.5rem 0;
 		position: absolute;
-		top: 0.25rem;
-		left: 38%;
+		top: 0.7rem;
+		left: 35%;
 	}
 	.nav-btn-box{
 		font-size: 0.875rem;
@@ -769,7 +767,7 @@
 		border-radius: 0 0.25rem 0.25rem 0;
 		margin-left: -0.27rem;
 	}
-	.nav-box-a .router-link-exact-active{
+	.nav-box-li .router-link-exact-active{
 		background: #ED424B;
 		color: #fff;
 	}
@@ -846,7 +844,7 @@
 		display: inline-block;
 		text-align: center;
 		color: #000000;
-		margin-right: 6.092%;
+		margin-right: 5%;
 	}
 	.home-nav-a:nth-child(5){
 		margin-right: 0;
@@ -1323,7 +1321,7 @@
 		background: #000;
 		opacity: 0.6;
 	}
-	.backTop .icon{
+	.backTop img{
 		width: 1.375rem;
 		height: 1.375rem;
 		color: #fff;
