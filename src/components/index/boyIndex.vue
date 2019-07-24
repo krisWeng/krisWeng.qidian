@@ -557,10 +557,10 @@
 		</div>
 
 		<!-- 返回顶部 -->
-		<span class="readBox Box-icon lately" @click="appear()">
+		<span class="readBox Box-icon" id="lately" @click="appear()">
 			最近阅读
 		</span>
-		<span class="backTop Box-icon TOPBack" @click="top()" style="display: none;">
+		<span class="backTop Box-icon" id="TOPBack" @click="top()" style="display: none;">
 			<img src="../../assets/img/fanhuidingbu.svg" alt="">
 		</span>
 
@@ -659,15 +659,15 @@
 				//变量scrollHeight是滚动条的总高度
 				let scrollHeight = document.documentElement.scrollHeight||document.body.scrollHeight;
 				if (scrollTop > browserHeight) {
-					$('.TOPBack').css('display','block');
+          TOPBack.style.display = 'block';
 				} else {
-					$('.TOPBack').css('display','none');
+          TOPBack.style.display = 'none';
 				}
 				if(scrollTop+windowHeight==scrollHeight){
-					$('.TOPBack').css('display','none');
-					$('.lately').css('display','none');
+          TOPBack.style.display = 'none';
+          lately.style.display = 'none';
 				}else{
-					$('.lately').css('display','block');
+          lately.style.display = 'block';
 				}
 			},
 			destroyed () {

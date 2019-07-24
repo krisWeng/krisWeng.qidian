@@ -401,7 +401,7 @@
     border-color: #fff;
   }
 	.phoneNum{
-		width: 3.875rem;
+		width: 16%;
 		display: inline-block;
 		vertical-align: middle;
 		line-height: 2.75rem;
